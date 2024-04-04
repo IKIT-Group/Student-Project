@@ -1,4 +1,4 @@
-@import url("./reset.css"); /* Подключение файла сброса стилей */
+@import url("../../Student-Project/css/reset.css"); /* Подключение файла сброса стилей */
 @import url("/fonts.css"); /* Подключение файла шрифтов */
 @import url("variables.css"); /* Подключение переменных */
 @import url("./global.css"); /* Подклбчение глобальных стилей (пока не знаю зачем, пусть будет) */
