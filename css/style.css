@@ -3,5 +3,8 @@
 @import url("./../css/variables.css"); /* Подключение переменных */
 @import url("./../css/global.css"); /* Подклбчение глобальных стилей (пока не знаю зачем, пусть будет) */
 
-@import url("./../css/blocks/page.css");
 @import url("./../css/blocks/container.css");
+@import url("./../css/blocks/visually-hidden.css");
+@import url("./../css/blocks/page.css");
+@import url("./../css/blocks/page-header.css");
+@import url("./../css/blocks/site-menu.css");

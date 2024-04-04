@@ -1,0 +1,11 @@
+.site-menu{
+    display: flex;
+}
+.site-menu__item:not(:last-child){
+    margin-right: 40px;
+}
+.site-menu__link{
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0.03em;
+}
