@@ -1,4 +1,6 @@
 @import url("./../css/reset.css"); /* Подключение файла сброса стилей */
 @import url("./../css/fonts.css"); /* Подключение файла шрифтов */
-@import url("./../variables.css"); /* Подключение переменных */
-@import url("./../global.css"); /* Подклбчение глобальных стилей (пока не знаю зачем, пусть будет) */
+@import url("./../css/variables.css"); /* Подключение переменных */
+@import url("./../css/global.css"); /* Подклбчение глобальных стилей (пока не знаю зачем, пусть будет) */
+
+@import url("./../css/blocks/page.css");
