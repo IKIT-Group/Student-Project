@@ -1,12 +1,19 @@
 .page-header{
-    padding: 51px 0;
+    padding: 51px 0 0 0;
+    background: var(--color-white-50);
+    border-radius: 0 0 50px 50px;
 }
 .page-header__nav{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin-bottom: 54px;
 }
 .page-header__logo{
     font-size: 24px;
     line-height: 100%;
     font-weight: 600;
+    margin-right: 30px;
+    max-width: 141px;
+    text-align: center;
 }

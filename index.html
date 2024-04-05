@@ -16,28 +16,85 @@
                     YOUR LOGO HERE
                 </a>
                 <ul class="page-header__list site-menu">
-                    <li class="site-menu__item">
+                    <li class="site-menu__item site-menu__item--active">
                         <a href="" class="site-menu__link">Главная</a>
                     </li>
-                    <li class="site-menu__item">
+                    <li class="site-menu__item ">
                         <a href="" class="site-menu__link">Выбор питомца</a>
                     </li>
-                    <li class="site-menu__item">
-                        <a href="" class="site-menu__link">Магазин</a>
+                    <li class="site-menu__item site-menu__item--dropdown" data-has-children>
+                        <a href="/" class="site-menu__btn">Магазин</a>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15 7.5L10 12.5L5 7.5" stroke="#222222"/>
+                        </svg>
+                            
+                        <ul class="site-menu--dropdown" hidden>
+                            <il class="site-menu__item">
+                                <a href="" class="site-menu__link">Корма и лакомства</a>
+                            </il>
+                            <il class="site-menu__item">
+                                <a href="" class="site-menu__link">Уход за животными</a>
+                            </il>
+                            <il class="site-menu__item">
+                                <a href="" class="site-menu__link">Аксессуары</a>
+                            </il>
+                            <il class="site-menu__item">
+                                <a href="" class="site-menu__link">Игрушки</a>
+                            </il>
+                            <il class="site-menu__item">
+                                <a href="" class="site-menu__link">Корзина товаров</a>
+                            </il>
+                        </ul>
                     </li>
-                    <li class="site-menu__item">
-                        <a href="" class="site-menu__link">О нас</a>
+                    <li class="site-menu__item site-menu__item--dropdown" data-has-children>
+                        <a href="/" class="site-menu__btn">О нас</a>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15 7.5L10 12.5L5 7.5" stroke="#222222"/>
+                        </svg>
+                            
+                        <ul class="site-menu--dropdown" hidden>
+                            <il class="site-menu__item">
+                                <a href="" class="site-menu__link">Наша миссия</a>
+                            </il>
+                            <il class="site-menu__item">
+                                <a href="" class="site-menu__link">Фотографии приюта</a>
+                            </il>
+                            <il class="site-menu__item">
+                                <a href="" class="site-menu__link">История приюта</a>
+                            </il>
+                            <il class="site-menu__item">
+                                <a href="" class="site-menu__link">Доп. информация</a>
+                            </il>
+                            <il class="site-menu__item">
+                                <a href="" class="site-menu__link">Помощь приюту</a>
+                            </il>
+                        </ul>
                     </li>
                 </ul>
 
             </nav>
+            <div class="page-header__promo promo">
+                <div class="promo__text">
+                    <p class="promo__name">ДОБРО БЕЗ ГРАНИЦ</p>
+                    <h1 class="promo__title">Приют для животных в г. Красноярск</h1>
+                    <div class="promo__description">
+                        <p class="promo__description--1">Наш приют - дом для тех, кто нуждается в любви и заботе.
+                            Мы помогли обрести любящих хозяев более чем 500 котикам и собакам!</p>
+                        <p class="promo__description--2">Дайте шанс бездомным животным найти свою семью и верных друзей. 
+                            Листайте ниже, чтобы познакомится с любимцами нашего приюта.</p>
+                    </div>
+                    <svg width="48" height="50" viewBox="0 0 48 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M46 1.92308L24.5406 22.8618C24.2466 23.1486 23.7534 23.1486 23.4594 22.8618L2 1.92308" stroke="#6C584C" stroke-width="5" stroke-linejoin="round"/>
+                        <path d="M46 25L24.5406 45.9387C24.2466 46.2256 23.7534 46.2256 23.4594 45.9387L2 25" stroke="#6C584C" stroke-width="5" stroke-linejoin="round"/>
+                    </svg>
+                        
+                </div>
+                <div class="promo__image">
+                    <img src="./img/index/header/header-bg.png" width="763px" alt="Мужчина с собакой">
+                </div>
+            </div>
         </div>
     </header>
-    <main class="page__main page-main">
-        <div class="header page-main__header promo">
-            <div class="promo__container container"></div>
-        </div>
-    </main>
 </body>
 
 </html>

@@ -1,0 +1,37 @@
+.page-header__promo {
+}
+.promo {
+  padding-left: 19px;
+  display: grid;
+  grid-template-columns: 500px 720px;
+}
+.promo__text {
+    position: relative;
+    z-index: 2;
+    margin-bottom: 39px;
+    text-align: center;
+}
+.promo__name {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 100%;
+  margin-bottom: 15px;
+}
+.promo__title {
+  font-size: 24px;
+  line-height: 100%;
+  margin-bottom: 40px;
+}
+.promo__description {
+  max-width: 500px;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 120%;
+  text-align: center;
+  margin-bottom: 39px;
+}
+.promo__description--1 {
+    margin-bottom: 20px;
+}
+.promo__description--2 {
+}
