@@ -42,7 +42,7 @@
   display: none;
   z-index: 1;
   position: absolute;
-  background-color: var(--color-white-50);
+  background-color: var(--background-white-50);
   min-width: 248px;
   border: 1px solid var(--color-brown-50);
   border-radius: 15px 0 15px 15px;

@@ -1,0 +1,22 @@
+.page-footer {
+  background-color: var(--background-brown);
+  padding: 40px 0;
+}
+.page-footer__nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+.page-footer__list {
+  text-align: right;
+}
+.page-footer__item:not(:last-child) {
+  margin-bottom: 15px;
+}
+.page-footer__link {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}

@@ -1,8 +1,13 @@
 :root {
     --main-font: "Rubik";
 
-    --color-black: #000;
+    --color-white: #ffffff;
+    --color-black: #000000;
     --color-brown: #6c584c;
     --color-brown-50: #a98467;
-    --color-white-50: #f0ead2;
+
+    --background-white-50: #f0ead2;
+    --background-green:  #adc178;
+    --background-green-50: #dde5b6;
+    --background-brown: #faedcd;
 }

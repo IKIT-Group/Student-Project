@@ -1,0 +1,16 @@
+.button {
+  display: inline-block;
+  background-color: var(--color-brown-50);
+  color: var(--color-white);
+  padding: 24px 64px;
+  text-align: center;
+  text-transform: uppercase;
+  align-self: center;
+  border-radius: 50px;
+}
+.button--link {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0.03em;
+}

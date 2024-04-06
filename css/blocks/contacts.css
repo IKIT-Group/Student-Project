@@ -1,0 +1,40 @@
+.contacts {
+}
+.contacts__name {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 100%;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+.contacts__description {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 100%;
+  margin-bottom: 15px;
+}
+.contacts__address {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+  margin-bottom: 15px;
+}
+.contacts__phone {
+    display: block;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+  margin-bottom: 15px;
+}
+.contacts__social {
+  display: flex;
+  gap: 30px;
+}
+.contacts__social svg{
+    width: 60px;
+    height: 60px;
+}
+.contacts__item {
+}
+.contacts__link {
+}

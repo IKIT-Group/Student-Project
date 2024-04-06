@@ -1,0 +1,78 @@
+.info {
+}
+.info__container {
+}
+.info__content {
+  display: flex;
+  flex-direction: column;
+  padding: 0 22px;
+}
+.info__title {
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: 0.03em;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding-left: 6px;
+  margin-bottom: 30px;
+}
+.info__list {
+  display: grid;
+  grid-template-columns: 558px 558px;
+  gap: 60px;
+  margin-bottom: 50px;
+}
+.info__item {
+  border-radius: 50px;
+  background: var(--background-green);
+  padding: 20px 20px 22px 20px;
+}
+.info__item--chlorine {
+  background: var(--background-green-50);
+}
+.info__img {
+  border-radius: 30px;
+  width: 518px;
+  height: 450px;
+  margin-bottom: 20px;
+}
+.info__description {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 22px;
+  padding: 0 30px;
+}
+.description {
+}
+.description__name {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 100%;
+  letter-spacing: 0.03em;
+}
+.description__age {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: 0.03em;
+}
+.info__subtitle {
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: 0.03em;
+  padding: 0 30px;
+}
+.info__aggitation {
+  text-align: center;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+.info__aggitation + svg{
+    margin: 0 auto 25px auto;
+}

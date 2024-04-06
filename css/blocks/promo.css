@@ -1,13 +1,10 @@
-.page-header__promo {
-}
+
 .promo {
   padding-left: 19px;
   display: grid;
-  grid-template-columns: 500px 720px;
+  grid-template-columns: 500px 1fr;
 }
 .promo__text {
-    position: relative;
-    z-index: 2;
     margin-bottom: 39px;
     text-align: center;
 }
@@ -33,5 +30,11 @@
 .promo__description--1 {
     margin-bottom: 20px;
 }
-.promo__description--2 {
+.promo__image{
+    height: fit-content;
+    align-self: flex-end;
+}
+.promo__image img{
+    width: 100%;
+    object-fit: cover;
 }
