@@ -4,16 +4,17 @@
     border-radius: 0 0 50px 50px;
     position: relative;
 }
-/* .page-header::after{
+.page-header::after{
     content: "";
     position: absolute;
+    z-index: 1;
     background: url('./../../img/index/header/decor/ellipse-1.png');
     width: 533px;
     height: 533px;
     display: block;
-    left: -321px;
-    bottom: -331px;
-} */
+    top: 0;
+    left: 0;
+}
 .page-header__nav{
     display: flex;
     justify-content: space-between;
