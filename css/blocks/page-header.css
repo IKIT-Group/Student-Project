@@ -1,19 +1,12 @@
 .page-header{
     padding: 51px 20px 0 20px;
-    background: var(--background-white-50);
     border-radius: 0 0 50px 50px;
-    position: relative;
-}
-.page-header::after{
-    content: "";
-    position: absolute;
-    z-index: 1;
-    background: url('./../../img/index/header/decor/ellipse-1.png');
-    width: 533px;
-    height: 533px;
-    display: block;
-    top: 0;
-    left: 0;
+    background-image: url('./../../img/index/header/decor/ellipse-1.png');
+    background-repeat: no-repeat;
+    background-size: 533px 533px;
+    background-position: left -321px bottom -331px;
+    background-color: var(--background-white-50);
+    
 }
 .page-header__nav{
     display: flex;
