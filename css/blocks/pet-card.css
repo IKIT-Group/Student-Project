@@ -3,7 +3,7 @@
 .pet-card__container {
 }
 .pet-card__link--back {
-  display: block;
+  display: inline-block;
   margin-bottom: 24px;
 }
 .pet-card__info {
