@@ -1,15 +1,18 @@
 .page-main{
-    padding: 35px 20px 30px 20px;
+    padding: 35px 0 30px 0;
     background: url('./../../img/index/header/decor/ellipse-2.png') no-repeat top 183px right -351px,
     url('./../../img/index/header/decor/ellipse-3.png') no-repeat bottom 55px left -208px;
 }
 .page-main--no-decor{
     background: none;
-    padding: 0 20px 50px 20px;
+    padding: 0 0 50px 0;
 }
 .page-main__shop{
     background: url('./../../img/shop/bg/ellipse-1.svg') no-repeat top 255px left -353px;
 }
 .page-main__empty-cart{
-    padding: 50px 20px 150px 20px;
+    padding: 50px 0 150px 0;
+}
+.page-main__card{
+    padding: 20px 0 40px 0;
 }

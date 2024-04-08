@@ -1,7 +1,8 @@
-/* .category {
+.category {
+  padding: 0 20px;
 }
 .category__container {
-} */
+} 
 .category__content {
   display: flex;
   flex-direction: column;

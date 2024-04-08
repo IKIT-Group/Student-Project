@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./../css/style.css" />
-    <title>Выбор питомца</title>
+    <title>Карточка питомца</title>
 </head>
 <body class="page__body">
     <header
@@ -91,107 +91,35 @@
         </nav>
       </div>
     </header>
-    <main class="page__main page-main page-main--no-decor">
-        <h1 class="visually-hidden">Выбор питомца</h1>
-        <section class="choice">
-            <div class="choice__container container">
-                <div class="choice__promo choice-promo">
-                    <div class="choice-promo__text">
-                        <h2 class="choice-promo__title">Найди себе четырехлапого друга</h2>
-                        <p class="choice-promo__subtitle">Выберите понравившегося питомца, заполните анкету потенциального хозяина и подарите маленькому сердцу новую жизнь, наполненную любовью и лаской!</p>
+    <main class="page__main page-main page-main--no-decor page-main__card">
+        <h1 class="visually-hidden">Карточка питомца</h1>
+        <section class="pet-card">
+            <div class="pet-card__container container">
+                <div class="pet-card__content">
+                    <a href="./pet.html" class="cart-header__link pet-card__link--back ">Вернуться назад</a>
+                    <article class="pet-card__info card-info">
+                        <img src="./../img/card/pet-1.jpg" alt="Кот Жорик" class="card-info__img" width="402px" height="496px">
+                        <div class="card-info__text">
+                            <div class="card-info__name-age">
+                                <p class="card-info__name">Жорик</p>
+                                <p class="card-info__age">Мальчик, 2 года</p>
+                            </div>
+                            <div class="card-info__health">
+                                <p class="card-info__health-title">Здоровье:</p>
+                                <p class="card-info__health-subtitle">Здоров</p>
+                            </div>
+                            <div class="card-info__add">
+                                <span class="card-info__add--done">Кастрирован</span>
+                                <span class="card-info__add--done">Вет. паспорт</span>
+                            </div>
+                            <p class="card-info__description">Добряк по кличке Жорик. Кот был спасен с улицы неравнодушными людьми, теперь находится под присмотром нашего приюта. К лотку приучен, кушает сухой корм и паштетики. Немного трусливый - потребуется некоторое время, чтобы он доверился незнакомому человеку. Ищем для кота спокойную семью!</p>
+                        </div>
+                    </article>
+                    <div class="pet-card__promo card-promo">
+                        <h2 class="card-promo__title">Хотите забрать питомца? - Заполните анкету</h2>
+                        <a href="#" class="button button--link button__to-form">Заполнить анкету</a>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="catalog">
-            <div class="catalog__container container">
-                <div class="catalog__filter catalog-filter"></div>
-                <ul class="catalog__list">
-                    <li class="catalog__item">
-                        <img src="./../img/pet/catalog/card-img/card-img-1.png" alt="Кот Жорик" class="catalog__img" width="353px" height="274px">
-                        <div class="catalog__description catalog-description">
-                            <p class="catalog-description__name">Жорик</p>
-                            <span class="catalog-description__age">2 года</span>
-                        </div>
-                        <p class="catalog__subtitle">Постоянно голодный, но мы как студенты его понимаем...</p>
-                        <a href="./card.html" class="catalog__link button button--link">Подробнее</a>
-                    </li>
-                    <li class="catalog__item">
-                        <img src="./../img/pet/catalog/card-img/card-img-1.png" alt="Кот Жорик" class="catalog__img" width="353px" height="274px">
-                        <div class="catalog__description catalog-description">
-                            <p class="catalog-description__name">Жорик</p>
-                            <span class="catalog-description__age">2 года</span>
-                        </div>
-                        <p class="catalog__subtitle">Постоянно голодный, но мы как студенты его понимаем...</p>
-                        <a href="./card.html" class="catalog__link button button--link">Подробнее</a>
-                    </li>
-                    <li class="catalog__item">
-                        <img src="./../img/pet/catalog/card-img/card-img-1.png" alt="Кот Жорик" class="catalog__img" width="353px" height="274px">
-                        <div class="catalog__description catalog-description">
-                            <p class="catalog-description__name">Жорик</p>
-                            <span class="catalog-description__age">2 года</span>
-                        </div>
-                        <p class="catalog__subtitle">Постоянно голодный, но мы как студенты его понимаем...</p>
-                        <a href="./card.html" class="catalog__link button button--link">Подробнее</a>
-                    </li>
-                    <li class="catalog__item">
-                        <img src="./../img/pet/catalog/card-img/card-img-1.png" alt="Кот Жорик" class="catalog__img" width="353px" height="274px">
-                        <div class="catalog__description catalog-description">
-                            <p class="catalog-description__name">Жорик</p>
-                            <span class="catalog-description__age">2 года</span>
-                        </div>
-                        <p class="catalog__subtitle">Постоянно голодный, но мы как студенты его понимаем...</p>
-                        <a href="./card.html" class="catalog__link button button--link">Подробнее</a>
-                    </li>
-                    <li class="catalog__item">
-                        <img src="./../img/pet/catalog/card-img/card-img-1.png" alt="Кот Жорик" class="catalog__img" width="353px" height="274px">
-                        <div class="catalog__description catalog-description">
-                            <p class="catalog-description__name">Жорик</p>
-                            <span class="catalog-description__age">2 года</span>
-                        </div>
-                        <p class="catalog__subtitle">Постоянно голодный, но мы как студенты его понимаем...</p>
-                        <a href="./card.html" class="catalog__link button button--link">Подробнее</a>
-                    </li>
-                    <li class="catalog__item">
-                        <img src="./../img/pet/catalog/card-img/card-img-1.png" alt="Кот Жорик" class="catalog__img" width="353px" height="274px">
-                        <div class="catalog__description catalog-description">
-                            <p class="catalog-description__name">Жорик</p>
-                            <span class="catalog-description__age">2 года</span>
-                        </div>
-                        <p class="catalog__subtitle">Постоянно голодный, но мы как студенты его понимаем...</p>
-                        <a href="./card.html" class="catalog__link button button--link">Подробнее</a>
-                    </li>
-                    <li class="catalog__item">
-                        <img src="./../img/pet/catalog/card-img/card-img-1.png" alt="Кот Жорик" class="catalog__img" width="353px" height="274px">
-                        <div class="catalog__description catalog-description">
-                            <p class="catalog-description__name">Жорик</p>
-                            <span class="catalog-description__age">2 года</span>
-                        </div>
-                        <p class="catalog__subtitle">Постоянно голодный, но мы как студенты его понимаем...</p>
-                        <a href="./card.html" class="catalog__link button button--link">Подробнее</a>
-                    </li>
-                    <li class="catalog__item">
-                        <img src="./../img/pet/catalog/card-img/card-img-1.png" alt="Кот Жорик" class="catalog__img" width="353px" height="274px">
-                        <div class="catalog__description catalog-description">
-                            <p class="catalog-description__name">Жорик</p>
-                            <span class="catalog-description__age">2 года</span>
-                        </div>
-                        <p class="catalog__subtitle">Постоянно голодный, но мы как студенты его понимаем...</p>
-                        <a href="./card.html" class="catalog__link button button--link">Подробнее</a>
-                    </li>
-                    <li class="catalog__item">
-                        <img src="./../img/pet/catalog/card-img/card-img-1.png" alt="Кот Жорик" class="catalog__img" width="353px" height="274px">
-                        <div class="catalog__description catalog-description">
-                            <p class="catalog-description__name">Жорик</p>
-                            <span class="catalog-description__age">2 года</span>
-                        </div>
-                        <p class="catalog__subtitle">Постоянно голодный, но мы как студенты его понимаем...</p>
-                        <a href="./card.html" class="catalog__link button button--link">Подробнее</a>
-                    </li>
-                </ul>
-                <button class="catalog__button button button__show-more">
-                    Загрузить ещё
-                </button>
             </div>
         </section>
     </main>

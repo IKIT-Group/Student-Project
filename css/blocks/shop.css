@@ -1,5 +1,6 @@
 .shop {
     margin-bottom: 24px;
+    padding: 0 20px;
 }
 .shop__container {
   min-height: 512px;

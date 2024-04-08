@@ -1,4 +1,5 @@
 .catalog {
+  padding: 0 20px;
 }
 .catalog__container {
     display: flex;

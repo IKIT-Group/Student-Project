@@ -1,6 +1,7 @@
 .choice {
     background: url('./../../img/pet/bg/pet-bg.png') no-repeat top 0px right -157px,
     url('./../../img/pet/bg/bg_rectangle.svg') no-repeat top 50px left -464px;
+    padding: 0 20px;
 }
 /* .choice__container {
     

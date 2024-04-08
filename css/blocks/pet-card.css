@@ -1,0 +1,101 @@
+.pet-card {
+}
+.pet-card__container {
+}
+.pet-card__link--back {
+  display: block;
+  margin-bottom: 24px;
+}
+.pet-card__info {
+}
+.card-info {
+  background: var(--background-green-50);
+  border-radius: 50px;
+  padding: 20px 30px 20px 20px;
+  box-shadow: 0px 20px var(--background-green);
+  margin-bottom: 50px;
+  display: grid;
+  grid-template-columns: 402px 738px;
+  gap: 30px;
+}
+.card-info__img {
+  width: 402px;
+  height: 496px;
+  border-radius: 50px;
+}
+.card-info__text {
+}
+.card-info__name-age {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 21px;
+}
+.card-info__name {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 120%;
+  margin-right: 30px;
+}
+.card-info__age {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 120%;
+}
+.card-info__health {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 18px;
+}
+.card-info__health-title {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 120%;
+}
+.card-info__health-subtitle {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 120%;
+}
+.card-info__add {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+  color: var(--color-brown);
+  margin-bottom: 25px;
+}
+.card-info__add--done {
+  padding-left: 36px;
+  position: relative;
+}
+.card-info__add--done::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  background: url("./../../img/icons/done.svg") no-repeat;
+  display: block;
+  width: 35px;
+  height: 35px;
+  transform: translateY(-50%);
+}
+.card-info__description {
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 120%;
+}
+.pet-card__promo {
+}
+.card-promo {
+  text-align: center;
+}
+.card-promo__title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
