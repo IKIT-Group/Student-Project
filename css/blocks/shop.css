@@ -1,0 +1,33 @@
+.shop {
+    margin-bottom: 24px;
+}
+.shop__container {
+  min-height: 512px;
+  background: url("./../../img/shop/bg/dog-bg.png") no-repeat top -150px right 0px; /* я точных цифр не знаю */
+}
+.shop__content {
+  padding-top: 85px;
+  padding-left: 63px;
+  display: grid;
+  grid-template-columns: 484px auto;
+}
+.shop__title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 100%;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+.shop__text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.shop__description {
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 120%;
+  text-align: center;
+  max-width: 432px;
+}

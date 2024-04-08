@@ -6,7 +6,9 @@
     background-size: 533px 533px;
     background-position: left -321px bottom -331px;
     background-color: var(--background-white-50);
-    
+}
+.page-header--no-decor{
+    background-image: none;
 }
 .page-header__nav{
     display: flex;
@@ -21,4 +23,8 @@
     margin-right: 30px;
     max-width: 141px;
     text-align: center;
+    transition: all .4s;
+}
+.page-header__logo:hover{
+    transform: scale(1.05);
 }

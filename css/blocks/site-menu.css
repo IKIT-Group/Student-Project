@@ -1,6 +1,9 @@
 .site-menu {
   display: flex;
 }
+.site-menu__item{
+  transition: all .4s;
+}
 .site-menu__item:not(:last-child) {
   margin-right: 40px;
 }
@@ -8,6 +11,7 @@
   position: relative;
   display: inline-block;
 }
+
 .site-menu__item--active::after {
   content: ""; 
   position: absolute; 
@@ -18,6 +22,9 @@
   height: 4px; 
   border-radius: 4px;
 }
+.site-menu__item--active__shop::after{
+  width: 85%; /* СОМНИТЕЛЬНО, НО ОКЕЙ */
+}
 .site-menu__link,
 .site-menu__btn {
   color: var(--color-black);
@@ -26,6 +33,8 @@
   line-height: 100%;
   letter-spacing: 0.03em;
   padding-bottom: 10px;
+  cursor: pointer;
+  transition: all .2s;
 }
 .site-menu__btn {
   display: block;
@@ -61,13 +70,35 @@
   display: block;
   text-transform: uppercase;
 }
+.site-menu__item--dropdown{
+  opacity: 1;
+  
+}
 .site-menu__item--dropdown:hover .site-menu--dropdown {
   display: block;
+  cursor: pointer;
+  
 }
 .site-menu__item--dropdown svg {
-  transition: all 0.3s;
+  transition: all 0.4s;
+  
 }
 .site-menu__item--dropdown:hover svg {
   cursor: pointer;
   transform: rotate(180deg);
+}
+.site-menu__item{
+  
+}
+.site-menu__item:hover{
+  transform: scale(1.05);
+}
+.site-menu__item--dropdown .site-menu__link:hover{
+  transform: scale(1.05);
+}
+.site-menu__item--dropdown .site-menu--dropdown{
+  transition: all .4s;
+}
+.site-menu__item--dropdown:hover .site-menu--dropdown{
+  opacity: 1;
 }

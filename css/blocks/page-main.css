@@ -3,3 +3,13 @@
     background: url('./../../img/index/header/decor/ellipse-2.png') no-repeat top 183px right -351px,
     url('./../../img/index/header/decor/ellipse-3.png') no-repeat bottom 55px left -208px;
 }
+.page-main--no-decor{
+    background: none;
+    padding: 0 20px 50px 20px;
+}
+.page-main__shop{
+    background: url('./../../img/shop/bg/ellipse-1.svg') no-repeat top 255px left -353px;
+}
+.page-main__empty-cart{
+    padding: 50px 20px 150px 20px;
+}

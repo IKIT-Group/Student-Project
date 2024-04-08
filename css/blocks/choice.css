@@ -1,0 +1,34 @@
+.choice {
+    background: url('./../../img/pet/bg/pet-bg.png') no-repeat top 0px right -157px,
+    url('./../../img/pet/bg/bg_rectangle.svg') no-repeat top 50px left -464px;
+}
+/* .choice__container {
+    
+}
+.container {
+} */
+.choice-promo {
+    display: grid;
+    grid-template-columns: 440px auto;
+    padding-left: 85px;
+}
+.choice-promo__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 64px;
+}
+.choice-promo__title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 100%;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  padding-top: 75px;
+}
+.choice-promo__subtitle {
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 120%;
+}

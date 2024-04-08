@@ -35,6 +35,10 @@
     height: 60px;
 }
 .contacts__item {
+  transition: all .4s;
+}
+.contacts__item:hover{
+  transform: scale(1.05);
 }
 .contacts__link {
 }

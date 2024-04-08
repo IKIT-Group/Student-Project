@@ -1,8 +1,9 @@
-.page{
-    font-family: var(--main-font);
+.page {
+  font-family: var(--main-font);
+  scroll-behavior: smooth;
 }
-.page__body{
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
+.page__body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }
