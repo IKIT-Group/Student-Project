@@ -1,0 +1,40 @@
+.questionnaire__container {
+    margin-bottom: 30px;
+}
+.questionnaire__header {
+  display: flex;
+  align-items: center;
+  gap: 190px; /* НЕ ТОЧНОЕ ЗНАЧЕНИЕ*/
+  margin-bottom: 50px;
+}
+.cart-header__link {
+}
+.questionnaire__link--back {
+}
+.questionnaire__title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 100%;
+
+}
+.questionnaire-content {
+  display: grid;
+  grid-template-columns: 544px 1fr;
+  grid-template-rows: auto;
+  background: url("./../../img/form/bg/form-bg.png") no-repeat top 0px right 0px;
+  
+}
+.questionnaire-content__text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 120%;
+  padding-bottom: 50px;
+}
+.questionnaire-content__text--1 {
+    margin-bottom: 20px;
+}
+.questionnaire-content__text--2 {
+}

@@ -15,7 +15,7 @@
   display: grid;
   grid-template-columns: repeat(3, 383px);
   gap: 20px 36px;
-  margin-bottom: 44px;
+
 }
 .catalog__item {
   background: var(--background-green-50);
@@ -57,7 +57,7 @@
     padding: 9px 23px;
 }
 .catalog__button {
-    margin-bottom: 30px;
+  margin-top: 30px;
 }
 .button {
 }

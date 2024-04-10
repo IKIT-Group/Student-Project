@@ -1,0 +1,92 @@
+.form {
+  padding: 0 20px;
+}
+.visually-hidden {
+}
+.form__container {
+}
+.form__body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.field-group {
+}
+.field-group--personal {
+  margin-bottom: 50px;
+}
+.field-group__heading {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 100%;
+  margin-bottom: 15px;
+}
+.field-group__list {
+  display: grid;
+  grid-template-columns: repeat(3, 352px);
+  gap: 45px;
+  padding: 0 40px;
+}
+.field-group__item {
+}
+.field-group__item--grid{
+  grid-column-start: 2;
+  grid-column-end: 4;
+  padding-right: 203px;
+}
+.field {
+  display: flex;
+  flex-direction: column;
+}
+.field__lead {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 100%;
+  hyphens: auto;
+}
+.field-lead {
+  margin-bottom: 5px;
+}
+.field__input {
+  border: 1px solid var(--color-brown-50);
+  border-radius: 10px;
+  padding: 11px 15px;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 100%;
+}
+.field__input::placeholder {
+}
+.field-group--contacts {
+  margin-bottom: 50px;
+}
+.field-group--other {
+  margin-bottom: 50px;
+}
+.field__lead--description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  color: var(--color-brown);
+  padding: 15px 0;
+}
+.field__lead--description--big {
+  padding-bottom: 27px;
+}
+.field-group__list--radio {
+  margin-top: 30px;
+}
+.control {
+}
+.control--radio {
+}
+.control__input {
+}
+.control__lead {
+}
+.form__button {
+  padding: 24px 38px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 100%;
+}
