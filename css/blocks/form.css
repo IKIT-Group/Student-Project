@@ -29,7 +29,7 @@
 }
 .field-group__item {
 }
-.field-group__item--grid{
+.field-group__item--grid {
   grid-column-start: 2;
   grid-column-end: 4;
   padding-right: 203px;
@@ -47,6 +47,7 @@
 .field-lead {
   margin-bottom: 5px;
 }
+
 .field__input {
   border: 1px solid var(--color-brown-50);
   border-radius: 10px;
@@ -54,14 +55,76 @@
   font-weight: 300;
   font-size: 28px;
   line-height: 100%;
+  width: 100%;
+  color: var(--color-brown);
+  cursor: pointer;
+  border-radius: 10px;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 100%;
 }
-.field__input::placeholder {
+.field__input-select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
 }
+.field__input-select::-ms-expand {
+  display: none;
+}
+.select-wrapper {
+  position: relative;
+}
+.select-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+
+  width: 32px;
+  height: 15px;
+  display: block;
+  background: url("./../../img/icons/arrow-select.svg");
+  pointer-events: none;
+  transition: 0.2s ease-in;
+}
+input:invalid {
+  border: 2px solid red;
+}
+input:valid {
+  border: 2px solid rgb(159, 255, 34);
+}
+select option {
+}
+/* УБИРАЕТ СТРЕЛКИ У "ВОЗРАСТ" */
+input[type="number"] {
+  -moz-appearance: textfield;
+  -webkit-appearance: textfield;
+  appearance: textfield;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  display: none;
+}
+/* ============================ */
+
 .field-group--contacts {
   margin-bottom: 50px;
 }
 .field-group--other {
   margin-bottom: 50px;
+}
+.field-group__list--other {
+}
+.field-group__item--other {
+  display: block;
+}
+.field--other {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
 .field__lead--description {
   font-weight: 400;
@@ -70,23 +133,77 @@
   color: var(--color-brown);
   padding: 15px 0;
 }
-.field__lead--description--big {
-  padding-bottom: 27px;
-}
 .field-group__list--radio {
   margin-top: 30px;
 }
 .control {
-}
-.control--radio {
-}
-.control__input {
-}
-.control__lead {
 }
 .form__button {
   padding: 24px 38px;
   font-weight: 700;
   font-size: 24px;
   line-height: 100%;
+}
+
+/* СТИЛИЗАЦИЯ RADIO BUTTONS */
+.field__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.field--radio {
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+
+  padding-left: 35px;
+  user-select: none;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 100%;
+  color: var(--color-brown);
+}
+.field-group__list--radio .field__lead {
+  display: block;
+  margin-bottom: 16px;
+}
+.field--radio input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 26px;
+  width: 26px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 1px solid #a98467;
+}
+.checkmark--no {
+  top: 10px;
+}
+.field--radio:hover input ~ .checkmark {
+  background-color: #eee;
+}
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.field--radio input:checked ~ .checkmark:after {
+  display: block;
+}
+.field--radio .checkmark:after {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  background: #adc178;
 }
