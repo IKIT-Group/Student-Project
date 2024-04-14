@@ -1,0 +1,43 @@
+.about{
+    padding: 0 20px;
+}
+.about__container{
+    
+}
+.container{
+
+}
+.about__content{
+    display: grid;
+    grid-template-columns: 494px auto;
+    padding-top: 50px;
+    padding-left: 56px;
+    padding-bottom: 164px;
+}
+.about__text{
+    text-align: center;
+}
+.about__title{
+    font-weight: 700;
+font-size: 48px;
+line-height: 100%;
+margin-bottom: 16px;
+text-transform: uppercase;
+}
+.about__subtitle{
+    font-weight: 400;
+font-size: 24px;
+margin-bottom: 40px;
+line-height: 100%;
+}
+.about__description{
+    font-weight: 300;
+font-size: 28px;
+line-height: 120%;
+}
+.about__description:not(:last-child){
+    margin-bottom: 20px;
+}
+.about__image{
+
+}

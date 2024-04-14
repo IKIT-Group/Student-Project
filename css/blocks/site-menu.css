@@ -25,6 +25,9 @@
 .site-menu__item--active__shop::after{
   width: 85%; /* СОМНИТЕЛЬНО, НО ОКЕЙ */
 }
+.site-menu__item--active__about::after{
+  width: 75%;
+}
 .site-menu__link,
 .site-menu__btn {
   color: var(--color-black);

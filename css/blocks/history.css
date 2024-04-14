@@ -1,0 +1,26 @@
+.history {
+    margin-bottom: 100px;
+}
+.history__content {
+  padding: 0 12px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.history__title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 100%;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.history__text {
+  display: grid;
+  grid-template-columns: repeat(2, 586px);
+  gap: 24px;
+}
+.history__description {
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 120%;
+}

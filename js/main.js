@@ -20,3 +20,6 @@ age.oninput = function(){
     this.value = this.value.replace(reg2, '');
     this.value = this.value.slice(0, 2);
 }
+
+
+

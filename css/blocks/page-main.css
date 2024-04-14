@@ -22,3 +22,7 @@
 .page-main--pet{
     padding-bottom: 30px;
 }
+.page-main__about{
+    padding: 0;
+    background: url('./../../img/about/bg/ellipse.png') no-repeat bottom 15px left 37px;
+}

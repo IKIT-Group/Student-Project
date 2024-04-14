@@ -1,0 +1,40 @@
+.help {
+    margin-bottom: 100px;
+    padding: 0 20px;
+    background: url('./../../img/about/bg/bg-3.png') no-repeat top 0px right -116px;
+    
+}
+.help__container {
+}
+.container {
+}
+.help__content {
+  display: grid;
+  grid-template-columns: 452px auto;
+}
+.help__text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 30px;
+}
+.help__title {
+    font-weight: 700;
+font-size: 48px;
+line-height: 100%;
+text-transform: uppercase;
+}
+.help__description {
+    font-weight: 300;
+font-size: 28px;
+line-height: 120%;
+}
+.button {
+}
+.button--help {
+    padding: 24px 50px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 100%;
+  width: 329px;
+}
