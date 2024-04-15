@@ -26,3 +26,6 @@
     padding: 0;
     background: url('./../../img/about/bg/ellipse.png') no-repeat bottom 15px left 37px;
 }
+.page-main__food{
+    background: url('./../../img/shop/food/bg/rect-1.svg') no-repeat bottom -50px left -20px;
+}

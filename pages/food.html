@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./../css/style.css" />
+    <title>Корма и лакомства</title>
+  </head>
+  <body class="page__body" id="food">
+    <header
+      id="shop"
+      class="page__header page-header page-header--no-decor page-header__shop"
+    >
+      <div class="page-header__container container">
+        <nav class="page-header__nav">
+          <a href="/" class="page-header__logo logo"> YOUR LOGO HERE </a>
+          <ul class="page-header__list site-menu">
+            <li class="site-menu__item">
+              <a href="./../index.html" class="site-menu__link">Главная</a>
+            </li>
+            <li class="site-menu__item">
+              <a href="./pet.html" class="site-menu__link">Выбор питомца</a>
+            </li>
+            <li
+              class="site-menu__item site-menu__item--dropdown site-menu__item--active site-menu__item--active__shop"
+              data-has-children
+            >
+              <a href="./shop.html" class="site-menu__btn">Магазин</a>
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M15 7.5L10 12.5L5 7.5" stroke="#222222" />
+              </svg>
+
+              <ul class="site-menu--dropdown" hidden>
+                <il class="site-menu__item">
+                  <a href="./food.html" class="site-menu__link">Корма и лакомства</a>
+                </il>
+                <il class="site-menu__item">
+                  <a href="./care.html" class="site-menu__link">Уход за животными</a>
+                </il>
+                <il class="site-menu__item">
+                  <a href="./accessories.html" class="site-menu__link">Аксессуары</a>
+                </il>
+                <il class="site-menu__item">
+                  <a href="./toys.html" class="site-menu__link">Игрушки</a>
+                </il>
+                <il class="site-menu__item">
+                  <a href="./empty-cart.html" class="site-menu__link"
+                    >Корзина товаров</a
+                  >
+                </il>
+              </ul>
+            </li>
+            <li
+              class="site-menu__item site-menu__item--dropdown"
+              data-has-children
+            >
+              <a href="./about.html" class="site-menu__btn">О нас</a>
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M15 7.5L10 12.5L5 7.5" stroke="#222222" />
+              </svg>
+
+              <ul class="site-menu--dropdown" hidden>
+                <il class="site-menu__item">
+                  <a href="./about.html#mission" class="site-menu__link"
+                    >Наша миссия</a
+                  >
+                </il>
+                <il class="site-menu__item">
+                  <a href="./about.html#photo" class="site-menu__link"
+                    >Фотографии приюта</a
+                  >
+                </il>
+                <il class="site-menu__item">
+                  <a href="./about.html#history" class="site-menu__link"
+                    >История приюта</a
+                  >
+                </il>
+                <il class="site-menu__item">
+                  <a href="./about.html#additional" class="site-menu__link"
+                    >Доп. информация</a
+                  >
+                </il>
+                <il class="site-menu__item">
+                  <a href="./about.html#help" class="site-menu__link"
+                    >Помощь приюту</a
+                  >
+                </il>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="page__main page-main page-main--no-decor page-main__food">
+      <section class="food">
+        <div class="food__container container">
+          <div class="food__content">
+            <div class="food__header food-header">
+              <a href="./shop.html" class="header__link food__link--back">Вернуться</a>
+              <h1 class="food-header__title">Корма и лакомства</h1>
+            </div>
+            <div class="food__catalog food-catalog">
+                <div class="food-catalog__row">
+                    <!-- <input class="food-catalog__search button--transparent button--search" type="search" name="" id="searchBar" name="searchBar" placeholder="Поиск по названию"> -->
+                    <a href="./empty-cart.html" class="food-catalog__cart button--transparent">Корзина товаров</a>
+                </div>
+                    <ul class="food-catalog__list">
+                        <li class="food-catalog__item food-catalog__item--normal">
+                            <img src="./../img/shop/food/product-1.png" alt="Сухой корм Edel Adult для взрослых стерелизованных кошек, 10 кг." width="353" height="306" class="food-catalog__img">
+                            <p class="food-catalog__name">Сухой корм Edel Adult для взрослых стерелизованных кошек, 10 кг.</p>
+                            <p class="food-catalog__price">4 842 руб.</p>
+                            <div class="button__wrapper">
+                                <button class="button button__add">В корзину</button>
+                            </div>
+                        </li>
+                        <li class="food-catalog__item food-catalog__item--sale">
+                            <img src="./../img/shop/food/product-1.png" alt="Сухой корм Edel Adult для взрослых стерелизованных кошек, 10 кг." width="353" height="306" class="food-catalog__img">
+                            <p class="food-catalog__name">Сухой корм Edel Adult для взрослых стерелизованных кошек, 1.5 кг.</p>
+                            <div class="food-catalog__price-row">
+                                <p class="food-catalog__price">972 руб.</p>
+                                <span class="food-catalog__price--old">1 050 руб.</span>
+                            </div>
+                            <div class="button__wrapper">
+
+                                <button class="button button__add">В корзину</button>
+                            </div>
+                        </li>
+                        <li class="food-catalog__item food-catalog__item--sale">
+                            <img src="./../img/shop/food/product-3.png" alt="Сухой корм Edel Adult для взрослых стерелизованных кошек, 10 кг." width="353" height="306" class="food-catalog__img">
+                            <p class="food-catalog__name">Сухой корм Alpha Pet для щенков и беременных собак с ягненков, 7 кг.</p>
+                            <div class="food-catalog__price-row">
+                                <p class="food-catalog__price">4 785 руб.</p>
+                                <span class="food-catalog__price--old">5 628 руб.</span>
+                            </div>
+                            <div class="button__wrapper">
+                                <button class="button button__add">В корзину</button>
+                            </div>
+                        </li>
+                        <li class="food-catalog__item food-catalog__item--normal">
+                            <img src="./../img/shop/food/product-4.png" alt="Сухой корм Edel Adult для взрослых стерелизованных кошек, 10 кг." width="353" height="306" class="food-catalog__img">
+                            <p class="food-catalog__name">Консервированный корм My Pets для собак с ягненком, 0.34 кг.</p>
+                            <p class="food-catalog__price">135 руб.</p>
+                            <div class="button__wrapper">
+                                <button class="button button__add">В корзину</button>
+                            </div>
+                        </li>
+                        <li class="food-catalog__item food-catalog__item--not-available">
+                            <img src="./../img/shop/food/product-1.png" alt="Сухой корм Edel Adult для взрослых стерелизованных кошек, 10 кг." width="353" height="306" class="food-catalog__img">
+                            <p class="food-catalog__name">Лакомство Оливер для собак шашлычки с мясом страуса, 0.75 кг.</p>
+                            <p class="food-catalog__price">2 620 руб.</p>
+                            <button class="button button--not-available">Нет в наличии</button>
+                        </li>
+                        <li class="food-catalog__item food-catalog__item--not-available">
+                            <img src="./../img/shop/food/product-5.png" alt="Сухой корм Edel Adult для взрослых стерелизованных кошек, 10 кг." width="353" height="306" class="food-catalog__img">
+                            <p class="food-catalog__name">Кошачья мята BLISS, 10 гр.</p>
+                            <p class="food-catalog__price">90 руб.</p>
+                            <button class="button button--not-available">Нет в наличии</button>
+                        </li>
+                    </ul>
+                <button class="food__button button button__show-more">
+                    Загрузить ещё
+                </button>
+            </div>
+        </div>
+      </section>
+    </main>
+    <footer class="page__footer page-footer">
+      <div class="page-footer__container container">
+        <nav class="page-footer__nav">
+          <div class="page-footer__contacts contacts">
+            <p class="contacts__name">Добро без границ</p>
+            <p class="contacts__description">
+              Приют для животных в г. Красноярск
+            </p>
+            <p class="contacts__address">г.Красноярск, ул.Пушкина, ст.4</p>
+            <a href="tel:83129000000" class="contacts__phone"
+              >+7 (312) 900-00-00</a
+            >
+            <ul class="contacts__social">
+              <li class="contacts__item">
+                <a
+                  target="_blank"
+                  href="https://vk.com/siberianfederal?from=search"
+                  class="contacts__link"
+                >
+                  <svg
+                    width="60"
+                    height="60"
+                    viewBox="0 0 60 60"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_432_146)">
+                      <path
+                        d="M0 28.8C0 15.2235 0 8.43533 4.21766 4.21766C8.43533 0 15.2235 0 28.8 0H31.2C44.7765 0 51.5646 0 55.7824 4.21766C60 8.43533 60 15.2235 60 28.8V31.2C60 44.7765 60 51.5646 55.7824 55.7824C51.5646 60 44.7765 60 31.2 60H28.8C15.2235 60 8.43533 60 4.21766 55.7824C0 51.5646 0 44.7765 0 31.2V28.8Z"
+                        fill="#0077FF"
+                      />
+                      <path
+                        d="M31.925 43.2251C18.25 43.2251 10.4501 33.8501 10.1251 18.2501H16.9751C17.2001 29.7001 22.25 34.5501 26.25 35.5501V18.2501H32.7002V28.1251C36.6502 27.7001 40.7997 23.2001 42.1997 18.2501H48.6499C47.5749 24.3501 43.0749 28.8501 39.8749 30.7001C43.0749 32.2001 48.2001 36.1251 50.1501 43.2251H43.0499C41.5249 38.4751 37.7252 34.8001 32.7002 34.3001V43.2251H31.925Z"
+                        fill="white"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_432_146">
+                        <rect width="60" height="60" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+              </li>
+              <li class="contacts__item">
+                <a
+                  target="_blank"
+                  href="https://t.me/SibFUofficial"
+                  class="contacts__link"
+                >
+                  <svg
+                    width="60"
+                    height="60"
+                    viewBox="0 0 60 60"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 28.8C0 15.2235 0 8.43533 4.21766 4.21766C8.43533 0 15.2235 0 28.8 0H31.2C44.7765 0 51.5646 0 55.7824 4.21766C60 8.43533 60 15.2235 60 28.8V31.2C60 44.7765 60 51.5646 55.7824 55.7824C51.5646 60 44.7765 60 31.2 60H28.8C15.2235 60 8.43533 60 4.21766 55.7824C0 51.5646 0 44.7765 0 31.2V28.8Z"
+                      fill="#2AABEE"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M14.5366 28.0383C23.0634 24.0536 28.7492 21.4267 31.5941 20.1575C39.717 16.5337 41.4048 15.9042 42.5049 15.8834C42.7469 15.8788 43.2879 15.9431 43.6384 16.2481C43.9343 16.5057 44.0157 16.8536 44.0546 17.0978C44.0936 17.3419 44.1421 17.8982 44.1035 18.3328C43.6634 23.2935 41.7587 35.3319 40.7897 40.8881C40.3797 43.2391 39.5724 44.0273 38.7908 44.1045C37.0923 44.2721 35.8025 42.9005 34.1573 41.7438C31.583 39.9338 30.1287 38.8071 27.6299 37.0408C24.742 34.9997 26.6141 33.8778 28.2599 32.0443C28.6906 31.5645 36.1745 24.2632 36.3193 23.6008C36.3374 23.518 36.3542 23.2092 36.1832 23.0462C36.0122 22.8831 35.7598 22.9389 35.5776 22.9832C35.3194 23.0461 31.2069 25.9616 23.2401 31.7298C22.0728 32.5896 21.0155 33.0085 20.0681 32.9866C19.0238 32.9624 17.0149 32.3532 15.5215 31.8325C13.6897 31.1939 12.2339 30.8562 12.3607 29.7716C12.4267 29.2066 13.152 28.6289 14.5366 28.0383Z"
+                      fill="white"
+                    />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <ul class="page-footer__list">
+            <li class="page-footer__item">
+              <a href="./../index.html" class="page-footer__link">Главная</a>
+            </li>
+            <li class="page-footer__item">
+              <a href="./about.html#help" class="page-footer__link"
+                >Помощь приюту</a
+              >
+            </li>
+            <li class="page-footer__item">
+              <a href="./pet.html" class="page-footer__link">Выбор питомца</a>
+            </li>
+            <li class="page-footer__item">
+              <a href="#shop" class="page-footer__link">Магазин</a>
+            </li>
+            <li class="page-footer__item">
+              <a href="./about.html" class="page-footer__link">О нас</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+    <script src="./../js/search.js"></script>
+  </body>
+</html>

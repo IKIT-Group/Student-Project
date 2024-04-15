@@ -33,3 +33,30 @@
   font-size: 24px;
   line-height: 100%;
 }
+.button__wrapper{
+  position: relative;
+  margin: 0 auto;
+  transition: all .4s;
+}
+.button__wrapper::before{
+  content: "";
+  position: absolute;
+  width: 27px;
+  height: 27px;
+  background: url('./../../img/shop/icons/bag.svg') no-repeat;
+  top: 9px;
+  left: 20px;
+  z-index: 2;
+  
+}
+.button__add {
+  padding: 0;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0.03em;
+  position: relative;
+  padding: 11px 20px;
+  padding-left: 57px;
+}
+
