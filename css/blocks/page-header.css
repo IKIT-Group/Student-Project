@@ -6,6 +6,7 @@
     background-size: 533px 533px;
     background-position: left -321px bottom -331px;
     background-color: var(--background-white-50);
+    z-index: 3;
 }
 .page-header--no-decor{
     background-image: none;

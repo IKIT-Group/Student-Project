@@ -11,11 +11,10 @@
 .food__content {
 }
 .food-header {
-  display: flex;
-  align-items: center;
-  gap: 177px;
+  position: relative;
+  text-align: center;
   margin-bottom: 47px;
-  padding-top: 48px;
+  margin-top: 48px;
 }
 .header__link {
 }

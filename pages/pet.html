@@ -106,8 +106,8 @@
         <section class="catalog">
             <div class="catalog__container container">
                 <div class="catalog__filter catalog-filter"></div>
-                <ul class="catalog__list">
-                    <li class="catalog__item">
+                <ul class="catalog__list" id="show-more__list">
+                    <li class="catalog__item" id="show-more__item">
                         <img src="./../img/pet/catalog/card-img/card-img-1.png" alt="Кот Жорик" class="catalog__img" width="353px" height="274px">
                         <div class="catalog__description catalog-description">
                             <p class="catalog-description__name">Жорик</p>
@@ -116,7 +116,7 @@
                         <p class="catalog__subtitle">Постоянно голодный, но мы как студенты его понимаем...</p>
                         <a href="./card.html" class="catalog__link button button--link">Подробнее</a>
                     </li>
-                    <li class="catalog__item">
+                    <li class="catalog__item" id="show-more__item">
                         <img src="./../img/pet/catalog/card-img/card-img-1.png" alt="Кот Жорик" class="catalog__img" width="353px" height="274px">
                         <div class="catalog__description catalog-description">
                             <p class="catalog-description__name">Жорик</p>
@@ -125,7 +125,7 @@
                         <p class="catalog__subtitle">Постоянно голодный, но мы как студенты его понимаем...</p>
                         <a href="./card.html" class="catalog__link button button--link">Подробнее</a>
                     </li>
-                    <li class="catalog__item">
+                    <li class="catalog__item" id="show-more__item">
                         <img src="./../img/pet/catalog/card-img/card-img-1.png" alt="Кот Жорик" class="catalog__img" width="353px" height="274px">
                         <div class="catalog__description catalog-description">
                             <p class="catalog-description__name">Жорик</p>
@@ -134,7 +134,7 @@
                         <p class="catalog__subtitle">Постоянно голодный, но мы как студенты его понимаем...</p>
                         <a href="./card.html" class="catalog__link button button--link">Подробнее</a>
                     </li>
-                    <li class="catalog__item">
+                    <li class="catalog__item" id="show-more__item">
                         <img src="./../img/pet/catalog/card-img/card-img-1.png" alt="Кот Жорик" class="catalog__img" width="353px" height="274px">
                         <div class="catalog__description catalog-description">
                             <p class="catalog-description__name">Жорик</p>
@@ -143,7 +143,7 @@
                         <p class="catalog__subtitle">Постоянно голодный, но мы как студенты его понимаем...</p>
                         <a href="./card.html" class="catalog__link button button--link">Подробнее</a>
                     </li>
-                    <li class="catalog__item">
+                    <li class="catalog__item" id="show-more__item">
                         <img src="./../img/pet/catalog/card-img/card-img-1.png" alt="Кот Жорик" class="catalog__img" width="353px" height="274px">
                         <div class="catalog__description catalog-description">
                             <p class="catalog-description__name">Жорик</p>
@@ -152,7 +152,7 @@
                         <p class="catalog__subtitle">Постоянно голодный, но мы как студенты его понимаем...</p>
                         <a href="./card.html" class="catalog__link button button--link">Подробнее</a>
                     </li>
-                    <li class="catalog__item">
+                    <li class="catalog__item" id="show-more__item">
                         <img src="./../img/pet/catalog/card-img/card-img-1.png" alt="Кот Жорик" class="catalog__img" width="353px" height="274px">
                         <div class="catalog__description catalog-description">
                             <p class="catalog-description__name">Жорик</p>
@@ -161,7 +161,7 @@
                         <p class="catalog__subtitle">Постоянно голодный, но мы как студенты его понимаем...</p>
                         <a href="./card.html" class="catalog__link button button--link">Подробнее</a>
                     </li>
-                    <li class="catalog__item">
+                    <li class="catalog__item" id="show-more__item">
                         <img src="./../img/pet/catalog/card-img/card-img-1.png" alt="Кот Жорик" class="catalog__img" width="353px" height="274px">
                         <div class="catalog__description catalog-description">
                             <p class="catalog-description__name">Жорик</p>
@@ -170,7 +170,7 @@
                         <p class="catalog__subtitle">Постоянно голодный, но мы как студенты его понимаем...</p>
                         <a href="./card.html" class="catalog__link button button--link">Подробнее</a>
                     </li>
-                    <li class="catalog__item">
+                    <li class="catalog__item" id="show-more__item">
                         <img src="./../img/pet/catalog/card-img/card-img-1.png" alt="Кот Жорик" class="catalog__img" width="353px" height="274px">
                         <div class="catalog__description catalog-description">
                             <p class="catalog-description__name">Жорик</p>
@@ -179,7 +179,7 @@
                         <p class="catalog__subtitle">Постоянно голодный, но мы как студенты его понимаем...</p>
                         <a href="./card.html" class="catalog__link button button--link">Подробнее</a>
                     </li>
-                    <li class="catalog__item">
+                    <li class="catalog__item" id="show-more__item">
                         <img src="./../img/pet/catalog/card-img/card-img-1.png" alt="Кот Жорик" class="catalog__img" width="353px" height="274px">
                         <div class="catalog__description catalog-description">
                             <p class="catalog-description__name">Жорик</p>
@@ -189,7 +189,7 @@
                         <a href="./card.html" class="catalog__link button button--link">Подробнее</a>
                     </li>
                 </ul>
-                <button class="catalog__button button button__show-more">
+                <button class="catalog__button button button__show-more" id="button__show-more">
                     Загрузить ещё
                 </button>
             </div>
@@ -287,5 +287,8 @@
           </nav>
         </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./../js/search.js"></script>
+    <script src="./../js/more.js"></script>
 </body>
 </html>

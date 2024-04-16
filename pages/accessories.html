@@ -108,7 +108,12 @@
         <div class="food__container container">
           <div class="food__content">
             <div class="food__header food-header">
-              <a href="./shop.html" class="header__link food__link--back">Вернуться</a>
+              <a href="./shop.html" class="header__link food__link--back">
+                <svg width="29" height="22" viewBox="0 0 29 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2.35509 11L1.17754 9.84033L0 11L1.17754 12.1597L2.35509 11ZM27.3347 12.6401C28.2544 12.6401 29 11.9058 29 11C29 10.0942 28.2544 9.35996 27.3347 9.35996V12.6401ZM11.1694 0L1.17754 9.84033L3.53265 12.1597L13.5245 2.31939L11.1694 0ZM1.17754 12.1597L11.1694 22L13.5245 19.6806L3.53265 9.84033L1.17754 12.1597ZM2.35509 12.6401H27.3347V9.35996H2.35509V12.6401Z" fill="#6C584C"/>
+                </svg>
+                Вернуться
+              </a>
               <h1 class="food-header__title">Аксессуары</h1>
             </div>
             <div class="food__catalog food-catalog">
@@ -116,62 +121,68 @@
                     <!-- <input class="food-catalog__search button--transparent button--search" type="search" name="" id="searchBar" name="searchBar" placeholder="Поиск по названию"> -->
                     <a href="./empty-cart.html" class="food-catalog__cart button--transparent">Корзина товаров</a>
                 </div>
-                    <ul class="food-catalog__list">
-                        <li class="food-catalog__item food-catalog__item--normal">
-                            <img src="./../img/shop/food/product-1.png" alt="Сухой корм Edel Adult для взрослых стерелизованных кошек, 10 кг." width="353" height="306" class="food-catalog__img">
-                            <p class="food-catalog__name">Сухой корм Edel Adult для взрослых стерелизованных кошек, 10 кг.</p>
-                            <p class="food-catalog__price">4 842 руб.</p>
-                            <div class="button__wrapper">
-                                <button class="button button__add">В корзину</button>
-                            </div>
-                        </li>
-                        <li class="food-catalog__item food-catalog__item--sale">
-                            <img src="./../img/shop/food/product-1.png" alt="Сухой корм Edel Adult для взрослых стерелизованных кошек, 10 кг." width="353" height="306" class="food-catalog__img">
-                            <p class="food-catalog__name">Сухой корм Edel Adult для взрослых стерелизованных кошек, 1.5 кг.</p>
-                            <div class="food-catalog__price-row">
-                                <p class="food-catalog__price">972 руб.</p>
-                                <span class="food-catalog__price--old">1 050 руб.</span>
-                            </div>
-                            <div class="button__wrapper">
+                <ul class="food-catalog__list" id="show-more__list">
+                  <li class="food-catalog__item food-catalog__item--normal" id="show-more__item">
+                      <img src="./../img/shop/food/product-1.png" alt="Сухой корм Edel Adult для взрослых стерелизованных кошек, 10 кг." width="353" height="306" class="food-catalog__img">
+                      <p class="food-catalog__name">Сухой корм Edel Adult для взрослых стерелизованных кошек, 10 кг.</p>
+                      <p class="food-catalog__price">4 842 руб.</p>
+                      <div class="button__wrapper">
+                          <button class="button button__add">В корзину</button>
+                      </div>
+                  </li>
+                  <li class="food-catalog__item food-catalog__item--sale" id="show-more__item">
+                      <img src="./../img/shop/food/product-1.png" alt="Сухой корм Edel Adult для взрослых стерелизованных кошек, 10 кг." width="353" height="306" class="food-catalog__img">
+                      <p class="food-catalog__name">Сухой корм Edel Adult для взрослых стерелизованных кошек, 1.5 кг.</p>
+                      <div class="food-catalog__price-row">
+                          <p class="food-catalog__price">972 руб.</p>
+                          <span class="food-catalog__price--old">1 050 руб.</span>
+                      </div>
+                      <div class="button__wrapper">
 
-                                <button class="button button__add">В корзину</button>
-                            </div>
-                        </li>
-                        <li class="food-catalog__item food-catalog__item--sale">
-                            <img src="./../img/shop/food/product-3.png" alt="Сухой корм Edel Adult для взрослых стерелизованных кошек, 10 кг." width="353" height="306" class="food-catalog__img">
-                            <p class="food-catalog__name">Сухой корм Alpha Pet для щенков и беременных собак с ягненков, 7 кг.</p>
-                            <div class="food-catalog__price-row">
-                                <p class="food-catalog__price">4 785 руб.</p>
-                                <span class="food-catalog__price--old">5 628 руб.</span>
-                            </div>
-                            <div class="button__wrapper">
-                                <button class="button button__add">В корзину</button>
-                            </div>
-                        </li>
-                        <li class="food-catalog__item food-catalog__item--normal">
-                            <img src="./../img/shop/food/product-4.png" alt="Сухой корм Edel Adult для взрослых стерелизованных кошек, 10 кг." width="353" height="306" class="food-catalog__img">
-                            <p class="food-catalog__name">Консервированный корм My Pets для собак с ягненком, 0.34 кг.</p>
-                            <p class="food-catalog__price">135 руб.</p>
-                            <div class="button__wrapper">
-                                <button class="button button__add">В корзину</button>
-                            </div>
-                        </li>
-                        <li class="food-catalog__item food-catalog__item--not-available">
-                            <img src="./../img/shop/food/product-1.png" alt="Сухой корм Edel Adult для взрослых стерелизованных кошек, 10 кг." width="353" height="306" class="food-catalog__img">
-                            <p class="food-catalog__name">Лакомство Оливер для собак шашлычки с мясом страуса, 0.75 кг.</p>
-                            <p class="food-catalog__price">2 620 руб.</p>
-                            <button class="button button--not-available">Нет в наличии</button>
-                        </li>
-                        <li class="food-catalog__item food-catalog__item--not-available">
-                            <img src="./../img/shop/food/product-5.png" alt="Сухой корм Edel Adult для взрослых стерелизованных кошек, 10 кг." width="353" height="306" class="food-catalog__img">
-                            <p class="food-catalog__name">Кошачья мята BLISS, 10 гр.</p>
-                            <p class="food-catalog__price">90 руб.</p>
-                            <button class="button button--not-available">Нет в наличии</button>
-                        </li>
-                    </ul>
-                <button class="food__button button button__show-more">
-                    Загрузить ещё
-                </button>
+                          <button class="button button__add">В корзину</button>
+                      </div>
+                  </li>
+                  <li class="food-catalog__item food-catalog__item--sale" id="show-more__item">
+                      <img src="./../img/shop/food/product-3.png" alt="Сухой корм Edel Adult для взрослых стерелизованных кошек, 10 кг." width="353" height="306" class="food-catalog__img">
+                      <p class="food-catalog__name">Сухой корм Alpha Pet для щенков и беременных собак с ягненков, 7 кг.</p>
+                      <div class="food-catalog__price-row">
+                          <p class="food-catalog__price">4 785 руб.</p>
+                          <span class="food-catalog__price--old">5 628 руб.</span>
+                      </div>
+                      <div class="button__wrapper">
+                          <button class="button button__add">В корзину</button>
+                      </div>
+                  </li>
+                  <li class="food-catalog__item food-catalog__item--normal" id="show-more__item">
+                      <img src="./../img/shop/food/product-4.png" alt="Сухой корм Edel Adult для взрослых стерелизованных кошек, 10 кг." width="353" height="306" class="food-catalog__img">
+                      <p class="food-catalog__name">Консервированный корм My Pets для собак с ягненком, 0.34 кг.</p>
+                      <p class="food-catalog__price">135 руб.</p>
+                      <div class="button__wrapper">
+                          <button class="button button__add">В корзину</button>
+                      </div>
+                  </li>
+                  <li class="food-catalog__item food-catalog__item--not-available" id="show-more__item">
+                      <img src="./../img/shop/food/product-1.png" alt="Сухой корм Edel Adult для взрослых стерелизованных кошек, 10 кг." width="353" height="306" class="food-catalog__img">
+                      <p class="food-catalog__name">Лакомство Оливер для собак шашлычки с мясом страуса, 0.75 кг.</p>
+                      <p class="food-catalog__price">2 620 руб.</p>
+                      <button class="button button--not-available">Нет в наличии</button>
+                  </li>
+                  <li class="food-catalog__item food-catalog__item--not-available" id="show-more__item">
+                      <img src="./../img/shop/food/product-5.png" alt="Сухой корм Edel Adult для взрослых стерелизованных кошек, 10 кг." width="353" height="306" class="food-catalog__img">
+                      <p class="food-catalog__name">Кошачья мята BLISS, 10 гр.</p>
+                      <p class="food-catalog__price">90 руб.</p>
+                      <button class="button button--not-available">Нет в наличии</button>
+                  </li>
+                  <li class="food-catalog__item food-catalog__item--not-available" id="show-more__item">
+                      <img src="./../img/shop/food/product-5.png" alt="Сухой корм Edel Adult для взрослых стерелизованных кошек, 10 кг." width="353" height="306" class="food-catalog__img">
+                      <p class="food-catalog__name">Кошачья мята BLISS, 10 гр.</p>
+                      <p class="food-catalog__price">90 руб.</p>
+                      <button class="button button--not-available">Нет в наличии</button>
+                  </li>
+              </ul>
+          <button class="food__button button button__show-more" id="button__show-more">
+              Загрузить ещё
+          </button>
             </div>
         </div>
       </section>
@@ -270,6 +281,8 @@
         </nav>
       </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="./../js/search.js"></script>
+    <script src="./../js/more.js"></script>
   </body>
 </html>
