@@ -68,3 +68,27 @@ const displayItem = (items) => {
     root.innerHTML = result;
 };
 displayItem(products);
+
+// КОРЗИНА
+// всё хранится в Local Storage (памяти браузера)
+
+const getCart = () => JSON.parse(localStorage.getItem('cart'));
+const setCart = items => localStorage.setItem('cart', JSON.stringify(items));
+
+if (!getCart()) setCart({});
+
+/** @param {number} itemId - ID продукта для добавления */
+const addToCart = itemId => {
+    let items = getCart();
+    if (items[itemId]) items[itemId]++;
+    else items[itemId] = 1;
+    setCart(items);
+}
+
+/** @param {number} itemId - ID продукта для удаления */
+const removeFromCart = itemId => {
+    let items = getCart();
+    if (items[itemId] > 1) items[itemId]--;
+    else delete items[itemId];
+    setCart(items);
+}
