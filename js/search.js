@@ -52,7 +52,7 @@ const displayItem = (items) => {
     const root = document.getElementById('root');
     let result = "";
     for(const item of items) {
-        const { image, title, price } = item;
+        const { id, image, title, price } = item;
         result +=
         `<div class='food-catalog__list'>
             <div class='food-catalog__img-box'>
@@ -61,11 +61,13 @@ const displayItem = (items) => {
             <div class='food-catalog__bottom'>
                 <p>${title}</p>
                 <h2>${price}.00</h2>
-                <button>Add to cart</button>
+                <button id="buy-${id}">Add to cart</button>
             </div>
         </div>`
     }
     root.innerHTML = result;
+    const button = document.getElementById(`buy-${id}`);
+    button.onclick = () => addToCart(id);
 };
 displayItem(products);
 
