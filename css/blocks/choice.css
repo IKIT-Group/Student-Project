@@ -1,7 +1,8 @@
 .choice {
-    background: url('./../../img/pet/bg/pet-bg.png') no-repeat top 0px right -157px,
+    background: url('./../../img/pet/bg/pet-bg.png') no-repeat top -19px right -157px,
     url('./../../img/pet/bg/bg_rectangle.svg') no-repeat top 50px left -464px;
     padding: 0 20px;
+    margin-bottom: 20px;
 }
 /* .choice__container {
     
@@ -12,6 +13,7 @@
     display: grid;
     grid-template-columns: 440px auto;
     padding-left: 85px;
+    height: 530px;
 }
 .choice-promo__text {
     display: flex;

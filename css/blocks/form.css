@@ -88,12 +88,12 @@
   pointer-events: none;
   transition: 0.2s ease-in;
 }
-input:invalid {
+/* input:invalid {
   border: 2px solid red;
 }
 input:valid {
   border: 2px solid rgb(159, 255, 34);
-}
+} */
 select option {
 }
 /* УБИРАЕТ СТРЕЛКИ У "ВОЗРАСТ" */
