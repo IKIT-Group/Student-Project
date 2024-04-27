@@ -101,3 +101,12 @@
 // filterButton.onclick = function() {
 //     filterBlock.classList.toggle('visually-hidden');
 // }
+$(document).ready(function() {
+    $('.js-example-basic-single').select2({
+        width: '100%',
+        minimumResultsForSearch: '-1',
+        closeOnSelect: true,
+        allowClear: false,
+        placeholder: "Питомец", 
+    });
+});

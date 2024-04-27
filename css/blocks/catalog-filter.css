@@ -3,15 +3,12 @@
 .catalog-filter {
   padding: 0 42px;
 }
-.visually-hidden {
-}
 .catalog-filter__row {
 }
-.filter-row__wrapper {
-  display: flex;
+.filter-row {
+  display: grid;
+  grid-template-columns: auto 430px;
   align-items: center;
-  gap: 15px;
-  margin-bottom: 15px;
 }
 .filter-row__title {
   font-weight: 700;
@@ -20,123 +17,43 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-.filter-row__search-button {
+.filter-row__buttons {
+}
+.filter-buttons {
+  display: grid;
+  grid-template-columns: 215px 197px;
+}
+.filter-buttons__search {
   border: 1px solid var(--color-brown-50);
-  padding: 12px 12px 11px 53px;
   border-radius: 20px;
+  padding: 12px 13px 11px 13px;
   font-weight: 500;
   font-size: 18px;
   line-height: 120%;
   color: var(--color-brown-50);
-  max-width: 215px;
+  appearance: none;
 }
-.filter-row__search-button::placeholder {
+.filter-buttons__search::placeholder{
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 120%;
   color: var(--color-brown-50);
 }
-.search-button__wrapper {
-  position: relative;
+.filter-buttons__search::-ms-clear{
+  width : 0;
+  height: 0;
 }
-.search-button__wrapper::after {
-  position: absolute;
-  content: "";
-  background: url("./../../img/pet/filter/search.svg") no-repeat;
-  width: 35px;
-  height: 35px;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 13px;
-}
-.submit-button__wrapper {
-  position: relative;
-}
-.submit-button__wrapper::before {
-  position: absolute;
-  content: "";
-  background: url("./../../img/pet/filter/filter.svg") no-repeat;
-  width: 35px;
-  height: 35px;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 13px;
-  pointer-events: none;
-}
-.filter-row__submit-button {
-  border: 1px solid #a98467;
+.filter-buttons__submit {
+  border: 1px solid var(--color-brown-50);
   border-radius: 20px;
-  background-color: var(--background-white-50);
   padding: 12px 10px 11px 50px;
   font-weight: 500;
   font-size: 18px;
   line-height: 120%;
   color: var(--color-brown-50);
 }
-.filter {
-  border: 1px solid var(--color-brown-50);
-  background-color: var(--background-white-50);
-  border-radius: 30px;
-  margin-bottom: 15px;
-}
-.filter__row {
-  padding: 15px;
-  display: grid;
-  grid-template-columns: repeat(6, auto);
-  gap: 15px;
-}
-.filter-row__wrapper--arrow {
-  position: relative;
-}
-.filter-row__wrapper--arrow::after {
-  position: absolute;
-  content: "";
-  background: url("./../../img/pet/filter/arrow-down.svg") no-repeat;
-  top: 50%;
-  transform: translateY(-50%);
-  right: 15px;
-  width: 22px;
-  height: 12px;
-  pointer-events: none;
-}
-.filter-row__select {
-  cursor: pointer;
-  position: relative;
-  background-color: var(--background-white-50);
-  border: 1px solid var(--color-brown-50);
-  border-radius: 20px;
-  padding: 5px 40px 6px 15px;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 120%;
-  color: var(--color-brown-50);
-  appearance: none;
-  max-width: 229px;
-}
-
-.filter-row__option {
-  background-color: none;
-  border-radius: 20px;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 120%;
-}
-.filter__buttons {
-}
-.filter-buttons {
+.filter{
   display: flex;
-  gap: 15px;
-  justify-content: flex-end;
 }
-.filter-button {
-  border: 1px solid #a98467;
-  border-radius: 20px;
-  padding: 11px 15px;
-  color: var(--color-brown-50);
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 120%;
-}
-.filter-buttons__reset{
-    background-color: transparent;
-}
-.filter-buttons__submit{
-    background-color: var(--background-white-50);
+.js-example-basic-single{
 }

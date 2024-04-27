@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./../css/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <title>Выбор питомца</title>
   </head>
   <body class="page__body">
@@ -130,90 +131,27 @@
       <section class="catalog">
         <div class="catalog__container container">
           <div class="catalog__filter catalog-filter">
-            <h1 class="visually-hidden">Фильтр</h1>
-            <div class="catalog-filter__row filter-row">
-              <div class="filter-row__wrapper">
-                <h2 class="filter-row__title">
-                  Животные, которые ищут свой дом
-                </h2>
-                <div class="search-button__wrapper">
-                  <input
-                  class="filter-row__search-button"
-                  type="text"
-                  name=""
-                  id="filter-row__search-button"
-                  placeholder="Поиск по кличке"
-                />
-                </div>
-                <div class="submit-button__wrapper">
-                  <button type="submit" id="toggle-filter" class="filter-row__submit-button">Фильтр поиска</button>
+              <div class="catalog-filter__row filter-row">
+                <h2 class="filter-row__title">Животные, которые ищут свой дом</h2>
+                <div class="filter-row__buttons filter-buttons">
+                  <input type="search" id="filter-row-search" name="search-button" class="filter-buttons__search" placeholder="Поиск по кличке"/>
+                  <button type="submit" class="filter-buttons__submit">Фильтр поиска</button>
                 </div>
               </div>
-              <div class="filter-row__block ">
-                <div class="filter">
-                  <div class="filter__row">
-                    <div class="filter-row__wrapper--arrow">
-                      <select class="filter-row__select" name="type-of-pet" id="type-of-pet">
-                        <option class="filter-row__option" value="cat" hidden disabled selected>Питомец</option>
-                        <option class="filter-row__option" value="cat">Кошка</option>
-                        <option class="filter-row__option" value="dog">Собака</option>
-                      </select>
-                    </div>
-                    
-                    <div class="filter-row__wrapper--arrow">
-                      <select class="filter-row__select" name="the-gender-of-the-pet" id="the-gender-of-the-pet">
-                        <option class="filter-row__option" value="cat" hidden disabled selected>Пол</option>
-                        <option class="filter-row__option" value="male">Самец</option>
-                        <option class="filter-row__option" value="female">Самка</option>
-                      </select>
-                    </div>
-                    <div class="filter-row__wrapper--arrow">
-                      <select class="filter-row__select" name="age" id="age-of-pet">
-                        <option class="filter-row__option" value="cat" hidden disabled selected>Возраст</option>
-                        <option class="filter-row__option" value="0-6 мес.">0-6 мес.</option>
-                        <option class="filter-row__option" value="7-12 мес.">7-12 мес.</option>
-                        <option class="filter-row__option" value="1-5 лет">1-5 лет</option>
-                        <option class="filter-row__option" value="6+ лет">6+ лет</option>
-                      </select>
-                    </div>
-                    <div class="filter-row__wrapper--arrow">
-                      <select class="filter-row__select" name="sterilization" id="sterilization">
-                        <option class="filter-row__option" value="cat" hidden disabled selected>Стерилизация</option>
-                        <option class="filter-row__option" value="Yes">Да</option>
-                        <option class="filter-row__option" value="No">Нет</option>
-                      </select>
-                    </div>
-                    <div class="filter-row__wrapper--arrow">
-                      <select class="filter-row__select" name="veterinary-passport" id="veterinary-passport">
-                        <option class="filter-row__option" value="cat" hidden disabled selected>Вет. паспорт</option>
-                        <option class="filter-row__option" value="Yes">Да</option>
-                        <option class="filter-row__option" value="No">Нет</option>
-                      </select>
-                    </div>
-                    <div class="filter-row__wrapper--arrow">
-                      <select class="filter-row__select" name="health" id="health">
-                        <option class="filter-row__option" value="cat" hidden disabled selected>Здоровье</option>
-                        <option class="filter-row__option" value="Completely healthy">Полностью здоров</option>
-                        <option class="filter-row__option" value="There are minor deviations">
-                          Есть незначительные отклонения
-                        </option>
-                        <option class="filter-row__option" value="There are serious illnesses or disabilities">
-                          Имеются серьезные заболевания или инвалидность
-                        </option>
-                      </select>
-                    </div>
-                  </div>
-                </div>
-                <div class="filter__buttons filter-buttons">
-                  <form action="">
-                    <button type="reset" class="filter-button filter-buttons__reset">Сбросить все</button>
-                    <button type="submit" class="filter-button filter-buttons__submit">Применить</button>
-                  </form>
-                  
-                </div>
+              <div class="filter">
+                <select class="js-example-basic-single" name="state">
+                  <option value="AL">Alabama</option>
+                  <option value="WY">Wyoming</option>
+                </select>
+                <select class="js-example-basic-single" name="state">
+                  <option value="AL">Alabama</option>
+                  <option value="WY">Wyoming</option>
+                </select>
+                <select class="js-example-basic-single" name="state">
+                  <option value="AL">Alabama</option>
+                  <option value="WY">Wyoming</option>
+                </select>
               </div>
-              
-            </div>
           </div>
           <ul class="catalog__list" id="show-more__list">
             <li class="catalog__item" id="show-more__item">
@@ -388,12 +326,7 @@
               >
             </li>
           </ul>
-          <button
-            class="catalog__button button button__show-more"
-            id="button__show-more"
-          >
-            Загрузить ещё
-          </button>
+          <button class="catalog__button button button__show-more" id="button__show-more">Загрузить ещё</button>
         </div>
       </section>
     </main>
@@ -492,6 +425,7 @@
       </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <script src="./../js/search.js"></script>
     <script src="./../js/more.js"></script>
   </body>
