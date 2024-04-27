@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./../css/style.css" />
     <title>Выбор питомца</title>
+    <script defer src="./../js/pets.js"></script>
   </head>
   <body class="page__body">
     <header
@@ -131,7 +132,7 @@
         <div class="catalog__container container">
           <div class="catalog__filter catalog-filter">
             <h1 class="visually-hidden">Фильтр</h1>
-            <form action="http://efima.fun:3000/pets" target="" class="catalog-filter__row filter-row">
+            <form class="catalog-filter__row filter-row" id="pet-form">
               <div class="filter-row__wrapper">
                 <h2 class="filter-row__title">
                   Животные, которые ищут свой дом
@@ -140,7 +141,7 @@
                   <input
                   class="filter-row__search-button"
                   type="text"
-                  name="searchBar"
+                  name="name"
                   id="searchBar"
                   placeholder="Поиск по кличке"
                 />
@@ -154,45 +155,45 @@
                   <div class="filter__row">
                     <div class="filter-row__wrapper--arrow">
                       <select class="filter-row__select" name="type" id="type-of-pet">
-                        <option class="filter-row__option" value="cat" hidden disabled selected>Питомец</option>
+                        <option class="filter-row__option" value="" hidden disabled selected>Питомец</option>
                         <option class="filter-row__option" value="cat">Кошка</option>
                         <option class="filter-row__option" value="dog">Собака</option>
                       </select>
                     </div>
                     
                     <div class="filter-row__wrapper--arrow">
-                      <select class="filter-row__select" name="the-gender-of-the-pet" id="the-gender-of-the-pet">
-                        <option class="filter-row__option" value="cat" hidden disabled selected>Пол</option>
-                        <option class="filter-row__option" value="male">Самец</option>
-                        <option class="filter-row__option" value="female">Самка</option>
+                      <select class="filter-row__select" name="gender" id="the-gender-of-the-pet">
+                        <option class="filter-row__option" value="" hidden disabled selected>Пол</option>
+                        <option class="filter-row__option" value="true">Самец</option>
+                        <option class="filter-row__option" value="false">Самка</option>
                       </select>
                     </div>
                     <div class="filter-row__wrapper--arrow">
                       <select class="filter-row__select" name="age" id="age-of-pet">
-                        <option class="filter-row__option" value="cat" hidden disabled selected>Возраст</option>
-                        <option class="filter-row__option" value="0-6 мес.">0-6 мес.</option>
-                        <option class="filter-row__option" value="7-12 мес.">7-12 мес.</option>
-                        <option class="filter-row__option" value="1-5 лет">1-5 лет</option>
-                        <option class="filter-row__option" value="6+ лет">6+ лет</option>
+                        <option class="filter-row__option" value="" hidden disabled selected>Возраст</option>
+                        <option class="filter-row__option" value="6m">0-6 мес.</option>
+                        <option class="filter-row__option" value="7-12m">7-12 мес.</option>
+                        <option class="filter-row__option" value="1-5y">1-5 лет</option>
+                        <option class="filter-row__option" value="6y">6+ лет</option>
                       </select>
                     </div>
                     <div class="filter-row__wrapper--arrow">
                       <select class="filter-row__select" name="sterilized" id="sterilization">
-                        <option class="filter-row__option" value="cat" hidden disabled selected>Стерилизация</option>
-                        <option class="filter-row__option" value="Yes">Да</option>
-                        <option class="filter-row__option" value="No">Нет</option>
+                        <option class="filter-row__option" value="" hidden disabled selected>Стерилизация</option>
+                        <option class="filter-row__option" value="true">Да</option>
+                        <option class="filter-row__option" value="false">Нет</option>
                       </select>
                     </div>
                     <div class="filter-row__wrapper--arrow">
                       <select class="filter-row__select" name="hasPassport" id="veterinary-passport">
-                        <option class="filter-row__option" value="cat" hidden disabled selected>Вет. паспорт</option>
-                        <option class="filter-row__option" value="Yes">Да</option>
-                        <option class="filter-row__option" value="No">Нет</option>
+                        <option class="filter-row__option" value="" hidden disabled selected>Вет. паспорт</option>
+                        <option class="filter-row__option" value="true">Да</option>
+                        <option class="filter-row__option" value="false">Нет</option>
                       </select>
                     </div>
                     <div class="filter-row__wrapper--arrow">
                       <select class="filter-row__select" name="health" id="health">
-                        <option class="filter-row__option" value="cat" hidden disabled selected>Здоровье</option>
+                        <option class="filter-row__option" value="" hidden disabled selected>Здоровье</option>
                         <option class="filter-row__option" value="great">Отличное</option>
                         <option class="filter-row__option" value="good">Хорошее</option>
                         <option class="filter-row__option" value="bad">Плохое</option>
