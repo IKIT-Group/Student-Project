@@ -1,4 +1,6 @@
-const url = 'http://efima.fun:3000/pets';
+const url = 'http://efima.fun:3000';
+const petsUrl = url + '/pets';
+const staticUrl = url + '/static';
 
 const form = document.getElementById('pet-form');
 const pets = document.getElementById('show-more__list');
@@ -16,7 +18,7 @@ form.addEventListener("submit", async (e) => {
 
 const fetchPets = async (query) => {
     try {
-        const response = await fetch(url + '?' + query, {
+        const response = await fetch(petsUrl + '?' + query, {
             method: "GET",
             mode: "cors"
         });
@@ -32,12 +34,14 @@ const fetchPets = async (query) => {
     }
 }
 
-const hrAge = dateText => {
+const parseAge = dateText => {
     const date = new Date(dateText);
     const now = new Date();
     const yearsDifference = now.getFullYear() - date.getFullYear();
     return `${yearsDifference} лет`;
 }
+
+const parseImage = imageText => `${staticUrl}/${imageText}`;
 
         // <li class="catalog__item" id="show-more__item">
         //     <img
@@ -76,7 +80,7 @@ const showPets = (data) => {
         //         height="274px"
         //     />
         const petImage = new Image(353, 275);
-        petImage.src = './../img/pet/catalog/card-img/card-img-1.png';
+        petImage.src = parseImage(pet.image);
         petImage.alt = pet.name;
         petImage.classList.add('catalog__img');
         petElement.appendChild(petImage);
@@ -95,7 +99,7 @@ const showPets = (data) => {
         nameAgeContainer.appendChild(petName);
 
         const petAge = document.createElement('span');
-        const petAgeText = document.createTextNode(hrAge(pet.dateOfBirth));
+        const petAgeText = document.createTextNode(parseAge(pet.dateOfBirth));
         petAge.appendChild(petAgeText);
         petAge.classList.add('catalog-description__age');
         nameAgeContainer.appendChild(petAge);
@@ -106,7 +110,7 @@ const showPets = (data) => {
         //         Постоянно голодный, но мы как студенты его понимаем...
         //     </p>
         const petSubtitle = document.createElement('p');
-        const petSubtitleText = document.createTextNode('Постоянно голодный, но мы как студенты его понимаем...');
+        const petSubtitleText = document.createTextNode(pet.description);
         petSubtitle.appendChild(petSubtitleText);
         petSubtitle.classList.add('catalog__subtitle');
         petElement.appendChild(petSubtitle);
@@ -127,8 +131,10 @@ const showPets = (data) => {
 class Pet {
     id;          // string;
     type;        // string;
-    gender;      // boolean;
     name;        // string;
+    description; // string;
+    image;       // string;
+    gender;      // boolean;
     sterilized;  // boolean;
     hasPassport; // boolean;
     health;      // string;
