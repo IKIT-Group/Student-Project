@@ -131,7 +131,7 @@
         <div class="catalog__container container">
           <div class="catalog__filter catalog-filter">
             <h1 class="visually-hidden">Фильтр</h1>
-            <div class="catalog-filter__row filter-row">
+            <form action="http://efima.fun:3000/pets" target="" class="catalog-filter__row filter-row">
               <div class="filter-row__wrapper">
                 <h2 class="filter-row__title">
                   Животные, которые ищут свой дом
@@ -140,8 +140,8 @@
                   <input
                   class="filter-row__search-button"
                   type="text"
-                  name=""
-                  id="filter-row__search-button"
+                  name="searchBar"
+                  id="searchBar"
                   placeholder="Поиск по кличке"
                 />
                 </div>
@@ -149,11 +149,11 @@
                   <button type="submit" id="toggle-filter" class="filter-row__submit-button">Фильтр поиска</button>
                 </div>
               </div>
-              <div class="filter-row__block ">
+              <div class="filter-row__block visually-hidden">
                 <div class="filter">
                   <div class="filter__row">
                     <div class="filter-row__wrapper--arrow">
-                      <select class="filter-row__select" name="type-of-pet" id="type-of-pet">
+                      <select class="filter-row__select" name="type" id="type-of-pet">
                         <option class="filter-row__option" value="cat" hidden disabled selected>Питомец</option>
                         <option class="filter-row__option" value="cat">Кошка</option>
                         <option class="filter-row__option" value="dog">Собака</option>
@@ -177,14 +177,14 @@
                       </select>
                     </div>
                     <div class="filter-row__wrapper--arrow">
-                      <select class="filter-row__select" name="sterilization" id="sterilization">
+                      <select class="filter-row__select" name="sterilized" id="sterilization">
                         <option class="filter-row__option" value="cat" hidden disabled selected>Стерилизация</option>
                         <option class="filter-row__option" value="Yes">Да</option>
                         <option class="filter-row__option" value="No">Нет</option>
                       </select>
                     </div>
                     <div class="filter-row__wrapper--arrow">
-                      <select class="filter-row__select" name="veterinary-passport" id="veterinary-passport">
+                      <select class="filter-row__select" name="hasPassport" id="veterinary-passport">
                         <option class="filter-row__option" value="cat" hidden disabled selected>Вет. паспорт</option>
                         <option class="filter-row__option" value="Yes">Да</option>
                         <option class="filter-row__option" value="No">Нет</option>
@@ -193,27 +193,20 @@
                     <div class="filter-row__wrapper--arrow">
                       <select class="filter-row__select" name="health" id="health">
                         <option class="filter-row__option" value="cat" hidden disabled selected>Здоровье</option>
-                        <option class="filter-row__option" value="Completely healthy">Полностью здоров</option>
-                        <option class="filter-row__option" value="There are minor deviations">
-                          Есть незначительные отклонения
-                        </option>
-                        <option class="filter-row__option" value="There are serious illnesses or disabilities">
-                          Имеются серьезные заболевания или инвалидность
-                        </option>
+                        <option class="filter-row__option" value="great">Отличное</option>
+                        <option class="filter-row__option" value="good">Хорошее</option>
+                        <option class="filter-row__option" value="bad">Плохое</option>
+                        <option class="filter-row__option" value="disabled">Инвалид</option>
                       </select>
                     </div>
                   </div>
                 </div>
                 <div class="filter__buttons filter-buttons">
-                  <form action="">
                     <button type="reset" class="filter-button filter-buttons__reset">Сбросить все</button>
                     <button type="submit" class="filter-button filter-buttons__submit">Применить</button>
-                  </form>
-                  
                 </div>
               </div>
-              
-            </div>
+            </form>
           </div>
           <ul class="catalog__list" id="show-more__list">
             <li class="catalog__item" id="show-more__item">
@@ -244,7 +237,7 @@
                 height="274px"
               />
               <div class="catalog__description catalog-description">
-                <p class="catalog-description__name">Жорик</p>
+                <p class="catalog-description__name">Борик</p>
                 <span class="catalog-description__age">2 года</span>
               </div>
               <p class="catalog__subtitle">
@@ -263,7 +256,7 @@
                 height="274px"
               />
               <div class="catalog__description catalog-description">
-                <p class="catalog-description__name">Жорик</p>
+                <p class="catalog-description__name">Жопик</p>
                 <span class="catalog-description__age">2 года</span>
               </div>
               <p class="catalog__subtitle">
@@ -282,7 +275,7 @@
                 height="274px"
               />
               <div class="catalog__description catalog-description">
-                <p class="catalog-description__name">Жорик</p>
+                <p class="catalog-description__name">Анатолий</p>
                 <span class="catalog-description__age">2 года</span>
               </div>
               <p class="catalog__subtitle">
@@ -301,7 +294,7 @@
                 height="274px"
               />
               <div class="catalog__description catalog-description">
-                <p class="catalog-description__name">Жорик</p>
+                <p class="catalog-description__name">Демьян</p>
                 <span class="catalog-description__age">2 года</span>
               </div>
               <p class="catalog__subtitle">

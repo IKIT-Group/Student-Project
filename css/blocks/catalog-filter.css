@@ -78,9 +78,13 @@
 }
 .filter__row {
   padding: 15px;
-  display: grid;
-  grid-template-columns: repeat(6, auto);
-  gap: 15px;
+  /* display: grid;
+  grid-template-columns: repeat(6, auto); */
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 15px;
+  align-items: center;
+  justify-content: space-around;
 }
 .filter-row__wrapper--arrow {
   position: relative;
@@ -97,6 +101,7 @@
   pointer-events: none;
 }
 .filter-row__select {
+  font-family: var(--main-font);
   cursor: pointer;
   position: relative;
   background-color: var(--background-white-50);
@@ -117,6 +122,7 @@
   font-weight: 500;
   font-size: 24px;
   line-height: 120%;
+  color: var(--color-brown);
 }
 .filter__buttons {
 }
@@ -139,4 +145,7 @@
 }
 .filter-buttons__submit{
     background-color: var(--background-white-50);
+}
+.option__wrapper{
+  background: #000;
 }
