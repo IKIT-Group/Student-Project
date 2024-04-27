@@ -95,9 +95,9 @@
 //     setCart(items);
 // }
 
-let filterButton = document.querySelector('#toggle-filter');
-let filterBlock = document.querySelector('.filter-row__block');
+// let filterButton = document.querySelector('#toggle-filter');
+// let filterBlock = document.querySelector('.filter-row__block');
 
-filterButton.onclick = function() {
-    filterBlock.classList.toggle('visually-hidden');
-}
+// filterButton.onclick = function() {
+//     filterBlock.classList.toggle('visually-hidden');
+// }
