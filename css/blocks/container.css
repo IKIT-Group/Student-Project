@@ -1,5 +1,15 @@
 .container{
     /* max-width: 84.722222%; */
-    max-width: 1220px;
+    width: 1220px;
     margin: 0 auto;
+}
+@media (max-width: 1300px) {
+    .container{
+        width: 708px;
+    }
+}
+@media (max-width: 767px){
+    .container{
+        width: 280px;
+    }
 }

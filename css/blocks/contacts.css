@@ -44,5 +44,64 @@
 .contacts__item:hover{
   transform: scale(1.05);
 }
-.contacts__link {
+
+/* ============================================================================================================== */
+/* ======================================== TABLET WIDTH (768px) =============================================== */
+/* ============================================================================================================ */
+
+@media (max-width: 1300px){
+  .contacts__name{
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .contacts__description{
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  .contacts__address{
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  .contacts__phone{
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  .contacts__social{
+    gap: 16px;
+  }
+  .contacts__social svg{
+    width: 32px;
+    height: 32px;
+  }
+}
+
+/* ============================================================================================================== */
+/* ======================================== MOBILE WIDTH (320px) =============================================== */
+/* ============================================================================================================ */
+
+@media (max-width: 767px){
+  .contacts__name{
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  .contacts__description{
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+  .contacts__address{
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+  .contacts__phone{
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+  .contacts__social{
+    gap: 10px;
+  }
+  .contacts__social svg{
+    width: 30px;
+    height: 30px;
+  }
 }

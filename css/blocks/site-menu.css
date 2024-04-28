@@ -105,3 +105,66 @@
 .site-menu__item--dropdown:hover .site-menu--dropdown{
   opacity: 1;
 }
+
+/* ============================================================================================================== */
+/* ======================================== TABLET WIDTH (768px) =============================================== */
+/* ============================================================================================================ */
+
+@media (max-width: 1300px) {
+  .site-menu__item:not(:last-child){
+    margin-right: 15px;
+  }
+  .site-menu__link, .site-menu__btn{
+    font-size: 15px;
+  }
+  .site-menu--dropdown:last-of-type{
+  }
+}
+
+/* ============================================================================================================== */
+/* ======================================== MOBILE WIDTH (320px) =============================================== */
+/* ============================================================================================================ */
+
+@media (max-width: 767px) {
+  .site-menu__item{
+    padding: 5px;
+    width: 100%;
+  }
+  .site-menu__item:not(:first-child),
+  .site-menu__item:not(:last-child){
+    
+    border-bottom: 1px solid #6c584c;
+  }
+  .site-menu__link, .site-menu__btn{
+    padding-bottom: 0;
+    display: block;
+    width: 100%;
+    padding: 0;
+    font-size: 20px;
+  }
+  .site-menu__item:not(:last-child){
+    margin-right: 0;
+  }
+  .site-menu__item--dropdown{
+    justify-content: center;
+  }
+  .site-menu__item--dropdown .site-menu__btn{
+  }
+  .site-menu__item--dropdown{
+    display: flex;
+    flex-direction: column;
+  }
+  .site-menu--dropdown{
+    position: static;
+    border: none;
+  }
+  .flex__wrapper{
+    display: flex;
+  }
+  .site-menu--dropdown .site-menu__item a{
+    text-align: center;
+  }
+  .site-menu--dropdown .site-menu__item{
+    border-bottom: 1px solid var(--color-brown-50);
+  }
+}

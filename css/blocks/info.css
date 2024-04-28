@@ -76,3 +76,101 @@
 .info__aggitation + svg{
     margin: 0 auto 25px auto;
 }
+
+/* ============================================================================================================== */
+/* ======================================== TABLET WIDTH (768px) =============================================== */
+/* ============================================================================================================ */
+@media (max-width: 1300px) {
+  .info__title{
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .info__list{
+    grid-template-columns: 324px 324px;
+    gap: 20px 30px;
+    margin-bottom: 20px;
+  }
+  .info__item{
+    padding: 15px 15px 10px 15px;
+    border-radius: 50px;
+  }
+  .info__img{
+    width: 294px;
+    height: 256px;
+    margin-bottom: 10px;
+  }
+  .info__description{
+    align-items: flex-end;
+    margin-bottom: 10px;
+  }
+  .description__name{
+    font-size: 24px;
+  }
+  .description__age{
+    font-size: 16px;
+  }
+  .info__subtitle{
+    font-size: 16px;
+  }
+  .info__aggitation{
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .info__content svg{
+    width: 32px;
+    height: 34px;
+  }
+  .info__aggitation + svg{
+    margin-bottom: 20px;
+  }
+}
+
+/* ============================================================================================================== */
+/* ======================================== MOBILE WIDTH (320px) =============================================== */
+/* ============================================================================================================ */
+
+@media (max-width: 767px){
+  .info__title{
+    font-size: 13px;
+    margin-bottom: 15px;
+    padding: 0;
+    margin-left: -12px;
+    margin-right: -12px;
+    text-align: center;
+  }
+  .info__list{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 15px;
+  }
+  .info__img{
+    width: 238px;
+    height: 207px;
+    margin-bottom: 5px;
+    border-radius: 15px;
+  }
+  .info__item{
+    padding: 10px 10px 13px 10px;
+    border-radius: 20px;
+  }
+  .info__content{
+    padding: 0 12px;
+  }
+  .info__description{
+    padding: 0 12px;
+  }
+  .info__subtitle{
+    padding: 0 13px;
+  }
+  .info__aggitation{
+    font-size: 13px;
+    line-height: 113%;
+    display: block;
+    padding: 0 36px;
+  }
+  .info__content svg{
+    width: 25px;
+    height: 26px;
+  }
+}

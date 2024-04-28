@@ -28,3 +28,43 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
+
+/* ============================================================================================================== */
+/* ======================================== TABLET WIDTH (768px) =============================================== */
+/* ============================================================================================================ */
+
+@media (max-width: 1300px) {
+  .page-footer{
+    padding: 20px 30px;
+  }
+  .page-footer__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  .page-footer__link{
+    font-size: 15px;
+  }
+}
+
+/* ============================================================================================================== */
+/* ======================================== MOBILE WIDTH (320px) =============================================== */
+/* ============================================================================================================ */
+
+@media (max-width: 767px){
+  .page-footer__nav{
+    display: grid;
+    grid-template-columns: auto;
+    gap: 15px;
+    grid-template-rows: auto auto;
+    padding: 0 30px;
+  }
+  .page-footer__list{
+    text-align: left;
+    padding: 0;
+  }
+  .page-footer__link{
+    font-size: 12px;
+  }
+  .page-footer__item:not(:last-child){
+    margin-bottom: 5px;
+  }
+}

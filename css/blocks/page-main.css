@@ -29,3 +29,15 @@
 .page-main__food{
     background: url('./../../img/shop/food/bg/rect-1.svg') no-repeat bottom -50px left -20px;
 }
+
+/* ============================================================================================================== */
+/* ======================================== TABLET WIDTH (768px) =============================================== */
+/* ============================================================================================================ */
+
+@media (max-width: 1300px) {
+    .page-main{
+        padding: 20px 0;
+        background: url('./../../img/index/header/decor/ellipse-768.png') no-repeat bottom 51px left -139px,
+        url('./../../img/index/header/decor/ellipse-768.png') no-repeat top 111px right -181px;
+    }
+}
