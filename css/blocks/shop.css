@@ -32,3 +32,55 @@
   text-align: center;
   max-width: 432px;
 }
+
+/* ============================================================================================================== */
+/* ======================================== TABLET WIDTH (768px) =============================================== */
+/* ============================================================================================================ */
+
+@media(max-width: 1300px){
+  .shop{
+    margin-bottom: 10px;
+  }
+  .shop__title{
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  .shop__description{
+    font-size: 16px;
+  }
+  .shop__content{
+    padding-top: 29px;
+    padding-left: 39px;
+    grid-template-columns: 276px auto;
+  }
+  .shop__container{
+    min-height: 305px;
+    background-size: 364px 405px;
+    background-position: top -95px right 0px;
+  }
+}
+
+/* ============================================================================================================== */
+/* ======================================== MOBILE WIDTH (320px) =============================================== */
+/* ============================================================================================================ */
+
+@media (max-width: 767px) {
+  .shop__title{
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  .shop__description{
+    font-size: 12px;
+  }
+  .shop__content{
+    display: flex;
+    padding: 0;
+    padding-top: 15px;
+    flex-direction: column;
+  }
+  .shop__container{
+    min-height: 404px;
+    background: url("./../../img/shop/bg/dog-320.png") no-repeat top 135px right -7px;
+    background-size: 289px 266px;
+  }
+}

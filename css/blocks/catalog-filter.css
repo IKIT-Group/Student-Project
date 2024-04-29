@@ -140,12 +140,101 @@
   font-size: 18px;
   line-height: 120%;
 }
-.filter-buttons__reset{
-    background-color: transparent;
+.filter-buttons__reset {
+  background-color: transparent;
 }
-.filter-buttons__submit{
-    background-color: var(--background-white-50);
+.filter-buttons__submit {
+  background-color: var(--background-white-50);
 }
-.option__wrapper{
+.option__wrapper {
   background: #000;
+}
+
+/* ============================================================================================================== */
+/* ======================================== TABLET WIDTH (768px) =============================================== */
+/* ============================================================================================================ */
+
+@media (max-width: 1300px) {
+  .filter-row__wrapper {
+    gap: 10px;
+  }
+  .catalog-filter {
+    padding: 0;
+  }
+  .filter-row__title {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .filter-row__search-button {
+    max-width: 138px;
+    font-size: 11px;
+    padding: 8px 14px 7px 30px;
+  }
+  .filter-row__submit-button {
+    padding: 8px 8px 7px 33px;
+    font-size: 11px;
+  }
+  .search-button__wrapper::after {
+    position: absolute;
+    content: "";
+    background: url("./../../img/pet/filter/search-768.svg") no-repeat;
+    left: 8px;
+    width: 22px;
+    height: 22px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .submit-button__wrapper::before {
+    position: absolute;
+    content: "";
+    background: url("./../../img/pet/filter/filter-768.svg") no-repeat;
+    width: 22px;
+    height: 22px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 8px;
+    pointer-events: none;
+  }
+  .filter-row__select {
+    font-size: 14px;
+    padding: 4px 24px 4px 9px;
+  }
+  .filter-row__option {
+    font-size: 14px;
+  }
+  .filter-row__wrapper--arrow::after {
+    position: absolute;
+    content: "";
+    background: url("./../../img/pet/filter/arrow-down-768.svg") no-repeat;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 9px;
+    pointer-events: none;
+    width: 14px;
+    height: 8px;
+  }
+  .filter-button{
+    padding: 8px 10px;
+    font-size: 11px;
+  }
+}
+
+/* ============================================================================================================== */
+/* ======================================== MOBILE WIDTH (320px) =============================================== */
+/* ============================================================================================================ */
+
+@media (max-width: 767px){
+  .filter-row__wrapper{
+    display: grid;
+    grid-template-columns: 154px 115px;
+  }
+  .filter-row__title{
+    grid-column-start: 1;
+    grid-column-end: -1;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 700;
+    padding: 0 45px;
+    margin-bottom: 10px;
+  }
 }

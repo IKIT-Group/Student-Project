@@ -150,4 +150,7 @@
         display: none;
     }
     
+    .page-header__shop .page-header__nav{
+        margin-bottom: 10px;
+    }
 }

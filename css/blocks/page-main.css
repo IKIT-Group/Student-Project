@@ -8,8 +8,10 @@
     padding: 0 0 50px 0;
 }
 .page-main__shop{
+    
     background: url('./../../img/shop/bg/ellipse-1.svg') no-repeat top 255px left -353px;
 }
+
 .page-main__empty-cart{
     padding: 50px 0 150px 0;
 }
@@ -35,9 +37,25 @@
 /* ============================================================================================================ */
 
 @media (max-width: 1300px) {
-    .page-main{
+    .page-main__index{
         padding: 20px 0;
         background: url('./../../img/index/header/decor/ellipse-768.png') no-repeat bottom 51px left -139px,
         url('./../../img/index/header/decor/ellipse-768.png') no-repeat top 111px right -181px;
+    }
+    .page-main__shop{
+        padding-top: 0;
+        background: url('./../../img/shop/bg/ellipse-768.svg') no-repeat bottom 148px left -199px;
+    }
+}
+
+/* ============================================================================================================== */
+/* ======================================== MOBILE WIDTH (320px) =============================================== */
+/* ============================================================================================================ */
+
+@media (max-width: 767px) {
+    .page-main__shop{
+        padding-top: 0;
+        background: url('./../../img/shop/bg/bg_ellipse_brown-320.svg') no-repeat bottom 508px right -28px,
+        url('./../../img/shop/bg/bg_ellipse_green-320.svg') no-repeat bottom 0px left -145px;
     }
 }
