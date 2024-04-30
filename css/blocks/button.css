@@ -73,6 +73,17 @@
     font-size: 14px;
     padding: 7px 14px;
   }
+  .button__wrapper::before{
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background: url('./../../img/shop/icons/bag-white-768.svg') no-repeat;
+    top: 7px;
+    left: 10px;
+    z-index: 2;
+    
+  }
 }
 
 /* ============================================================================================================== */
@@ -83,5 +94,16 @@
   .button{
     padding: 8px 13px;
     font-size: 12px;
+  }
+  .button__wrapper::before{
+    content: "";
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    background: url('./../../img/shop/icons/bag-white-320.svg') no-repeat;
+    top: 4px;
+    left: 7px;
+    z-index: 2;
+    
   }
 }

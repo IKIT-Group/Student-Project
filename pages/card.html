@@ -12,8 +12,11 @@
       class="page__header page-header page-header--no-decor page-header__shop"
     >
       <div class="page-header__container container">
-        <nav class="page-header__nav">
+        <nav class="page-header__nav page-header__nav--closed page-header__nav--nojs">
           <a href="/" class="page-header__logo logo"> YOUR LOGO HERE </a>
+          <button class="page-header__toggler" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
           <ul class="page-header__list site-menu">
             <li class="site-menu__item">
               <a href="./../index.html" class="site-menu__link">Главная</a>
@@ -215,5 +218,6 @@
           </nav>
         </div>
     </footer>
+    <script src="./../js/burger.js"></script>
 </body>
 </html>

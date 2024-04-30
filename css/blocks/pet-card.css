@@ -99,3 +99,177 @@
   text-transform: uppercase;
   margin-bottom: 30px;
 }
+
+/* ============================================================================================================== */
+/* ======================================== TABLET WIDTH (768px) =============================================== */
+/* ============================================================================================================ */
+
+@media (max-width: 1300px) {
+  .card-info {
+    grid-template-columns: 238px 435px;
+    padding: 10px;
+    gap: 15px;
+    border-radius: 25px;
+    margin-bottom: 40px;
+  }
+  .card-info__img {
+    width: 238px;
+    height: 291px;
+    border-radius: 25px;
+    object-fit: cover;
+  }
+  .card-info__name-age {
+    margin-bottom: 10px;
+  }
+  .card-info__name {
+    font-size: 32px;
+    margin-right: 15px;
+  }
+  .card-info__age {
+    font-size: 20px;
+  }
+  .card-info__health{
+    gap: 8px;
+    margin-bottom: 10px;
+  }
+  .card-info__health-title {
+    font-size: 20px;
+  }
+  .card-info__health-subtitle {
+    font-size: 20px;
+  }
+  .card-info__add--done::before {
+    width: 20px;
+    height: 20px;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    background: url("./../../img/icons/done-768.svg") no-repeat;
+    display: block;
+    transform: translateY(-50%);
+  }
+  .card-info__add{
+    gap: 10px;
+    line-height: 1;
+    margin-bottom: 10px;
+  }
+  .card-info__add--done{
+    font-size: 15px;
+    padding-left: 20px;
+  }
+  .card-info__description{
+    font-size: 16px;
+  }
+  .card-promo__title{
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .button__to-form{
+    padding: 15px 18px;
+  }
+  .pet-card__link--back{
+    font-size: 15px;
+  }
+  .cart-header__link{
+    padding-left: 30px;
+  }
+  .cart-header__link::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 22px;
+    background: url("./../../img/icons/arrow-left-768.svg") no-repeat;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+  }
+}
+/* ============================================================================================================== */
+/* ======================================== MOBILE WIDTH (320px) =============================================== */
+/* ============================================================================================================ */
+
+@media (max-width: 767px){
+  .card-info {
+    display: flex;
+    box-shadow: none;
+    flex-direction: column;
+    padding: 10px;
+    padding: 15px 10px 10px 10px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+  }
+  .card-info__img {
+    order: 6;
+    width: 260px;
+    height: 260px;
+    border-radius: 20px;
+    object-fit: cover;
+  }
+  .card-info__name-age {
+    margin-bottom: 9px;
+  }
+  .card-info__name {
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  .card-info__age {
+    font-size: 13px;
+  }
+  .card-info__health{
+    gap: 5px;
+    margin-bottom: 6px;
+  }
+  .card-info__health-title {
+    font-size: 13px;
+  }
+  .card-info__health-subtitle {
+    font-size: 13px;
+  }
+  .card-info__add--done::before {
+    width: 16px;
+    height: 16px;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    background: url("./../../img/icons/done-320.svg") no-repeat;
+    display: block;
+    transform: translateY(-50%);
+  }
+  .card-info__add{
+    line-height: 1;
+    gap: 5px;
+  }
+  .card-info__add--done{
+    font-size: 12px;
+    padding-left: 16px;
+  }
+  .card-info__description{
+    font-size: 12px;
+    padding: 0 5px;
+  }
+  .card-promo__title{
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+  .button__to-form{
+    padding: 8px 16px;
+  }
+  .pet-card__link--back{
+    font-size: 12px;
+  }
+  .cart-header__link{
+    padding-left: 23px;
+  }
+  .cart-header__link::before {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 13px;
+    background: url("./../../img/icons/arrow-left-320.svg") no-repeat;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+  }
+}

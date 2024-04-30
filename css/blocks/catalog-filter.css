@@ -267,4 +267,19 @@
     left: 7px;
     pointer-events: none;
   }
+  .filter-row__select{
+    font-size: 11px;
+  }
+  .filter-row__option{
+    font-size: 11px;
+  }
+  .filter__row{
+    row-gap: 10px;
+  }
+  .catalog-filter__row{
+    margin-bottom: 10px;
+  }
+  .filter-buttons{
+    justify-content: center;
+  }
 }

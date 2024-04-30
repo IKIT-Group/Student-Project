@@ -46,6 +46,12 @@
         padding-top: 0;
         background: url('./../../img/shop/bg/ellipse-768.svg') no-repeat bottom 148px left -199px;
     }
+    .page-main__card{
+        padding: 20px 0;
+    }
+    .page-main__food{
+        background: url('./../../img/shop/food/bg/rect-768.svg') no-repeat bottom 10px left -22px;
+    }
 }
 
 /* ============================================================================================================== */
@@ -60,5 +66,9 @@
     }
     .page-main--pet{
         padding-bottom: 15px;
+    }
+    .page-main__food{
+        padding-bottom: 15px;
+        background: none;
     }
 }

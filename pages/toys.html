@@ -12,8 +12,11 @@
       class="page__header page-header page-header--no-decor page-header__shop"
     >
       <div class="page-header__container container">
-        <nav class="page-header__nav">
+        <nav class="page-header__nav page-header__nav--closed page-header__nav--nojs">
           <a href="/" class="page-header__logo logo"> YOUR LOGO HERE </a>
+          <button class="page-header__toggler" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
           <ul class="page-header__list site-menu">
             <li class="site-menu__item">
               <a href="./../index.html" class="site-menu__link">Главная</a>
@@ -117,10 +120,18 @@
               <h1 class="food-header__title">Игрушки</h1>
             </div>
             <div class="food__catalog food-catalog">
-                <div class="food-catalog__row">
-                    <!-- <input class="food-catalog__search button--transparent button--search" type="search" name="" id="searchBar" name="searchBar" placeholder="Поиск по названию"> -->
-                    <a href="./empty-cart.html" class="food-catalog__cart button--transparent">Корзина товаров</a>
-                </div>
+              <div class="food-catalog__row">
+                <div class="search-button__wrapper food-catalog__button">
+                  <input
+                  class="filter-row__search-button food-catalog__search-button"
+                  type="text"
+                  name="name"
+                  id="searchBar"
+                  placeholder="Поиск по названию"
+                  />
+              </div>
+              <a href="./empty-cart.html" class="food-catalog__cart button--transparent">Корзина товаров</a>
+            </div>
                 <ul class="food-catalog__list" id="show-more__list">
                   <li class="food-catalog__item food-catalog__item--normal" id="show-more__item">
                       <img src="./../img/shop/food/product-1.png" alt="Сухой корм Edel Adult для взрослых стерелизованных кошек, 10 кг." width="353" height="306" class="food-catalog__img">
@@ -297,6 +308,7 @@
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="./../js/search.js"></script>
+    <script src="./../js/burger.js"></script>
     <script src="./../js/more.js"></script>
   </body>
 </html>
