@@ -1,6 +1,6 @@
-const url = 'http://efima.fun:3000';
-const petsUrl = url + '/pets';
-const staticUrl = url + '/static';
+const apiUrl = 'https://d5dr7r5i2n1rsjd50kif.apigw.yandexcloud.net';
+const storageUrl = 'https://storage.yandexcloud.net/backend-bucket';
+const petsUrl = apiUrl + '/pets';
 
 const form = document.getElementById('pet-form');
 const pets = document.getElementById('show-more__list');
@@ -41,7 +41,7 @@ const parseAge = dateText => {
     return `${yearsDifference} лет`;
 }
 
-const parseImage = imageText => `${staticUrl}/${imageText}`;
+const parseImage = imageText => `${storageUrl}/${imageText}`;
 
         // <li class="catalog__item" id="show-more__item">
         //     <img
