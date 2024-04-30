@@ -58,4 +58,7 @@
         background: url('./../../img/shop/bg/bg_ellipse_brown-320.svg') no-repeat bottom 508px right -28px,
         url('./../../img/shop/bg/bg_ellipse_green-320.svg') no-repeat bottom 0px left -145px;
     }
+    .page-main--pet{
+        padding-bottom: 15px;
+    }
 }

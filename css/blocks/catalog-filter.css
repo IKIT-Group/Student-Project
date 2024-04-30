@@ -227,6 +227,7 @@
   .filter-row__wrapper{
     display: grid;
     grid-template-columns: 154px 115px;
+    column-gap: 5px;
   }
   .filter-row__title{
     grid-column-start: 1;
@@ -235,6 +236,35 @@
     text-align: center;
     font-weight: 700;
     padding: 0 45px;
-    margin-bottom: 10px;
+  }
+  .filter-row__search-button{
+    font-size: 10px;
+    padding: 6px 10px 5px 27px;
+    min-width: 100%;
+  }
+  .filter-row__submit-button{
+    font-size: 10px;
+    padding: 6px 7px 5px 30px;
+  }
+  .search-button__wrapper::after {
+    position: absolute;
+    content: "";
+    background: url("./../../img/pet/filter/search-320.svg") no-repeat;
+    left: 7px;
+    width: 18px;
+    height: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .submit-button__wrapper::before {
+    position: absolute;
+    content: "";
+    background: url("./../../img/pet/filter/filter-320.svg") no-repeat;
+    width: 20px;
+    height: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 7px;
+    pointer-events: none;
   }
 }

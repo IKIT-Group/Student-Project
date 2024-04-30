@@ -95,3 +95,53 @@
     padding: 0 10px;
   }
 }
+
+/* ============================================================================================================== */
+/* ======================================== MOBILE WIDTH (320px) =============================================== */
+/* ============================================================================================================ */
+
+@media (max-width: 767px){
+  .catalog__list{
+    grid-template-columns: repeat(1, 100%);
+    padding: 0 11px;
+    gap: 15px;
+  }
+  .catalog__item{
+    padding: 10px;
+  }
+  .catalog__img{
+    width: 100%;
+    height: 207px;
+    margin-bottom: 5px;
+  }
+  .catalog-description{
+    padding: 0 12px;
+    margin-bottom: 5px;
+    align-items: baseline;
+  }
+  .catalog-description__name{
+    font-size: 20px;
+  }
+  .catalog-description__age{
+    font-size: 16px;
+  }
+  .catalog__subtitle{
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+  .catalog__link{
+    padding: 8px 16px;
+  }
+  .catalog__button{
+    margin-top: 15px;
+    padding: 8px 16px;
+  }
+  .catalog{
+    background: url('./../../img/pet/bg/320/bg_ellipse-1.svg') no-repeat top 564px right -244px,
+                url('./../../img/pet/bg/320/bg_ellipse-2.svg') no-repeat top 344px left -23px,
+                url('./../../img/pet/bg/320/bg_ellipse-3.svg') no-repeat top 67px right -16px,
+                url('./../../img/pet/bg/320/bg_ellipse.svg') no-repeat bottom 716px left -22px,
+                url('./../../img/pet/bg/320/bg_rectangle-1.svg') no-repeat bottom 308px right -40px,
+                url('./../../img/pet/bg/320/bg_rectangle.svg') no-repeat bottom 15px left -115px;
+  }
+}
