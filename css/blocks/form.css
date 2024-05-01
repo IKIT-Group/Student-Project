@@ -67,6 +67,12 @@
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
+  padding: 13px 15px;
+  font-family: var(--main-font);
+}
+.field__input-select option {
+  font-size: 16px;
+  border: 5px solid var(--color-brown-50) !important;
 }
 .field__input-select::-ms-expand {
   display: none;
@@ -206,4 +212,198 @@ input[type="number"]::-webkit-inner-spin-button {
   height: 19px;
   border-radius: 50%;
   background: #adc178;
+}
+
+.form-modal {
+  background-color: var(--color-white);
+  margin: auto;
+  max-width: 704px;
+  padding: 30px;
+  border-radius: 50px;
+  text-align: center;
+}
+.form-modal__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 100%;
+  margin-bottom: 17px;
+}
+.form-modal__subtitle {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 160%;
+  margin-bottom: 17px;
+}
+.form-modal__button{
+  font-size: 24px;
+  font-weight: 700;
+  padding: 24px 53px;
+}
+
+/* ============================================================================================================== */
+/* ======================================== TABLET WIDTH (768px) =============================================== */
+/* ============================================================================================================ */
+
+@media (max-width: 1300px) {
+  .field-group__heading {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .field-group__list {
+    grid-template-columns: repeat(3, 206px);
+    padding: 0 20px;
+    gap: 25px;
+  }
+  .field__lead {
+    font-size: 16px;
+  }
+  .field__input {
+    font-size: 16px;
+    padding: 6px 8px;
+  }
+  .field-group--personal,
+  .field-group--contacts {
+    margin-bottom: 30px;
+  }
+  .field__lead--description {
+    font-size: 10px;
+    padding: 10px 0;
+  }
+
+  .field--radio {
+    font-size: 16px;
+    padding-left: 18px;
+  }
+  .checkmark {
+    width: 13px;
+    height: 13px;
+  }
+  .field--radio .checkmark:after {
+    width: 9px;
+    height: 9px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-55%, -45%);
+  }
+  .field-group__list--radio {
+    margin-top: 16px;
+    grid-template-columns: 206px auto;
+  }
+  .field-group__item--grid {
+    padding-right: 124px;
+  }
+  .field-group--other {
+    margin-bottom: 20px;
+  }
+  .form__button {
+    padding: 15px 18px;
+    font-size: 15px;
+  }
+  .select-wrapper::after {
+    background: url("./../../img/form/icons/arrow-down-form-768.svg") no-repeat;
+    width: 17px;
+    height: 8px;
+    top: 50%;
+    right: 8px;
+  }
+  .form-modal {
+    background-color: var(--color-white);
+    margin: auto;
+    max-width: 448px;
+    padding: 20px 57px;
+    border-radius: 25px;
+    text-align: center;
+  }
+  .form-modal__title {
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .form-modal__subtitle {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  .form-modal__button{
+    font-size: 15px;
+    padding: 15px 32px;
+  }
+}
+
+/* ============================================================================================================== */
+/* ======================================== MOBILE WIDTH (320px) =============================================== */
+/* ============================================================================================================ */
+
+@media (max-width: 767px) {
+  .field-group__heading {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  .field-group__list {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    gap: 10px;
+  }
+  .form__body {
+    align-items: flex-start;
+  }
+  .field__lead {
+    font-size: 15px;
+  }
+  .field__input {
+    font-size: 14px;
+    padding: 7px 10px;
+    width: 194px;
+  }
+  .field-group--personal,
+  .field-group--personal {
+    margin-bottom: 20px;
+  }
+  .field__lead--description {
+    padding-right: 104px;
+  }
+  .checkmark {
+    width: 15px;
+    height: 15px;
+  }
+  .field--radio {
+    font-size: 15px;
+    padding-left: 21px;
+  }
+  .field--radio .checkmark:after {
+    width: 11px;
+    height: 11px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-45%, -45%);
+  }
+  .form__button {
+    font-size: 12px;
+    padding: 8px 16px;
+  }
+  .field-group--other {
+    margin-bottom: 28px;
+  }
+  .form-modal {
+    background-color: var(--color-white);
+    margin: auto;
+    max-width: 280px;
+    padding: 15px 18px;
+    border-radius: 20px;
+    text-align: center;
+  }
+  .form-modal__title {
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  .form-modal__subtitle {
+    font-size: 12px;
+    margin-bottom: 5px;
+    padding: 0 6px;
+  }
+  .form-modal__button{
+    font-size: 12px;
+    padding: 8px 16px;
+  }
 }

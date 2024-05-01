@@ -7,6 +7,9 @@
   display: grid;
   grid-template-rows: auto 1fr auto;
 }
+.scroll-lock{
+  overflow: hidden;
+}
 .page-body__about{
   background: url('./../../img/about/bg/bg-1.png') no-repeat top 0px right 0px;
   background-size:  auto;

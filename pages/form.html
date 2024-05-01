@@ -13,8 +13,11 @@
       class="page__header page-header page-header--no-decor page-header__shop"
     >
       <div class="page-header__container container">
-        <nav class="page-header__nav">
+        <nav class="page-header__nav page-header__nav--closed page-header__nav--nojs">
           <a href="/" class="page-header__logo logo"> YOUR LOGO HERE </a>
+          <button class="page-header__toggler" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
           <ul class="page-header__list site-menu">
             <li class="site-menu__item">
               <a href="./../index.html" class="site-menu__link">Главная</a>
@@ -125,8 +128,6 @@
         <div class="form__container container">
           <form
             id="form"
-            action="https://echo.htmlacademy.ru/"
-            method="post"
             class="form__body"
           >
             <fieldset class="form__group field-group field-group--personal">
@@ -136,7 +137,7 @@
 
               <ul class="field-group__list">
                 <li class="field-group__item">
-                  <label for="" class="field">
+                  <label for="fullname" class="field">
                     <span class="field__lead field-lead">ФИО:</span>
                     <input
                       id="fullname"
@@ -151,7 +152,7 @@
                   </label>
                 </li>
                 <li class="field-group__item">
-                  <label for="" class="field">
+                  <label for="age" class="field">
                     <span class="field__lead field-lead">Возраст</span>
                     <input
                       id="age"
@@ -167,18 +168,20 @@
                   </label>
                 </li>
                 <li class="field-group__item">
-                  <label for="" class="field">
+                  <label for="status" class="field">
                     <span class="field__lead field-lead"
                       >Род деятельности:</span
                     >
                     <div class="select-wrapper">
                       <select
+                        
                         class="field__input field__input-select"
                         name="Род деятельности"
                         placeholder="Варианты"
                       >
+                        <option value="Студент" disabled hidden selected>Варианты</option>
                         <option value="Студент">Студент</option>
-                        <option value="Трудоустроенный" selected>
+                        <option value="Трудоустроенный">
                           Трудоустроенный
                         </option>
                         <option value="Безработный">Безработный</option>
@@ -198,10 +201,11 @@
 
               <ul class="field-group__list">
                 <li class="field-group__item">
-                  <label for="" class="field">
+                  <label for="phone" class="field">
                     <span class="field__lead field-lead">Телефон:</span>
                     <input
                       type="tel"
+                      id="phone"
                       class="field__input"
                       name="Номер телефона"
                       placeholder="89123456789"
@@ -211,10 +215,11 @@
                   </label>
                 </li>
                 <li class="field-group__item">
-                  <label for="" class="field">
+                  <label for="email" class="field">
                     <span class="field__lead field-lead">Эл. почта:</span>
                     <input
                       type="email"
+                      id="email"
                       class="field__input"
                       name="Электронная почта"
                       placeholder="example@mail.com"
@@ -232,7 +237,7 @@
 
               <ul class="field-group__list field-group__list--other">
                 <li class="field-group__item field-group__item--other">
-                  <label for="" class="field field--other">
+                  <label for="other-input-1" class="field field--other">
                     <span class="field__lead">Вы проживаете один(а)?</span>
                     <span
                       class="field__lead--description field__lead--description--big"
@@ -241,6 +246,7 @@
                     >
                     <input
                       type="text"
+                      id="other-input-1"
                       class="field__input"
                       placeholder="Введите краткий ответ"
                       required
@@ -248,7 +254,7 @@
                   </label>
                 </li>
                 <li class="field-group__item field-group__item--other">
-                  <label for="" class="field field--other">
+                  <label for="other-input-2" class="field field--other">
                     <span class="field__lead"
                       >Ранее имели домашних животных?</span
                     >
@@ -258,13 +264,14 @@
                     <input
                       type="text"
                       class="field__input"
+                      id="other-input-2"
                       placeholder="Введите краткий ответ"
                       required
                     />
                   </label>
                 </li>
                 <li class="field-group__item field-group__item--other">
-                  <label for="" class="field field--other">
+                  <label for="other-input-3" class="field field--other">
                     <span class="field__lead"
                       >Имеете домашнее животное на данный момент?</span
                     >
@@ -274,6 +281,7 @@
                     <input
                       type="text"
                       class="field__input"
+                      id="other-input-3"
                       placeholder="Введите краткий ответ"
                       required
                     />
@@ -312,6 +320,13 @@
                 </li>
               </ul>
             </fieldset>
+            <dialog class="form__modal form-modal" id="formModal">
+              <h4 class="form-modal__title">Благодарим вас!</h4>
+              <p class="form-modal__subtitle">Ваша анкета успешно отправлена. Время рассмотрения анкеты - 3 рабочих дня.После проверки мы пришлем письмо на адрес электронной почты, указанной в анкете.</p>
+              <button type="button" onclick="window.formModal.close()" class="button form-modal__button">
+                Отлично
+              </button>
+            </dialog>
             <button class="form__button button" type="submit">
               Отправить заявку
             </button>
@@ -413,6 +428,8 @@
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./../js/burger.js"></script>
+    <script src="./../js/dialog.js"></script>
     <script src="./../js/main.js"></script>
   </body>
 </html>

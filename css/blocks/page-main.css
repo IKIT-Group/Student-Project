@@ -52,6 +52,9 @@
     .page-main__food{
         background: url('./../../img/shop/food/bg/rect-768.svg') no-repeat bottom 10px left -22px;
     }
+    .page-main__form{
+        padding: 30px 0 20px 0;
+    }
 }
 
 /* ============================================================================================================== */
@@ -70,5 +73,9 @@
     .page-main__food{
         padding-bottom: 15px;
         background: none;
+    }
+    .page-main__form{
+        padding: 15px 0 20px 0;
+        background: url('./../../img/form/bg/form-bg-320.png') no-repeat top 264px right 50%;
     }
 }
