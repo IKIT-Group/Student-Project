@@ -78,4 +78,8 @@
         padding: 15px 0 20px 0;
         background: url('./../../img/form/bg/form-bg-320.png') no-repeat top 264px right 50%;
     }
+    .page-main__about{
+        padding: 0;
+        background: url('./../../img/about/bg/ellipse-320.png') no-repeat bottom 15px left -25px;
+    }
 }

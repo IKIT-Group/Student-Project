@@ -86,3 +86,68 @@
   grid-template-columns: 34px auto;
   gap: 10px;
 }
+/* ============================================================================================================== */
+/* ======================================== TABLET WIDTH (768px) =============================================== */
+/* ============================================================================================================ */
+
+@media(max-width: 1300px){
+
+}
+
+/* ============================================================================================================== */
+/* ======================================== MOBILE WIDTH (320px) =============================================== */
+/* ============================================================================================================ */
+
+@media(max-width: 767px){
+  .additional{
+    margin: 0;
+    background: url('./../../img/about/bg/bg-3-320.png') no-repeat top 330px right calc(50% - 50px);
+  }
+  .additional__title{
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .additional__subtitle{
+    font-size: 14px;
+  }
+  .additional__list{
+    gap: 5px;
+  }
+  .additional__social .additional__list{
+    gap: 10px;
+  }
+  .additional__item{
+    gap: 5px;
+  }
+  .additional__item svg{
+    width: 17px;
+    height: 17px;
+  }
+  .additional__content{
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 300px;
+  }
+  .additional__links{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    gap: 0;
+  }
+  .additional__contacts{
+    margin-bottom: 20px;
+  }
+  .additional__name{
+    font-size: 14px;
+    margin: 0;
+  }
+  .additional__link{
+    font-size: 14px;
+  }
+  .additional__social .additional__item{
+    grid-template-columns: 17px auto;
+    gap: 6px;
+  }
+}

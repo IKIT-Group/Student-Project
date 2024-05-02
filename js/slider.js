@@ -5,6 +5,14 @@ $(function () {
         arrows: true,
         slidesToShow: 3,
         variableWidth: true,
-        adaptiveHeight: true
+        adaptiveHeight: true,
+        responsive: [
+            {
+                breakpoint: 767,
+                settings: {
+                    arrows: false,
+                }
+            }
+        ]
     })
 })
