@@ -13,96 +13,71 @@
     >
       <div class="page-header__container container">
         <nav class="page-header__nav page-header__nav--closed page-header__nav--nojs">
-          <a href="/" class="page-header__logo logo"> YOUR LOGO HERE </a>
+                
+          <a href="./../index.html" class="page-header__logo logo">
+              YOUR LOGO HERE
+          </a>
           <button class="page-header__toggler" type="button">
-            <span class="visually-hidden">Открыть меню</span>
+              <span class="visually-hidden">Открыть меню</span>
           </button>
           <ul class="page-header__list site-menu">
-            <li class="site-menu__item">
-              <a href="./../index.html" class="site-menu__link">Главная</a>
-            </li>
-            <li class="site-menu__item">
-              <a href="./pet.html" class="site-menu__link">Выбор питомца</a>
-            </li>
-            <li
-              class="site-menu__item site-menu__item--dropdown site-menu__item--active site-menu__item--active__shop"
-              data-has-children
-            >
-              <a href="./shop.html" class="site-menu__btn">Магазин</a>
-              <svg
-                width="20"
-                height="20"
-                viewBox="0 0 20 20"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M15 7.5L10 12.5L5 7.5" stroke="#222222" />
-              </svg>
-
-              <ul class="site-menu--dropdown" hidden>
-                <il class="site-menu__item">
-                  <a href="./food.html" class="site-menu__link">Корма и лакомства</a>
-                </il>
-                <il class="site-menu__item">
-                  <a href="#" class="site-menu__link">Уход за животными</a>
-                </il>
-                <il class="site-menu__item">
-                  <a href="./accessories.html" class="site-menu__link">Аксессуары</a>
-                </il>
-                <il class="site-menu__item">
-                  <a href="./toys.html" class="site-menu__link">Игрушки</a>
-                </il>
-                <il class="site-menu__item">
-                  <a href="./empty-cart.html" class="site-menu__link"
-                    >Корзина товаров</a
-                  >
-                </il>
-              </ul>
-            </li>
-            <li
-              class="site-menu__item site-menu__item--dropdown"
-              data-has-children
-            >
-              <a href="./about.html" class="site-menu__btn">О нас</a>
-              <svg
-                width="20"
-                height="20"
-                viewBox="0 0 20 20"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M15 7.5L10 12.5L5 7.5" stroke="#222222" />
-              </svg>
-
-              <ul class="site-menu--dropdown" hidden>
-                <il class="site-menu__item">
-                  <a href="./about.html#mission" class="site-menu__link"
-                    >Наша миссия</a
-                  >
-                </il>
-                <il class="site-menu__item">
-                  <a href="./about.html#photo" class="site-menu__link"
-                    >Фотографии приюта</a
-                  >
-                </il>
-                <il class="site-menu__item">
-                  <a href="./about.html#history" class="site-menu__link"
-                    >История приюта</a
-                  >
-                </il>
-                <il class="site-menu__item">
-                  <a href="./about.html#additional" class="site-menu__link"
-                    >Доп. информация</a
-                  >
-                </il>
-                <il class="site-menu__item">
-                  <a href="./about.html#help" class="site-menu__link"
-                    >Помощь приюту</a
-                  >
-                </il>
-              </ul>
-            </li>
+              <li class="site-menu__item">
+                  <a href="./../index.html" class="site-menu__link">Главная</a>
+              </li>
+              <li class="site-menu__item ">
+                  <a href="./pet.html" class="site-menu__link">Выбор питомца</a>
+              </li>
+              
+              <li class="site-menu__item site-menu__item--dropdown site-menu__item--active site-menu__item--active__shop" data-has-children>
+                  <a href="#" class="site-menu__btn">Магазин</a>
+                  <svg id="dropdownButton--first" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M15 7.5L10 12.5L5 7.5" stroke="#222222"/>
+                  </svg>
+                      
+                  <ul class="site-menu--dropdown visually-hidden" id="menuDropdownFirst">
+                      <il class="site-menu__item">
+                          <a href="./food.html" class="site-menu__link">Корма и лакомства</a>
+                      </il>
+                      <il class="site-menu__item">
+                          <a href="#" class="site-menu__link">Уход за животными</a>
+                      </il>
+                      <il class="site-menu__item">
+                          <a href="./accessories.html" class="site-menu__link">Аксессуары</a>
+                      </il>
+                      <il class="site-menu__item">
+                          <a href="./toys.html" class="site-menu__link">Игрушки</a>
+                      </il>
+                      <il class="site-menu__item">
+                          <a href="./empty-cart.html" class="site-menu__link">Корзина товаров</a>
+                      </il>
+                  </ul>
+              </li>
+              <li class="site-menu__item site-menu__item--dropdown " data-has-children>
+                  <a href="./about.html" class="site-menu__btn">О нас</a>
+                  <svg id="dropdownButton--second" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M15 7.5L10 12.5L5 7.5" stroke="#222222"/>
+                  </svg>
+                      
+                  <ul class="site-menu--dropdown" id="menuDropdownSecond">
+                      <il class="site-menu__item">
+                          <a href="./about.html#mission" class="site-menu__link">Наша миссия</a>
+                      </il>
+                      <il class="site-menu__item">
+                          <a href="./about.html#photo" class="site-menu__link">Фотографии приюта</a>
+                      </il>
+                      <il class="site-menu__item">
+                          <a href="./about.html#history" class="site-menu__link">История приюта</a>
+                      </il>
+                      <il class="site-menu__item">
+                          <a href="./about.html#additional" class="site-menu__link">Доп. информация</a>
+                      </il>
+                      <il class="site-menu__item">
+                          <a href="./about.html#help" class="site-menu__link">Помощь приюту</a>
+                      </il>
+                  </ul>
+              </li>
           </ul>
+
         </nav>
       </div>
     </header>

@@ -77,25 +77,24 @@
   opacity: 1;
   
 }
-.site-menu__item--dropdown:hover .site-menu--dropdown {
+/* .site-menu__item--dropdown:hover .site-menu--dropdown {
   display: block;
   cursor: pointer;
   
-}
+} */
 .site-menu__item--dropdown svg {
   transition: all 0.4s;
   
 }
-.site-menu__item--dropdown:hover svg {
+.site-menu__item--dropdown svg {
   cursor: pointer;
-  transform: rotate(180deg);
 }
 .site-menu__item{
   
 }
-.site-menu__item:hover{
+/* .site-menu__item:hover{
   transform: scale(1.05);
-}
+} */
 .site-menu__item--dropdown .site-menu__link:hover{
   transform: scale(1.05);
 }
@@ -117,7 +116,8 @@
   .site-menu__link, .site-menu__btn{
     font-size: 15px;
   }
-  .site-menu--dropdown:last-of-type{
+  .site-menu__item--dropdown svg {
+    translate: 0 -3px;
   }
 }
 
@@ -148,23 +148,55 @@
   .site-menu__item--dropdown{
     justify-content: center;
   }
-  .site-menu__item--dropdown .site-menu__btn{
-  }
   .site-menu__item--dropdown{
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: auto ;
+    grid-template-rows: auto auto;
   }
   .site-menu--dropdown{
     position: static;
     border: none;
+    padding: 0;
   }
   .flex__wrapper{
     display: flex;
   }
   .site-menu--dropdown .site-menu__item a{
     text-align: center;
+    color: var(--color-brown);
+    padding: 5px 0;
+    display: inline-block;
+    font-size: 16px;
+    
+  }
+  .site-menu--dropdown .site-menu__item:not(:last-child) a{
+    border-bottom: 1px solid var(--color-brown-50);
   }
   .site-menu--dropdown .site-menu__item{
-    border-bottom: 1px solid var(--color-brown-50);
+    border: none;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 15px;
+  }
+  .site-menu--dropdown .site-menu__link{
+    width: 198px;
+  }
+  .site-menu__item--dropdown .site-menu__link:hover{
+    transform: none;
+  }
+  .site-menu__item:hover{
+    transform: none;
+  }
+  .site-menu__item--dropdown svg{
+    position: absolute;
+    right: 0;
+    top: 4px;
+  }
+  .site-menu__item--dropdown:hover .site-menu--dropdown {
+    display: block;
+    cursor: pointer;
+  }
+  .site-menu__item--dropdown svg {
+    translate: 0 0;
   }
 }

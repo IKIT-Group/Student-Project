@@ -76,6 +76,7 @@
         align-items: center;
         justify-content: space-between;
         grid-template-columns: auto auto;
+        margin-bottom: 15px;
     }
     .page-header__logo{
         margin: 0;
@@ -96,7 +97,7 @@
         cursor: pointer;
     }
     .page-header__nav--opened .page-header__toggler {
-        top: 10px;
+        top: 50%;
     }
     .page-header__nav--closed .page-header__toggler::before {
         content: "";
@@ -133,7 +134,7 @@
         display: none;
     }
     .site-menu{
-        width: 100%;
+        width: 100vw;
         margin-top: 10px;
         display: flex;
         text-align: center;
