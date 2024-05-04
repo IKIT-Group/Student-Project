@@ -86,7 +86,7 @@
             <div class="cart__container container">
                 <div class="cart__content">
                     <header class="cart__header cart-header">
-                        <a href="./shop.html" class="cart-header__link">Вернуться</a>
+                        <a class="cart-header__link" onclick="window.history.back()">Вернуться</a>
                         <h1 class="cart-header__title">Корзина товаров</h1>
                     </header>
 
@@ -206,6 +206,14 @@
                         </div>
                         <div class="cart__grid-book">
                           <button class="button cart__grid-book__add">Забронировать</button>
+                          <dialog class="cart__modal cart-modal" id="cartModal">
+                            <h4 class="cart-modal__title">Товары забронированы</h4>
+                            <p class="cart-modal__subtitle">Вы можете забрать товары в нашем приюте и оплатить при получении удобными вам способами.
+                             <br> Срок хранения - 7 дней с момента брони.</p>
+                            <button type="button" onclick="window.cartModal.close()" class="button cart-modal__button">
+                              Отлично
+                            </button>
+                          </dialog>
                           <button class="cart__grid-book__hint"><svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M17.0087 15.3415L16.9921 23.675M17.0087 10.3417L16.9921 10.3417M32 16.9999C32 25.2842 25.2843 31.9999 17 31.9999C8.71573 31.9999 2 25.2842 2 16.9999C2 8.71564 8.71573 1.99991 17 1.99991C25.2843 1.99991 32 8.71564 32 16.9999Z" stroke="#A98467" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
@@ -311,6 +319,7 @@
         </div>
     </footer>
     <script src="./../js/burger.js"></script>
+    <script src="./../js/cartModal.js"></script>
     <script src="./../js/hint.js"></script>
 </body>
 </html>

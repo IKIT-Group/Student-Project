@@ -32,4 +32,7 @@
   .page-body__about{
     background: url('./../../img/about/bg/bg-1-320.png') no-repeat top 232px right calc(50% - 90px);
   }
+  .page__body{
+    grid-template-rows: max-content auto max-content;
+  }
 }
