@@ -76,11 +76,15 @@
 }
 .cart__grid-title {
   font-weight: 500;
+  margin-bottom: 15px;
   font-size: 36px;
   line-height: 120%;
   padding-left: 35px;
 }
 .cart__grid-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 .cart__grid-item {
   border-radius: 20px;
@@ -91,13 +95,13 @@
   gap: 15px;
   background-color: var(--background-green-50);
 }
-.cart__grid-wrapper--first{
+.cart__grid-wrapper--first {
   display: flex;
   flex-direction: column;
   max-width: 350px;
   gap: 14px;
 }
-.cart__grid-wrapper--second{
+.cart__grid-wrapper--second {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -128,7 +132,7 @@
   letter-spacing: 0.03em;
   margin-bottom: 5px;
 }
-.quantity__wrapper{
+.quantity__wrapper {
   display: flex;
   align-items: center;
   gap: 20px;
@@ -150,6 +154,15 @@
   border-radius: 5px;
 }
 .cart__grid-price {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.cart__grid-price--old {
+  color: var(--color-brown);
+  text-decoration: line-through var(--color-brown-50);
+  font-size: 24px;
 }
 .cart__grid-price--now {
   font-weight: 500;
@@ -167,6 +180,23 @@
   padding: 20px 30px;
   border-radius: 30px;
   background-color: var(--background-white-50);
+  align-self: start;
+  position: relative;
+}
+.cart__grid-hint--message {
+  position: absolute;
+  padding: 10px 19px;
+  max-width: 318px;
+  background-color: var(--background-white-50);
+  border-radius: 25px;
+  border: 1px solid var(--color-brown);
+  color: var(--color-brown);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+
+  top: 165px;
+  left: 57px;
 }
 .cart__grid-place {
   font-weight: 400;
@@ -214,7 +244,7 @@
   font-size: 20px;
   line-height: 120%;
 }
-.cart__grid-sum{
+.cart__grid-sum {
   display: flex;
   margin-bottom: 20px;
   justify-content: space-between;
@@ -237,11 +267,13 @@
   gap: 15px;
 }
 .cart__grid-book__add {
-  
   font-weight: 700;
   font-size: 24px;
   line-height: 100%;
   padding: 24px 27px;
 }
-.cart__grid-book__hint {
+.cart__grid-book__hint{
+  cursor: pointer;
+  background-color: transparent;
+
 }
