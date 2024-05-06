@@ -1,6 +1,4 @@
-const apiUrl = 'https://d5dr7r5i2n1rsjd50kif.apigw.yandexcloud.net';
-const storageUrl = 'https://storage.yandexcloud.net/backend-bucket';
-const petsUrl = apiUrl + '/pets';
+import { Pet, getPets, parseAge, parseImage } from './api.js';
 
 const form = document.getElementById('pet-form');
 const pets = document.getElementById('show-more__list');
@@ -13,35 +11,9 @@ form.addEventListener("submit", async (e) => {
     for (const [key, value] of formData)
         if (value !== '') params.append(key, value);
     
-    await fetchPets(params);
+    const pets = await getPets(params);
+    showPets(pets);
 });
-
-const fetchPets = async (query) => {
-    try {
-        const response = await fetch(petsUrl + '?' + query, {
-            method: "GET",
-            mode: "cors"
-        });
-    
-        if (!response.ok) return alert("Ошибка запроса!");
-    
-        /** @type {Pet[]} */
-        const data = await response.json();
-        console.log(data);
-        showPets(data);
-    } catch (error) {
-        alert('Ошибка: ' + error);
-    }
-}
-
-const parseAge = dateText => {
-    const date = new Date(dateText);
-    const now = new Date();
-    const yearsDifference = now.getFullYear() - date.getFullYear();
-    return `${yearsDifference} лет`;
-}
-
-const parseImage = imageText => `${storageUrl}/${imageText}`;
 
         // <li class="catalog__item" id="show-more__item">
         //     <img
@@ -126,17 +98,4 @@ const showPets = (data) => {
         // FINISH
         pets.appendChild(petElement);
     }
-}
-
-class Pet {
-    id;          // string;
-    type;        // string;
-    name;        // string;
-    description; // string;
-    image;       // string;
-    gender;      // boolean;
-    sterilized;  // boolean;
-    hasPassport; // boolean;
-    health;      // string;
-    dateOfBirth; // string;
 }
