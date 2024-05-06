@@ -1,7 +1,12 @@
 import { Pet, getPets, parseAge, parseImage } from './api.js';
 
 const form = document.getElementById('pet-form');
-const pets = document.getElementById('show-more__list');
+const petsEl = document.getElementById('show-more__list');
+
+document.addEventListener("DOMContentLoaded", async () => {
+    const pets = await getPets();
+    showPets(pets);
+});
 
 form.addEventListener("submit", async (e) => {
     e.preventDefault();
@@ -36,8 +41,8 @@ form.addEventListener("submit", async (e) => {
 
 /** @param {Pet[]} data */
 const showPets = (data) => {
-    while (pets.firstChild) {
-        pets.removeChild(pets.firstChild);
+    while (petsEl.firstChild) {
+        petsEl.removeChild(petsEl.firstChild);
     }
     for (const pet of data) {
         const petElement = document.createElement('li');
@@ -90,12 +95,12 @@ const showPets = (data) => {
         //     <a href="./card.html" class="catalog__link button button--link"
         //     >Подробнее</a>
         const petLink = document.createElement('a');
-        petLink.href = './card.html';
+        petLink.href = `./card.html?id=${pet.id}`;
         petLink.classList.add('catalog__link', 'button', 'button--link');
         const petLinkText = document.createTextNode('Подробнее');
         petLink.appendChild(petLinkText);
         petElement.appendChild(petLink);
         // FINISH
-        pets.appendChild(petElement);
+        petsEl.appendChild(petElement);
     }
 }
