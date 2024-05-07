@@ -306,6 +306,111 @@
 }
 
 /* ============================================================================================================== */
+/* ======================================== TABLET WIDTH (768px) =============================================== */
+/* ============================================================================================================ */
+
+@media(max-width: 1300px){
+  .cart__header .cart-header__link{
+    font-size: 15px;
+    padding-left: 30px;
+  }
+  .cart-header{
+    grid-template-columns: 110px auto;
+    gap: 104px;
+    margin-bottom: 25px;
+  }
+  .cart-header__title{
+    font-size: 28px;
+  }
+  .cart__grid{
+    grid-template-columns: 397px auto;
+    gap: 30px;
+  }
+  .cart__grid-title{
+    font-size: 16px;
+    padding-left: 20px;
+    margin-bottom: 10px;
+  }
+  .cart__grid-list{
+    gap: 15px;
+  }
+  .cart__grid-item{
+    padding: 7px;
+    gap: 6px;
+  }
+  .cart__grid-name{
+    font-size: 13px;
+  }
+  .cart__grid-img{
+    width: 82px;
+    height: 81px;
+  }
+  .cart__grid-wrapper--first{
+    max-width: 200px;
+    gap: 4px;
+  }
+  .cart__grid-quantity__title{
+    font-size: 13px;
+    margin-bottom: 5px;
+  }
+  .cart__grid-button--add,
+  .cart__grid-button--remove,
+  .cart__grid-button--delete,
+  .cart__grid-button--add svg,
+  .cart__grid-button--remove svg,
+  .cart__grid-button--delete svg{
+    width: 20px;
+    height: 20px;
+  }
+  .quantity__wrapper{
+    gap: 9px;
+  }
+  .cart__grid-quantity__value{
+    font-size: 24px;
+  }
+  .cart__grid-total{
+    padding: 10px;
+    border-radius: 15px;
+  }
+  .cart__grid-price--now{
+    font-size: 16px;
+  }
+  .cart__grid-price--old{
+    font-size: 15px;
+  }
+  .cart__grid-place{
+    padding-right: 74px;
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+  .cart__grid-address{
+    font-size: 13px;
+    margin-bottom: 15px;
+  }
+  .cart__info-value__title,
+  .cart__info-value__sum,
+  .cart__info-sale__title,
+  .cart__info-sale__value{
+    font-size: 13px;
+  }
+  .cart__grid-sum__title,
+  .cart__grid-sum__value{
+    font-size: 16px;
+  }
+  .cart__grid-book{
+    gap: 10px;
+  }
+  .cart__grid-book__add{
+    padding: 15px;
+    font-size: 15px;
+  }
+  .cart__grid-book__hint svg {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+/* ============================================================================================================== */
 /* ======================================== MOBILE WIDTH (320px) =============================================== */
 /* ============================================================================================================ */
 
@@ -376,8 +481,8 @@
     font-size: 12px;
   }
   .cart__grid-book__hint svg {
-    width: 15px;
-    height: 15px;
+    width: 17px;
+    height: 17px;
   }
   .cart__grid-title {
     font-size: 10px;

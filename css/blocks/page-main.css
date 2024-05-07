@@ -31,6 +31,11 @@
 .page-main__food{
     background: url('./../../img/shop/food/bg/rect-1.svg') no-repeat bottom -50px left -20px;
 }
+.page-main__empty-cart{
+    background: url('./../../img/cart/bg/bg_assets-desktop.svg') no-repeat bottom -60px right calc(50% - 770px),
+                url('./../../img/cart/bg/ellipse-desktop.svg') no-repeat top 165px left calc(50% - 685px);
+    padding: 30px 0 50px 0;
+}
 
 /* ============================================================================================================== */
 /* ======================================== TABLET WIDTH (768px) =============================================== */
@@ -54,6 +59,11 @@
     }
     .page-main__form{
         padding: 30px 0 20px 0;
+    }
+    .page-main__empty-cart{
+        background: url('./../../img/cart/bg/bg_assets.svg') no-repeat bottom 10px left calc(50% + 370px),
+                    url('./../../img/cart/bg/ellipse.svg') no-repeat top 105px left calc(50% - 348px);
+        padding: 30px 0 50px 0;
     }
 }
 
@@ -83,6 +93,7 @@
         background: url('./../../img/about/bg/ellipse-320.png') no-repeat bottom 15px left -25px;
     }
     .page-main__empty-cart{
+        background: none;
         padding: 15px 0 15px 0;
     }
 }
