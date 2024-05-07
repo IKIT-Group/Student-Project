@@ -63,6 +63,19 @@ export const getPet = async (id) => {
 }
 
 /**
+ * Получить читаемую строку здоровья питомца
+ * @param {string} healthText - текст здоровья
+ * @returns {string}
+ */
+export const parseHealth = healthText => {
+    if (healthText === 'great') return "Отличное";
+    if (healthText === 'good') return "Хорошее";
+    if (healthText === 'bad') return "Плохое";
+    if (healthText === 'disabled') return "Инвалин";
+    return "Неизвестно";
+}
+
+/**
  * Получить читаемую строку возраста питомца
  * @param {string} dateText - текст даты
  * @returns {string}
@@ -71,7 +84,32 @@ export const parseAge = dateText => {
     const date = new Date(dateText);
     const now = new Date();
     const yearsDifference = now.getFullYear() - date.getFullYear();
-    return `${yearsDifference} лет`;
+    if (yearsDifference > 0) {
+        let yearsText = "лет";
+        if (10 < yearsDifference  && yearsDifference < 20) {
+            yearsText = "лет";
+        }
+        if (yearsDifference % 10 === 1) {
+            yearsText = "год";
+        }
+        else if (yearsDifference % 10 >= 2 && yearsDifference % 10 <= 4) {
+            yearsText = "года";
+        }
+        return `${yearsDifference} ${yearsText}`;
+    } else {
+        const monthsDifference = now.getMonth() - date.getMonth();
+        let monthsText = "месяцев";
+        if (10 < monthsDifference  && monthsDifference < 20) {
+            monthsText = "месяцев";
+        }
+        if (monthsDifference % 10 === 1) {
+            monthsText = "месяц";
+        }
+        else if (monthsDifference % 10 >= 2 && monthsDifference % 10 <= 4) {
+            monthsText = "месяца";
+        }
+        return `${monthsDifference} ${monthsText}`;
+    }
 }
 
 /**
