@@ -3,10 +3,10 @@ import { Pet, getPets, parseAge, parseImage } from './api.js';
 const form = document.getElementById('pet-form');
 const petsEl = document.getElementById('show-more__list');
 
-// document.addEventListener("DOMContentLoaded", async () => {
-//     const pets = await getPets();
-//     showPets(pets);
-// });
+document.addEventListener("DOMContentLoaded", async () => {
+    const pets = await getPets();
+    showPets(pets);
+});
 
 form.addEventListener("submit", async (e) => {
     e.preventDefault();
