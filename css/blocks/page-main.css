@@ -32,8 +32,7 @@
     background: url('./../../img/shop/food/bg/rect-1.svg') no-repeat bottom -50px left -20px;
 }
 .page-main__empty-cart{
-    background: url('./../../img/cart/bg/bg_assets-desktop.svg') no-repeat bottom -60px right calc(50% - 770px),
-                url('./../../img/cart/bg/ellipse-desktop.svg') no-repeat top 165px left calc(50% - 685px);
+    background: none;
     padding: 30px 0 50px 0;
 }
 
