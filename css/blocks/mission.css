@@ -22,14 +22,14 @@
     padding: 50px 0;
     padding-right: 55px;
 }
-.misson__title{
+.mission__title{
     font-weight: 700;
 font-size: 48px;
 line-height: 100%;
 margin-bottom: 30px;
 text-transform: uppercase;
 }
-.misson__description{
+.mission__description{
     font-weight: 300;
 font-size: 28px;
 line-height: 120%;
@@ -40,7 +40,25 @@ line-height: 120%;
 /* ============================================================================================================ */
 
 @media(max-width: 1300px){
+    .mission{
+        background-size: 405px;
+        margin-bottom: 50px;
+    }
+    .mission__content{
+        grid-template-columns: auto 287px;
+        padding: 50px 34px 60px 0px;
+    }
+    .mission__text{
+        padding: 0;
+    }
+    .mission__title{
 
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+    .mission__description{
+        font-size: 16px;
+    }
 }
 
 /* ============================================================================================================== */
@@ -60,11 +78,11 @@ line-height: 120%;
         padding: 0;
         padding-bottom: 330px;
     }
-    .misson__title{
+    .mission__title{
         font-size: 24px;
         margin-bottom: 10px;
     }
-    .misson__description{
+    .mission__description{
         font-size: 14px;
     }
 }

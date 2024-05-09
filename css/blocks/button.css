@@ -73,6 +73,9 @@
     font-size: 14px;
     padding: 7px 14px;
   }
+  .info__button{
+    padding: 15px 24px;
+  }
   .button__wrapper::before{
     content: "";
     position: absolute;
@@ -105,5 +108,7 @@
     left: 7px;
     z-index: 2;
     
+  }.info__button{
+    padding: 8px 13px;
   }
 }

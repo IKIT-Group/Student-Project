@@ -44,7 +44,29 @@ line-height: 120%;
 /* ============================================================================================================ */
 
 @media(max-width: 1300px){
-
+  .help{
+    margin-bottom: 50px;
+    background-size: 506px 346px;
+    background-position: top 0px right calc(50% - 240px);
+  }
+  .help__content{
+    grid-template-columns: 282px auto;
+    padding-left: 36px;
+  }
+  .help__text{
+    gap: 15px;
+  }
+  .help__title{
+    font-size: 28px;
+  }
+  .help__description{
+    font-size: 16px;
+  }
+  .button--help{
+    padding: 15px 23px;
+    font-size: 15px;
+    width: 194px;
+  }
 }
 
 /* ============================================================================================================== */

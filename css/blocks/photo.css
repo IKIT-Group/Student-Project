@@ -79,7 +79,38 @@
 /* ============================================================================================================ */
 
 @media(max-width: 1300px){
+  .photo{
+    margin-bottom: 50px;
+  }
+  .photo__title{
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+  .photo__content{
+    margin: 0 auto;
+    padding: 16px 0;
+    max-width: 680px;
+  }
+  .photo__slider .slick-arrow{
+    width: 45px;
+    height: 45px;
 
+  }
+  .photo__slider .slick-arrow.slick-next{
+    right: -21px;
+  }
+  .photo__slider .slick-arrow.slick-prev{
+    left: -21px;
+  }
+  .photo-slide__img{
+    margin: 0 12px;
+    width: 208px;
+    height: 260px;
+    
+  }
+  .photo-slide.slick-center .photo-slide__img{
+    
+  }
 }
 
 /* ============================================================================================================== */

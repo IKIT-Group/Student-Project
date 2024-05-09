@@ -157,6 +157,8 @@
     position: static;
     border: none;
     padding: 0;
+    display: flex !important;
+    flex-direction: column;
   }
   .flex__wrapper{
     display: flex;
@@ -176,7 +178,6 @@
     border: none;
     width: 100%;
     padding: 0;
-    margin-bottom: 15px;
   }
   .site-menu--dropdown .site-menu__link{
     width: 198px;

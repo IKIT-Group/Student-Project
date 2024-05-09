@@ -64,6 +64,11 @@
                     url('./../../img/cart/bg/ellipse.svg') no-repeat top 105px left calc(50% - 348px);
         padding: 30px 0 50px 0;
     }
+    .page-main__about{
+        padding: 0;
+        background: url('./../../img/about/bg/ellipse.png') no-repeat bottom 31px left calc(50% - 260px);
+        background-size: 183px;
+    }
 }
 
 /* ============================================================================================================== */

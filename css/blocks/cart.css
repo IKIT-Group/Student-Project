@@ -50,7 +50,7 @@
   flex-direction: column;
   align-items: center;
   max-width: 628px;
-  /* padding: 0 296px; */
+  padding: 150px 0;
   margin: 0 auto;
 }
 .cart-info--empty__title {
@@ -450,6 +450,22 @@
     font-size: 15px;
     padding: 15px 32px;
   }
+  .cart-info--empty {
+    max-width: 392px;
+    padding: 150px 0;
+  }
+  .cart-info--empty__title {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  .cart-info--empty__subtitle {
+    font-size: 20px;
+    margin-bottom: 20px;
+    padding: 0 37px; /* По макету 0 70px */
+  }
+  .cart-info--empty__button{
+    padding: 15px 23px;
+  }
 }
 
 /* ============================================================================================================== */
@@ -594,5 +610,20 @@
   .cart-modal__button {
     font-size: 12px;
     padding: 8px 16px;
+  }
+  .cart-info--empty {
+    max-width: 392px;
+    padding: 150px 0;
+  }
+  .cart-info--empty__title {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .cart-info--empty__subtitle {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .cart-info--empty__button{
+    padding: 8px;
   }
 }

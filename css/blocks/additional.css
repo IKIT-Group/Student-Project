@@ -90,8 +90,47 @@
 /* ======================================== TABLET WIDTH (768px) =============================================== */
 /* ============================================================================================================ */
 
-@media(max-width: 1300px){
-
+@media(max-width: 1300px){  
+  .additional{
+    margin-bottom: 50px;
+  }
+  .additional__title{
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+  .additional__links{
+    grid-template-columns: 315px 267px;
+    gap: 63px;
+    padding-left: 19px;
+    padding-right: 44px;
+  }
+  .additional__subtitle{
+    font-size: 16px;
+    margin-bottom: 7px;
+  }
+  .additional__list{
+    gap: 6px;
+  }
+  .additional__item svg{
+    width: 20px;
+    height: 20px;
+    margin-right: 2px;
+  }
+  .additional__name{
+    font-size: 16px;
+    margin-right: 7px;
+  }
+  .additional__link{
+    font-size: 16px;
+  }
+  .additional__social .additional__item {
+    display: grid;
+    grid-template-columns: 20px auto;
+    gap: 5px;
+  }
+  .additional__list--social{
+    gap: 7px;
+  }
 }
 
 /* ============================================================================================================== */

@@ -29,7 +29,23 @@
 /* ============================================================================================================ */
 
 @media(max-width: 1300px){
-
+  .history{
+    margin-bottom: 50px;
+  }
+  .history__content{
+    padding: 0 10px;
+  }
+  .history__title{
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+  .history__text{
+    grid-template-columns: repeat(2, 335px);
+    gap: 18px;
+  }
+  .history__description{
+    font-size: 16px;
+  }
 }
 
 /* ============================================================================================================== */
