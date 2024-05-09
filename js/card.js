@@ -1,5 +1,15 @@
 import { Pet, getPet, parseHealth, parseAge, parseImage } from './api.js';
 
+/*
+Логика такая:
+1. Получаем id питомца из URL (.../card.html?id=12345) => id = '12345'
+2. Если id нет, отображаем сообщение "Питомец не найден"
+3. Получаем питомца по id
+4. Если питомец не найден, отображаем сообщение "Питомец не найден"
+5. Выводим информацию о питомце
+6. Добавляем ссылку на форму заявки с id питомца (.../form.html?id=12345)
+*/
+
 const params = new URLSearchParams(location.search);
 const id = params.get('id');
 

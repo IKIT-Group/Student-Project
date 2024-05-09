@@ -1,6 +1,8 @@
 const apiUrl = 'https://d5dr7r5i2n1rsjd50kif.apigw.yandexcloud.net';
 const storageUrl = 'https://storage.yandexcloud.net/backend-bucket';
 const petsUrl = apiUrl + '/pets';
+const ownersUrl = apiUrl + '/owners';
+const productsUrl = apiUrl + '/products';
 
 /**
  * Класс питомца
@@ -17,6 +19,9 @@ export class Pet {
     health;      // string;
     dateOfBirth; // string;
 }
+
+// добавить классы владельца и продукта
+// и функции для их получения
 
 /**
  * Получить всех питомцев, удовлетворяющих условиям фильтрации
