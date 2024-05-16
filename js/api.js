@@ -20,8 +20,40 @@ export class Pet {
     dateOfBirth; // string;
 }
 
-// добавить классы владельца и продукта
-// и функции для их получения
+/**
+ * Класс товара
+ */
+export class Product {
+    id;    // string;
+    type;  // string;
+    name;  // string;
+    image; // string;
+    price; // number
+    // oldPrice; // number | null
+    /** @param {number} amount @returns {ProductInCart} */
+    AddAmount(amount) {
+        return {
+            ...this,
+            amount
+        }
+    }
+}
+
+/**
+ * Товар в корзине (товар + количество)
+ */
+export class ProductInCart {
+    id;
+    type;
+    name;
+    image;
+    price;
+    oldPrice;
+    amount;
+}
+
+// добавить класс владельца
+// и функции для его получения
 
 /**
  * Получить всех питомцев, удовлетворяющих условиям фильтрации
@@ -51,6 +83,50 @@ export const getPets = async (query) => {
  * @returns {Promise<Pet>}
  */
 export const getPet = async (id) => {
+    try {
+        const response = await fetch(petsUrl + '/' + id, {
+            method: "GET",
+            mode: "cors"
+        });
+    
+        if (!response.ok) return console.error("Ошибка запроса!");
+    
+        /** @type {Pet[]} */
+        const data = await response.json();
+        return data;
+    } catch (error) {
+        console.error('Ошибка: ' + error);
+    }
+}
+
+/**
+ * Получить все товары, удовлетворяющие условиям фильтрации
+ * @param {URLSearchParams} query - Параметры фильтрации
+ * @returns {Promise<Product[]>}
+ */
+export const getProducts = async (query) => {
+    try {
+        const response = await fetch(productsUrl + '?' + query, {
+            method: "GET",
+            mode: "cors"
+        });
+    
+        if (!response.ok) return console.error("Ошибка запроса!");
+    
+        /** @type {Product[]} */
+        const data = await response.json();
+        return data;
+    } catch (error) {
+        console.error('Ошибка: ' + error);
+    }
+}
+
+/**
+ * Получить один товар по его идентификатору
+ * @param {string} id - Уникальный идентификатор товара
+ * @returns {Promise<Pet>}
+ */
+export const getProduct = async (id) => {
     try {
         const response = await fetch(petsUrl + '/' + id, {
             method: "GET",
@@ -123,3 +199,38 @@ export const parseAge = dateText => {
  * @returns {string}
  */
 export const parseImage = imageText => `${storageUrl}/${imageText}`;
+
+// КОРЗИНА
+// всё хранится в Local Storage (памяти браузера)
+
+/** @returns {{[string]:number}} { productId : amountInCart } */
+export const getCart = () => JSON.parse(localStorage.getItem('cart') || {});
+
+/** @param {{[string]:number}} items */
+const setCart = items => localStorage.setItem('cart', JSON.stringify(items));
+
+/** @param {string} itemId @returns {number} */
+export const getProductInCart = (itemId) => {
+    return getCart()[itemId] || 0;
+}
+
+/** @param {string} itemId @param {number} amount */
+export const setProductInCart = (itemId, amount) => {
+    let items = getCart();
+    if (amount < 1) {
+        delete items[itemId];
+    } else {
+        items[itemId] = amount;
+    }
+    setCart(items);
+}
+
+/** @param {string} itemId - ID продукта для добавления */
+export const addToCart = itemId => {
+    setProductInCart(itemId, getProductInCart(itemId) + 1);
+}
+
+/** @param {string} itemId - ID продукта для удаления */
+export const removeFromCart = itemId => {
+    setProductInCart(itemId, getProductInCart(itemId) - 1);
+}
