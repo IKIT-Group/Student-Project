@@ -204,7 +204,7 @@ export const parseImage = imageText => `${storageUrl}/${imageText}`;
 // всё хранится в Local Storage (памяти браузера)
 
 /** @returns {{[string]:number}} { productId : amountInCart } */
-export const getCart = () => JSON.parse(localStorage.getItem('cart') || {});
+export const getCart = () => JSON.parse(localStorage.getItem('cart')) || {};
 
 /** @param {{[string]:number}} items */
 const setCart = items => localStorage.setItem('cart', JSON.stringify(items));
