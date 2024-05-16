@@ -200,6 +200,15 @@ export const parseAge = dateText => {
  */
 export const parseImage = imageText => `${storageUrl}/${imageText}`;
 
+/**
+ * Получить читаемую строку цены товара
+ * @param {number} price - цена
+ * @returns {string}
+ */
+export const parsePrice = price => {
+    return price + ' руб.';
+}
+
 // КОРЗИНА
 // всё хранится в Local Storage (памяти браузера)
 
