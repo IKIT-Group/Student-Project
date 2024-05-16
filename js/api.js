@@ -62,7 +62,7 @@ export class ProductInCart {
  */
 export const getPets = async (query) => {
     try {
-        const response = await fetch(petsUrl + '?' + query, {
+        const response = await fetch(petsUrl + '?' + query || '', {
             method: "GET",
             mode: "cors"
         });
@@ -106,7 +106,7 @@ export const getPet = async (id) => {
  */
 export const getProducts = async (query) => {
     try {
-        const response = await fetch(productsUrl + '?' + query, {
+        const response = await fetch(productsUrl + '?' + query || '', {
             method: "GET",
             mode: "cors"
         });
