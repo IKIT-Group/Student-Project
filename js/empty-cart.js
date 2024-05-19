@@ -32,9 +32,17 @@ const getProductsInCartWithAmount = () => {
         });
 }
 
+const nonEmptyCart = document.querySelector('.cart__grid');
+const emptyCart = document.querySelector('.cart__info--empty');
+
 const renderPage = () => {
     const productsInCart = getProductsInCartWithAmount();
-    showProducts(productsInCart);
+    if (productsInCart.length > 0) {
+        showProducts(productsInCart);
+    } else {
+        nonEmptyCart.classList.add('visually-hidden');
+        emptyCart.classList.remove('visually-hidden');
+    }
     showSummary(productsInCart);
 }
 
