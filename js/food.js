@@ -7,7 +7,7 @@ import { getProductsElementsByType } from './products.js';
 
 document.addEventListener("DOMContentLoaded", async () => {
     const elements = await getProductsElementsByType('food');
-    showProducts(elements);
+    // showProducts(elements);
 });
 
 const productsContainer = document.querySelector('.food-catalog__list');
