@@ -6,7 +6,7 @@ import { getProductsElementsByType } from './products.js';
 */
 
 document.addEventListener("DOMContentLoaded", async () => {
-    const elements = await getProductsElementsByType('food');
+    const elements = await getProductsElementsByType('toy');
     showProducts(elements);
 });
 
