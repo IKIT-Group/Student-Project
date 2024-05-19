@@ -14,9 +14,7 @@ const productsContainer = document.querySelector('.food-catalog__list');
 
 /** @param {HTMLLIElement[]} data */
 const showProducts = (data) => {
-    while (productsContainer.firstChild) {
-        productsContainer.removeChild(productsContainer.firstChild);
-    }
+    productsContainer.innerHTML = '';
     for (const element of data) {
         productsContainer.appendChild(element);
     }

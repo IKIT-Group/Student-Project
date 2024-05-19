@@ -7,16 +7,14 @@ import { getProductsElementsByType } from './products.js';
 
 document.addEventListener("DOMContentLoaded", async () => {
     const elements = await getProductsElementsByType('food');
-    // showProducts(elements);
+    showProducts(elements);
 });
 
 const productsContainer = document.querySelector('.food-catalog__list');
 
 /** @param {HTMLLIElement[]} data */
 const showProducts = (data) => {
-    while (productsContainer.firstChild) {
-        productsContainer.removeChild(productsContainer.firstChild);
-    }
+    productsContainer.innerHTML = '';
     for (const element of data) {
         productsContainer.appendChild(element);
     }
