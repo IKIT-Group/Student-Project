@@ -356,9 +356,9 @@
   .cart__grid-button--add,
   .cart__grid-button--remove,
   .cart__grid-button--delete,
-  .cart__grid-button--add svg,
-  .cart__grid-button--remove svg,
-  .cart__grid-button--delete svg{
+  .cart__grid-button--add img,
+  .cart__grid-button--remove img,
+  .cart__grid-button--delete img{
     width: 20px;
     height: 20px;
   }
@@ -574,11 +574,11 @@
   .cart__grid-price--old {
     font-size: 10px;
   }
-  .cart__grid-button--add svg,
+  .cart__grid-button--add img,
   .cart__grid-button--add,
-  .cart__grid-button--remove svg,
+  .cart__grid-button--remove img,
   .cart__grid-button--remove,
-  .cart__grid-button--delete svg,
+  .cart__grid-button--delete img,
   .cart__grid-button--delete {
     width: 22px;
     height: 22px;

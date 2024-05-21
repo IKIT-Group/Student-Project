@@ -1,14 +1,14 @@
 .shop {
     margin-bottom: 24px;
     padding: 0 20px;
+    background: url("./../../img/shop/bg/dog-bg.png") no-repeat top -181px right calc(50% - 314px) / 629px 698px;
 }
 .shop__container {
-  min-height: 512px;
-  background: url("./../../img/shop/bg/dog-bg.png") no-repeat top -150px right 0px; /* я точных цифр не знаю */
 }
 .shop__content {
   padding-top: 85px;
   padding-left: 63px;
+  padding-bottom: 96px;
   display: grid;
   grid-template-columns: 484px auto;
 }
@@ -40,6 +40,7 @@
 @media(max-width: 1300px){
   .shop{
     margin-bottom: 10px;
+    background: url("./../../img/shop/bg/dog-bg.png") no-repeat top -107px right calc(50% - 182px) / 364px 405px;
   }
   .shop__title{
     font-size: 28px;
@@ -47,6 +48,7 @@
   }
   .shop__description{
     font-size: 16px;
+    padding: 0 8px;
   }
   .shop__content{
     padding-top: 29px;
@@ -65,6 +67,9 @@
 /* ============================================================================================================ */
 
 @media (max-width: 767px) {
+  .shop{
+    background: url("./../../img/shop/bg/dog-320.png") no-repeat top 147px right calc(50%) / 289px 266px;
+  }
   .shop__title{
     font-size: 24px;
     margin-bottom: 15px;
@@ -80,7 +85,6 @@
   }
   .shop__container{
     min-height: 404px;
-    background: url("./../../img/shop/bg/dog-320.png") no-repeat top 135px right -7px;
     background-size: 289px 266px;
   }
 }

@@ -1,6 +1,9 @@
-/* .catalog {
-  padding: 0 20px;
-} */
+.catalog{
+  background: url('./../../img/pet/bg/ellipse-bg-green.svg') no-repeat top 90px right calc(50% - 172px) / 197px 197px,
+              url('./../../img/pet/bg/ellipse-bg-brown.svg') no-repeat top 325px left calc(50% - 901px) / 821px 821px,
+              url('./../../img/pet/bg/ellipse-bg-lightbrown.svg') no-repeat top 1100px left calc(50% - 209px) / 197px 197px,
+              url('./../../img/pet/bg/rectangle-bg-green.svg') no-repeat top 900px right calc(50% - 640px) / 602px 598px;
+}
 .catalog__container {
     display: flex;
     flex-direction: column;
@@ -69,6 +72,12 @@
 /* ============================================================================================================ */
 
 @media (max-width: 1300px){
+  .catalog{
+    background: url('./../../img/pet/bg/ellipse-bg-green.svg') no-repeat top 90px right calc(50% - 105px) / 105px 105px,
+              url('./../../img/pet/bg/ellipse-bg-brown.svg') no-repeat top 253px left calc(50% - 472px) / 457px 457px,
+              url('./../../img/pet/bg/ellipse-bg-lightbrown.svg') no-repeat top 717px left calc(50% - 126px) / 130px 130px,
+              url('./../../img/pet/bg/rectangle-bg-green.svg') no-repeat top 604px right calc(50% - 365px) / 331px 329px;
+  }
   .catalog__list{
     grid-template-columns: repeat(3, 224px);
     gap: 20px 18px;
@@ -143,11 +152,11 @@
     padding: 8px 16px;
   }
   .catalog{
-    background: url('./../../img/pet/bg/320/bg_ellipse-1.svg') no-repeat top 564px right -244px,
-                url('./../../img/pet/bg/320/bg_ellipse-2.svg') no-repeat top 344px left -23px,
-                url('./../../img/pet/bg/320/bg_ellipse-3.svg') no-repeat top 67px right -16px,
-                url('./../../img/pet/bg/320/bg_ellipse.svg') no-repeat bottom 716px left -22px,
-                url('./../../img/pet/bg/320/bg_rectangle-1.svg') no-repeat bottom 308px right -40px,
-                url('./../../img/pet/bg/320/bg_rectangle.svg') no-repeat bottom 15px left -115px;
+    background: url('./../../img/pet/bg/ellipse-bg-green.svg') no-repeat top 67px right calc(50% - 129px) / 93px 93px,
+              url('./../../img/pet/bg/ellipse-bg-green.svg') no-repeat top 344px left calc(50% - 116px) / 135px 135px,
+              url('./../../img/pet/bg/ellipse-bg-brown.svg') no-repeat top 564px right calc(50% - 210px) / 387px 387px,
+              url('./../../img/pet/bg/ellipse-bg-lightbrown.svg') no-repeat top 1095px left calc(50% - 136px) / 93px 93px,
+              url('./../../img/pet/bg/rectangle-bg-brown.svg') no-repeat top 1410px right calc(50% - 144px) / 187px 187px,
+              url('./../../img/pet/bg/rectangle-bg-green-2.svg') no-repeat top 1623px left calc(50% - 156px) / 239px 297px;
   }
 }

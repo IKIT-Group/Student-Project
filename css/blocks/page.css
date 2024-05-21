@@ -18,6 +18,9 @@
   background: url('./../../img/cart/bg/bg_assets-desktop.svg') no-repeat bottom -122px right calc(50% - 770px),
                 url('./../../img/cart/bg/ellipse-desktop.svg') no-repeat top 318px left calc(50% - 685px);
 }
+#food{
+  background: url('./../../img/shop/food/bg/rectangle-brown.svg') no-repeat bottom 172px left calc(50% - 621px);
+}
 
 /* ============================================================================================================== */
 /* ======================================== TABLET WIDTH (768px) =============================================== */
@@ -31,6 +34,9 @@
     background: url('./../../img/about/bg/bg-1.png') no-repeat top 0px right calc(50% - 200px);
     background-size:  450px;
   }
+  #food{
+    background: url('./../../img/shop/food/bg/rectangle-brown.svg') no-repeat bottom -105px left calc(50% - 333px) / 156px 134px;
+  }
 }
 /* ============================================================================================================== */
 /* ======================================== MOBILE WIDTH (320px) =============================================== */
@@ -42,5 +48,8 @@
   }
   .page__body{
     grid-template-rows: max-content auto max-content;
+  }
+  #page__body-shop{
+    background: url('./../../img/shop/bg/ellipse-green.svg') no-repeat top 1185px left calc(50% - 171px) / 266px 266px;
   }
 }

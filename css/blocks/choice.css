@@ -1,6 +1,5 @@
 .choice {
-    background: url('./../../img/pet/bg/pet-bg.png') no-repeat top -19px right -157px,
-    url('./../../img/pet/bg/bg_rectangle.svg') no-repeat top 50px left -464px;
+    background: url('./../../img/pet/bg/pet-bg.png') no-repeat top -19px right calc(50% - 438px) / 876px 548px;
     padding: 0 20px;
     margin-bottom: 20px;
 }
@@ -42,8 +41,7 @@
 
 @media(max-width: 1300px){
   .choice{
-    background: url('./../../img/pet/bg/pet-bg-768.png') no-repeat top -5px right -109px,
-    url('./../../img/pet/bg/bg_rectangle-768.svg') no-repeat top 31px left -283px;
+    background: url('./../../img/pet/bg/pet-bg.png') no-repeat top -5px right calc(50% - 207px) / 494px 309px;
   }
   .choice-promo__title{
     font-size: 28px;
@@ -69,8 +67,7 @@
 
 @media (max-width: 767px){
   .choice{
-    background: url('./../../img/pet/bg/pet-bg-320.png') no-repeat top 173px right -110px,
-    url('./../../img/pet/bg/bg_rectangle-320.svg') no-repeat top 15px left -79px;
+    background: url('./../../img/pet/bg/pet-bg.png') no-repeat top 173px left calc(50% + 50px) / 483px 302px;
   }
   .choice-promo__title{
     font-size: 24px;
@@ -84,5 +81,6 @@
   }
   .choice-promo__subtitle{
     font-size: 12px;
+    padding: 0 15px;
   }
 }

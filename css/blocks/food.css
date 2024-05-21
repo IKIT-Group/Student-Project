@@ -1,7 +1,6 @@
 .food {
     padding: 0 20px;
-    background: url('./../../img/shop/food/bg/ellipse-1.svg') no-repeat top 113px right -260px,
-    url('./../../img/shop/food/bg/ellipse-2.svg') no-repeat bottom 345px left -165px;
+    
     
 }
 .food__container {

@@ -1,15 +1,14 @@
 .page-main{
     padding: 35px 0 30px 0;
-    background: url('./../../img/index/header/decor/ellipse-2.png') no-repeat top 183px right -351px,
-    url('./../../img/index/header/decor/ellipse-3.png') no-repeat bottom 55px left -208px;
+    background: url('./../../img/index/header/decor/ellipse-brown.svg') no-repeat top 183px right calc(50% - 805px) / 533px 533px,
+                url('./../../img/index/header/decor/ellipse-brown.svg') no-repeat bottom 55px left calc(50% - 661px) / 533px 533px;
 }
 .page-main--no-decor{
     background: none;
     padding: 0 0 50px 0;
 }
 .page-main__shop{
-    
-    background: url('./../../img/shop/bg/ellipse-1.svg') no-repeat top 255px left -353px;
+    background: url('./../../img/shop/bg/ellipse-brown-green.svg') no-repeat top 255px left calc(50% - 757px) / 631px 576px;
 }
 
 .page-main__empty-cart{
@@ -22,6 +21,7 @@
     padding: 44px 0 50px 0;
 }
 .page-main--pet{
+    background: url('./../../img/pet/bg/rectangle-bg-green.svg') no-repeat top 65px left calc(50% - 863px) / 602px 598px;
     padding-bottom: 30px;
 }
 .page-main__about{
@@ -29,7 +29,8 @@
     background: url('./../../img/about/bg/ellipse.png') no-repeat bottom 15px left 37px;
 }
 .page-main__food{
-    background: url('./../../img/shop/food/bg/rect-1.svg') no-repeat bottom -50px left -20px;
+    background: url('./../../img/shop/food/bg/ellipse-brown.svg') no-repeat top 113px right calc(50% - 637px) / 504px 504px,
+                url('./../../img/shop/food/bg/ellipse-green.svg') no-repeat bottom 345px left calc(50% - 574px) / 617px 617px;
 }
 .page-main__empty-cart{
     background: none;
@@ -43,12 +44,12 @@
 @media (max-width: 1300px) {
     .page-main__index{
         padding: 20px 0;
-        background: url('./../../img/index/header/decor/ellipse-768.png') no-repeat bottom 51px left -139px,
-        url('./../../img/index/header/decor/ellipse-768.png') no-repeat top 111px right -181px;
+        background: url('./../../img/index/header/decor/ellipse-brown.svg') no-repeat top 111px right calc(50% - 437px) / 256px 256px,
+                url('./../../img/index/header/decor/ellipse-brown.svg') no-repeat bottom 51px left calc(50% - 395px) / 256px 256px;
     }
     .page-main__shop{
         padding-top: 0;
-        background: url('./../../img/shop/bg/ellipse-768.svg') no-repeat bottom 148px left -199px;
+        background: url('./../../img/shop/bg/ellipse-brown-green.svg') no-repeat top 144px left calc(50% - 415px) / 323px 288px;
     }
     .page-main__card{
         padding: 20px 0;
@@ -69,6 +70,13 @@
         background: url('./../../img/about/bg/ellipse.png') no-repeat bottom 31px left calc(50% - 260px);
         background-size: 183px;
     }
+    .page-main--pet{
+        background: url('./../../img/pet/bg/rectangle-bg-green.svg') no-repeat top 31px left calc(50% - 486px) / 361px 359px;
+    }
+    .page-main__food{
+        background: url('./../../img/shop/food/bg/ellipse-brown.svg') no-repeat top 113px right calc(50% - 365px) / 252px 252px,
+                    url('./../../img/shop/food/bg/ellipse-green.svg') no-repeat bottom 213px left calc(50% - 318px) / 308px 308px;
+    }
 }
 
 /* ============================================================================================================== */
@@ -76,10 +84,15 @@
 /* ============================================================================================================ */
 
 @media (max-width: 767px) {
+    .page-main__index{
+        background: url('./../../img/index/header/decor/ellipse-brown.svg') no-repeat top 221px right calc(50% - 182px) / 244px 244px,
+                    url('./../../img/index/header/decor/ellipse-brown.svg') no-repeat top 528px left calc(50% - 176px) / 244px 244px,
+                    url('./../../img/index/header/decor/ellipse-brown.svg') no-repeat bottom 311px right calc(50% - 182px) / 244px 244px,
+                    url('./../../img/index/header/decor/ellipse-brown.svg') no-repeat bottom 35px left calc(50% - 220px) / 244px 244px;
+    }
     .page-main__shop{
         padding-top: 0;
-        background: url('./../../img/shop/bg/bg_ellipse_brown-320.svg') no-repeat bottom 508px right -28px,
-        url('./../../img/shop/bg/bg_ellipse_green-320.svg') no-repeat bottom 0px left -145px;
+        background: url('./../../img/shop/bg/ellipse-brown.svg') no-repeat top 572px right calc(50% - 130px) / 115px 116px;
     }
     .page-main--pet{
         padding-bottom: 15px;
@@ -99,5 +112,12 @@
     .page-main__empty-cart{
         background: none;
         padding: 15px 0 15px 0;
+    }
+    .page-main--pet{
+        background: url('./../../img/pet/bg/rectangle-bg-green.svg') no-repeat top 15px left calc(50% - 183px) / 131px 131px;
+    }
+    .page-main__food{
+        background: url('./../../img/shop/food/bg/ellipse-brown.svg') no-repeat top 85px right calc(50% - 205px) / 267px 267px,
+                    url('./../../img/shop/food/bg/ellipse-green.svg') no-repeat bottom 7px left calc(50% - 182px) / 226px 226px;
     }
 }

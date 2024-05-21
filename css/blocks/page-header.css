@@ -1,10 +1,9 @@
 .page-header{
     padding: 51px 20px 0 20px;
     border-radius: 0 0 50px 50px;
-    background-image: url('./../../img/index/header/decor/ellipse-1.png');
+    background: url('./../../img/index/header/decor/ellipse-green.svg') left calc(50% - 774px) top 493px / 533px 533px,
+                url('./../../img/index/header/header-bg-desktop.png') top 159px right calc(50% - 237px) / 743px 634px;
     background-repeat: no-repeat;
-    background-size: 533px 533px;
-    background-position: left -321px bottom -331px;
     background-color: var(--background-white-50);
     z-index: 3;
 }
@@ -46,6 +45,9 @@
     }
     .page-header{
         padding-top: 35px;
+        background: url('./../../img/index/header/decor/ellipse-green.svg') left calc(50% - 404px) top 316px / 222px 222px no-repeat,
+                url('./../../img/index/header/header-bg-tablet.png') top 107px right calc(50% - 138px) / 431px 384px no-repeat;
+        background-color: var(--background-white-50);
     }
     .page-header__nav{
         margin-bottom: 30px;
@@ -67,7 +69,11 @@
 @media (max-width: 767px){
     .page-header{
         padding-top: 10px;
-        background-image: none;
+    }
+    #index .page-header{
+        min-height: 507px;
+        background: url('./../../img/index/header/header-bg-tablet.png') top 294px right calc(50%) / 312px 279px no-repeat;
+        background-color: var(--background-white-50);
     }
     .page-header__nav{
         position: relative;
