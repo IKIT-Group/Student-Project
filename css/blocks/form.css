@@ -184,8 +184,8 @@ input[type="number"]::-webkit-inner-spin-button {
   position: absolute;
   top: 0;
   left: 0;
-  height: 26px;
-  width: 26px;
+  height: 24px;
+  width: 24px;
   background-color: #fff;
   border-radius: 50%;
   border: 1px solid #a98467;
@@ -208,8 +208,8 @@ input[type="number"]::-webkit-inner-spin-button {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 19px;
-  height: 19px;
+  width: 17px;
+  height: 17px;
   border-radius: 50%;
   background: #adc178;
 }
@@ -275,15 +275,15 @@ input[type="number"]::-webkit-inner-spin-button {
     padding-left: 18px;
   }
   .checkmark {
-    width: 13px;
-    height: 13px;
+    width: 16px;
+    height: 16px;
   }
   .field--radio .checkmark:after {
-    width: 9px;
-    height: 9px;
+    width: 12px;
+    height: 12px;
     top: 50%;
     left: 50%;
-    transform: translate(-55%, -45%);
+    transform: translate(-50%, -50%);
   }
   .field-group__list--radio {
     margin-top: 16px;
@@ -363,19 +363,19 @@ input[type="number"]::-webkit-inner-spin-button {
     padding-right: 104px;
   }
   .checkmark {
-    width: 15px;
-    height: 15px;
+    width: 16px;
+    height: 16px;
   }
   .field--radio {
     font-size: 15px;
     padding-left: 21px;
   }
   .field--radio .checkmark:after {
-    width: 11px;
-    height: 11px;
+    width: 12px;
+    height: 12px;
     top: 50%;
     left: 50%;
-    transform: translate(-45%, -45%);
+    transform: translate(-50%, -50%);
   }
   .form__button {
     font-size: 12px;

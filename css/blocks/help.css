@@ -1,7 +1,7 @@
 .help {
     margin-bottom: 100px;
     padding: 0 20px;
-    background: url('./../../img/about/bg/bg-3.png') no-repeat top 0px right -116px;
+    background: url('./../../img/about/bg/bg-3.png') no-repeat top 24px right calc(50% - 408px) / 855px 584px;
     
 }
 .help__container {
@@ -82,6 +82,7 @@ line-height: 120%;
   .help__content{
     display: flex;
     flex-direction: column;
+    padding: 0 15px;
   }
   .help__text{
     gap: 10px;

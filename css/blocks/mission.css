@@ -1,5 +1,5 @@
 .mission{
-    background: url('./../../img/about/bg/bg-2.png') no-repeat top 50px left -54px;
+    background: url('./../../img/about/bg/bg-2.png') no-repeat top 50px left calc(50% - 415px) / 714px 548px;
     padding: 0 20px;
 }
 .mission__container{    
@@ -41,7 +41,7 @@ line-height: 120%;
 
 @media(max-width: 1300px){
     .mission{
-        background-size: 405px;
+        background: url('./../../img/about/bg/bg-2.png') no-repeat top 30px left calc(50% - 235px) / 433px 332px;
         margin-bottom: 50px;
     }
     .mission__content{
@@ -67,7 +67,7 @@ line-height: 120%;
 
 @media(max-width: 767px){
     .mission{
-        background: url('./../../img/about/bg/bg-2-320.png') no-repeat top 220px left calc(50% - 20px);
+        background: url('./../../img/about/bg/bg-2.png') no-repeat top 236px left calc(50% - 30px) / 375px 288px;
     }
     .mission__content{
         display: flex;

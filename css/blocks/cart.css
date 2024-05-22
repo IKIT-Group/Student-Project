@@ -113,6 +113,7 @@
 .cart__grid-img {
   width: 124px;
   height: 129px;
+  object-fit: cover;
 }
 .cart__grid-name {
   display: inline;
@@ -482,6 +483,7 @@
   .cart .cart-header__link {
     align-self: flex-start;
     font-size: 12px;
+    padding-left: 23px;
   }
   .cart-header__title {
     font-size: 14px;
@@ -585,13 +587,15 @@
   }
   .cart__grid-wrapper--first {
     gap: 5px;
+    max-width: 123px;
   }
   .cart__grid-hint--message {
     border-radius: 15px;
     max-width: 153px;
-    top: 50px;
+    top: 52px;
     padding: 7px 10px;
     font-size: 10px;
+    left: 65px;
   }
 
   .cart-modal {

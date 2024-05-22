@@ -41,6 +41,7 @@
 @media (max-width: 1300px) {
     .page__header{
         background-size: 222px 222px;
+        border-radius: 0 0 25px 25px;
         background-position: top 316px left -131px;
     }
     .page-header{
@@ -69,8 +70,10 @@
 @media (max-width: 767px){
     .page-header{
         padding-top: 10px;
+        border-radius: 0 0 10px 10px;
     }
     #index .page-header{
+        border-radius: 0 0 20px 20px;
         min-height: 507px;
         background: url('./../../img/index/header/header-bg-tablet.png') top 294px right calc(50%) / 312px 279px no-repeat;
         background-color: var(--background-white-50);

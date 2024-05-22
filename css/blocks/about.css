@@ -1,12 +1,6 @@
 .about{
     padding: 0 20px;
 }
-.about__container{
-    
-}
-.container{
-
-}
 .about__content{
     display: grid;
     grid-template-columns: 494px auto;
@@ -38,11 +32,6 @@ line-height: 120%;
 .about__description:not(:last-child){
     margin-bottom: 20px;
 }
-.about__image{
-
-}
-
-
 
 /* ============================================================================================================== */
 /* ======================================== TABLET WIDTH (768px) =============================================== */
@@ -51,7 +40,7 @@ line-height: 120%;
 @media(max-width: 1300px){
     .about__content{
         grid-template-columns: 287px auto;
-        padding: 30px 30px 150px 27px;
+        padding: 30px 30px 50px 27px;
     }
     .about__title{
         font-size: 28px;
@@ -93,6 +82,7 @@ line-height: 120%;
     }
     .about__description{
         font-size: 14px;
+        padding: 0 13px;
     }
     .about__description:not(:last-child){
         margin-bottom: 10px;

@@ -11,7 +11,7 @@
   overflow: hidden;
 }
 .page-body__about{
-  background: url('./../../img/about/bg/bg-1.png') no-repeat top 0px right 0px;
+  background: url('./../../img/about/bg/bg-1.png') no-repeat top 0px right calc(50% - 508px) / 940px 836px;
   background-size:  auto;
 }
 .page-body__cart{
@@ -31,7 +31,7 @@
     background: none;
   }
   .page-body__about{
-    background: url('./../../img/about/bg/bg-1.png') no-repeat top 0px right calc(50% - 200px);
+    background: url('./../../img/about/bg/bg-1.png') no-repeat top 10px right calc(50% - 250px) / 557px 496px;
     background-size:  450px;
   }
   #food{
@@ -44,7 +44,8 @@
 
 @media(max-width: 767px){
   .page-body__about{
-    background: url('./../../img/about/bg/bg-1-320.png') no-repeat top 232px right calc(50% - 90px);
+    background: url('./../../img/about/bg/bg-1-mobile.png') no-repeat top 237px right calc(50% - 80px) / 478px 410px,
+                url('./../../img/about/bg/ellipse.png') no-repeat top 2895px left calc(50% - 113px) / 165px 159px;
   }
   .page__body{
     grid-template-rows: max-content auto max-content;

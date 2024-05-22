@@ -1,6 +1,7 @@
 let navHeader = document.querySelector('.page-header__nav');
 let navToggler = document.querySelector('.page-header__toggler');
 let pageHeader = document.querySelector('.page-header');
+let pageHeaderMain = document.querySelector('#page-header__index');
 
 navHeader.classList.remove('page-header__nav--nojs');
 
@@ -9,10 +10,12 @@ navToggler.addEventListener('click', function () {
     navHeader.classList.remove('page-header__nav--closed');
     navHeader.classList.add('page-header__nav--opened');
     pageHeader.style.borderRadius = '0px';
+    pageHeaderMain.style.borderRadius = '0px 0px 20px 20px';
   } else {
     navHeader.classList.add('page-header__nav--closed');
     navHeader.classList.remove('page-header__nav--opened');
-    pageHeader.style.borderRadius = '0px 0px 50px 50px';
+    pageHeader.style.borderRadius = '0px 0px 10px 10px';
+    pageHeaderMain.style.borderRadius = '0px 0px 20px 20px';
   }
 })
 
