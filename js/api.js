@@ -24,19 +24,12 @@ export class Pet {
  * Класс товара
  */
 export class Product {
-    id;    // string;
-    type;  // string;
-    name;  // string;
-    image; // string;
-    price; // number
-    // oldPrice; // number | null
-    /** @param {number} amount @returns {ProductInCart} */
-    AddAmount(amount) {
-        return {
-            ...this,
-            amount
-        }
-    }
+    id;       // string;
+    type;     // string;
+    name;     // string;
+    image;    // string;
+    price;    // number
+    oldPrice; // number | null
 }
 
 /**
@@ -52,13 +45,52 @@ export class ProductInCart {
     amount;
 }
 
-// добавить класс владельца
-// и функции для его получения
+/**
+ * Класс владельца (для анкеты)
+ */
+export class Owner {
+    id;          // string
+    name;        // string
+    age;         // number
+    phone;       // string
+    email;       // string
+    activity;    // string
+    petId;       // string
+    livesAlone;  // string
+    hadPets;     // string
+    hasPets;     // string
+    selfWalking; // boolean
+    canPay;      // boolean
+    constructor(
+        name,
+        age,
+        phone,
+        email,
+        activity,
+        petId,
+        livesAlone,
+        hadPets,
+        hasPets,
+        selfWalking,
+        canPay
+    ) {
+        this.name = name;
+        this.age = age;
+        this.phone = phone;
+        this.email = email;
+        this.activity = activity;
+        this.petId = petId;
+        this.livesAlone = livesAlone;
+        this.hadPets = hadPets;
+        this.hasPets = hasPets;
+        this.selfWalking = selfWalking;
+        this.canPay = canPay;
+    }
+}
 
 /**
  * Получить всех питомцев, удовлетворяющих условиям фильтрации
  * @param {URLSearchParams} query - Параметры фильтрации
- * @returns {Promise<Pet[]>}
  */
 export const getPets = async (query) => {
     try {
@@ -80,7 +112,6 @@ export const getPets = async (query) => {
 /**
  * Получить одного питомца по его идентификатору
  * @param {string} id - Уникальный идентификатор питомца
- * @returns {Promise<Pet>}
  */
 export const getPet = async (id) => {
     try {
@@ -91,7 +122,7 @@ export const getPet = async (id) => {
     
         if (!response.ok) return console.error("Ошибка запроса!");
     
-        /** @type {Pet[]} */
+        /** @type {Pet} */
         const data = await response.json();
         return data;
     } catch (error) {
@@ -102,7 +133,6 @@ export const getPet = async (id) => {
 /**
  * Получить все товары, удовлетворяющие условиям фильтрации
  * @param {URLSearchParams} query - Параметры фильтрации
- * @returns {Promise<Product[]>}
  */
 export const getProducts = async (query) => {
     try {
@@ -124,7 +154,6 @@ export const getProducts = async (query) => {
 /**
  * Получить один товар по его идентификатору
  * @param {string} id - Уникальный идентификатор товара
- * @returns {Promise<Pet>}
  */
 export const getProduct = async (id) => {
     try {
@@ -135,7 +164,32 @@ export const getProduct = async (id) => {
     
         if (!response.ok) return console.error("Ошибка запроса!");
     
-        /** @type {Pet[]} */
+        /** @type {Product} */
+        const data = await response.json();
+        return data;
+    } catch (error) {
+        console.error('Ошибка: ' + error);
+    }
+}
+
+/**
+ * Отправить заявку на питомца
+ * @param {Owner} owner
+ */
+export const requestPet = async (owner) => {
+    try {
+        const response = await fetch(ownersUrl, {
+            method: "POST",
+            mode: "cors",
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(owner)
+        });
+    
+        if (!response.ok) return console.error("Ошибка запроса!");
+    
+        /** @type {Owner} */
         const data = await response.json();
         return data;
     } catch (error) {
@@ -146,7 +200,6 @@ export const getProduct = async (id) => {
 /**
  * Получить читаемую строку здоровья питомца
  * @param {string} healthText - текст здоровья
- * @returns {string}
  */
 export const parseHealth = healthText => {
     if (healthText === 'great') return "Отличное";
@@ -159,7 +212,6 @@ export const parseHealth = healthText => {
 /**
  * Получить читаемую строку возраста питомца
  * @param {string} dateText - текст даты
- * @returns {string}
  */
 export const parseAge = dateText => {
     const date = new Date(dateText);
@@ -196,14 +248,12 @@ export const parseAge = dateText => {
 /**
  * Получить ссылку на изображение питомца
  * @param {string} imageText - название файла изображения
- * @returns {string}
  */
 export const parseImage = imageText => `${storageUrl}/${imageText}`;
 
 /**
  * Получить читаемую строку цены товара
  * @param {number} price - цена
- * @returns {string}
  */
 export const parsePrice = price => {
     return price + ' руб.';
