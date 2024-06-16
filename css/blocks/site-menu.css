@@ -89,8 +89,8 @@
 .site-menu__item--dropdown svg {
   cursor: pointer;
 }
-.site-menu__item{
-  
+.site-menu__item:hover{
+  transform: scale(1.05);
 }
 /* .site-menu__item:hover{
   transform: scale(1.05);

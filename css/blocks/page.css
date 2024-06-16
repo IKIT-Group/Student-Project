@@ -1,6 +1,5 @@
 .page {
   font-family: var(--main-font);
-  scroll-behavior: smooth;
 }
 .page__body {
   min-height: 100%;

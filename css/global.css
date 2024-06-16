@@ -1,6 +1,7 @@
 * {
   -webkit-tap-highlight-color: transparent;
 }
+
 .header__link {
   cursor: pointer;
   font-weight: 500;
