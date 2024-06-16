@@ -60,15 +60,21 @@
   left: 13px;
   pointer-events: none;
 }
+
 .filter-row__submit-button {
   border: 1px solid #a98467;
   border-radius: 20px;
-  background-color: var(--background-white-50);
+  background-color: transparent;
   padding: 12px 10px 11px 50px;
   font-weight: 500;
   font-size: 18px;
   line-height: 120%;
   color: var(--color-brown-50);
+  
+}
+.filter-row__submit-button--opened{
+  opacity: 1;
+  background-color: var(--background-white-50);
 }
 .filter {
   border: 1px solid var(--color-brown-50);

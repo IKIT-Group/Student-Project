@@ -1,7 +1,7 @@
-@import url("./../css/reset.css"); /* Подключение файла сброса стилей */
 @import url("./../css/fonts.css"); /* Подключение файла шрифтов */
+@import url("./../css/reset.css"); /* Подключение файла сброса стилей */
 @import url("./../css/variables.css"); /* Подключение переменных */
-@import url("./../css/global.css"); /* Подклбчение глобальных стилей (пока не знаю зачем, пусть будет) */
+@import url("./../css/global.css"); /* Подключение глобальных стилей */
 
 @import url("./../css/blocks/container.css");
 @import url("./../css/blocks/visually-hidden.css");

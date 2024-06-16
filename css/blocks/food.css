@@ -295,7 +295,7 @@ input.food-catalog__search-button{
     max-width: 138px;
   }
   .food-catalog__list{
-    gap: 10;
+    gap: 10px;
     grid-template-columns: repeat(2, 135px);
   }
   .food-catalog__img{

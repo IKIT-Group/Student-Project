@@ -7,10 +7,6 @@
   gap: 190px; /* НЕ ТОЧНОЕ ЗНАЧЕНИЕ*/
   margin-bottom: 50px;
 }
-.cart-header__link {
-}
-.questionnaire__link--back {
-}
 .questionnaire__title {
   font-weight: 700;
   font-size: 48px;

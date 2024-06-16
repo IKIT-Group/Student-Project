@@ -44,7 +44,7 @@
 @media(max-width: 767px){
   .page-body__about{
     background: url('./../../img/about/bg/bg-1-mobile.png') no-repeat top 237px right calc(50% - 80px) / 478px 410px,
-                url('./../../img/about/bg/ellipse.png') no-repeat top 2895px left calc(50% - 113px) / 165px 159px;
+                url('./../../img/about/bg/ellipse.svg') no-repeat top 2895px left calc(50% - 113px) / 165px 159px;
   }
   .page__body{
     grid-template-rows: max-content auto max-content;

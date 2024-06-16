@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="./img/icons/head/icons8-домашние-животные-32.png" />
+    <link rel="icon" href="./img/icons/head/favicon.png" />
     <title>Главная страница</title>
   </head>
 
@@ -139,7 +139,7 @@
                 Листайте ниже, чтобы познакомится с любимцами нашего приюта.
               </p>
             </div>
-            <svg
+            <a href="#info" class="anchor__link"><svg
               width="48"
               height="50"
               viewBox="0 0 48 50"
@@ -159,6 +159,8 @@
                 stroke-linejoin="round"
               />
             </svg>
+            </a>
+            
           </div>
           <!-- <div class="promo__image">
                     <img src="./img/index/header/header-bg.png" width="763px" alt="Мужчина с собакой">
@@ -167,7 +169,7 @@
       </div>
     </header>
     <main class="page__main page-main page-main__index">
-      <section class="info">
+      <section class="info" id="info">
         <div class="info__container container">
           <div class="info__content">
             <h2 class="info__title">Животные, которые ищут свой дом</h2>
@@ -238,26 +240,6 @@
             <div class="info__aggitation">
               Эти и другие животные в нашем приюте
             </div>
-            <svg
-              width="48"
-              height="50"
-              viewBox="0 0 48 50"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M46 1.92308L24.5406 22.8618C24.2466 23.1486 23.7534 23.1486 23.4594 22.8618L2 1.92308"
-                stroke="#6C584C"
-                stroke-width="5"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M46 25L24.5406 45.9387C24.2466 46.2256 23.7534 46.2256 23.4594 45.9387L2 25"
-                stroke="#6C584C"
-                stroke-width="5"
-                stroke-linejoin="round"
-              />
-            </svg>
             <a href="./pages/pet.html" class="info__button button button--link"
               >Выбор питомца</a
             >
@@ -273,7 +255,7 @@
             <p class="contacts__description">
               Приют для животных в г. Красноярск
             </p>
-            <p class="contacts__address">г.Красноярск, ул.Пушкина, ст.4</p>
+            <p class="contacts__address">г. Красноярск, ул. Пушкина, ст. 4</p>
             <a href="tel:83129000000" class="contacts__phone"
               >+7 (312) 900-00-00</a
             >
@@ -362,6 +344,7 @@
       </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./js/scroll.js"></script>
     <script src="./js/burger.js"></script>
   </body>
 </html>

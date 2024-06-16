@@ -100,5 +100,6 @@ let filterBlock = document.querySelector('.filter-row__block');
 
 filterButton.onclick = function(evt) {
     evt.preventDefault();
+    filterButton.classList.toggle('filter-row__submit-button--opened')
     filterBlock.classList.toggle('visually-hidden');
 }
