@@ -5,16 +5,25 @@ import {
     addToCart
 } from './api.js';
 
-/** @param {'food' | 'care' | 'accessory' | 'toy'} type */
-const getProductsByType = async (type) => {
+/**
+ * @param {'food' | 'care' | 'accessory' | 'toy'} type
+ * @param {string?} name
+ */
+const getProductsByTypeAndName = async (type, name) => {
     const params = new URLSearchParams();
     params.append('type', type);
+    if (name) {
+        params.append('name', name);
+    }
     return await getProducts(params);
 }
 
-/** @param {'food' | 'care' | 'accessory' | 'toy'} type */
-export const getProductsElementsByType = async (type) => {
-    const data = await getProductsByType(type);
+/**
+ * @param {'food' | 'care' | 'accessory' | 'toy'} type
+ * @param {string?} name
+ */
+export const getProductsElementsByTypeAndName = async (type, name) => {
+    const data = await getProductsByTypeAndName(type, name);
     const result = [];
     for (const product of data) {
         // CREATE A NEW ELEMENT

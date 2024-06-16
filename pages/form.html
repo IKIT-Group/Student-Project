@@ -129,7 +129,7 @@
                       id="fullname"
                       type="text"
                       class="field__input"
-                      name="ФИО"
+                      name="name"
                       placeholder="Иванов Иван Иванович"
                       pattern="^[А-Яа-яЁё\s]+$"
                       required
@@ -144,7 +144,7 @@
                       id="age"
                       type="number"
                       class="field__input"
-                      name="Возраст"
+                      name="age"
                       placeholder="18"
                       min="1"
                       max="100"
@@ -155,24 +155,21 @@
                 </li>
                 <li class="field-group__item">
                   <label for="status" class="field">
-                    <span class="field__lead field-lead"
-                      >Род деятельности:</span
-                    >
+                    <span class="field__lead field-lead">Род деятельности:</span>
                     <div class="select-wrapper">
                       <select
-                        
                         class="field__input field__input-select"
-                        name="Род деятельности"
+                        name="activity"
                         placeholder="Варианты"
                       >
-                        <option value="Студент" disabled hidden selected>Варианты</option>
-                        <option value="Студент">Студент</option>
-                        <option value="Трудоустроенный">
+                        <option value="" disabled hidden selected>Варианты</option>
+                        <option value="student">Студент</option>
+                        <option value="working">
                           Трудоустроенный
                         </option>
-                        <option value="Безработный">Безработный</option>
-                        <option value="Получает пособие">Получаю пособие</option>
-                        <option value="Пенсионер">Пенсионер</option>
+                        <option value="unemployed">Безработный</option>
+                        <option value="allowance">Получаю пособие</option>
+                        <option value="pensioner">Пенсионер</option>
                       </select>
                     </div>
                   </label>
@@ -193,10 +190,10 @@
                       type="tel"
                       id="phone"
                       class="field__input"
-                      name="Номер телефона"
-                      placeholder="89123456789"
+                      name="phone"
+                      placeholder="+79123456789"
                       required
-                      pattern="[8]{1}[0-9]{10}"
+                      pattern="\+7[0-9]{10}"
                     />
                   </label>
                 </li>
@@ -207,7 +204,7 @@
                       type="email"
                       id="email"
                       class="field__input"
-                      name="Электронная почта"
+                      name="email"
                       placeholder="example@mail.com"
                       required
                     />
@@ -234,6 +231,7 @@
                       type="text"
                       id="other-input-1"
                       class="field__input"
+                      name="livesAlone"
                       placeholder="Введите краткий ответ"
                       required
                     />
@@ -251,6 +249,7 @@
                       type="text"
                       class="field__input"
                       id="other-input-2"
+                      name="hadPets"
                       placeholder="Введите краткий ответ"
                       required
                     />
@@ -268,6 +267,7 @@
                       type="text"
                       class="field__input"
                       id="other-input-3"
+                      name="hasPets"
                       placeholder="Введите краткий ответ"
                       required
                     />
@@ -279,30 +279,28 @@
                     <span class="field__lead">Вы будете отпускать животное на самовыгул?</span>
                     <div class="field__wrapper">
                       <label class="field--radio">Да
-                        <input type="radio" checked="checked" name="Отпускать на прогулку" value="Да">
+                        <input type="radio" checked="checked" name="selfWalking" value="true">
                         <span class="checkmark"></span>
                       </label>
                       <label class="field--radio">Нет
-                        <input type="radio" name="Отпускать на прогулку" value="Нет">
+                        <input type="radio" name="selfWalking" value="false">
                         <span class="checkmark"></span>
                       </label>
                     </div>
-                    
                 </li>
                 <li class="field-group__item field-group__item--grid">
                     <span class="field__lead">Вы готовы оплатить лечение животного
                       в случае внезапного заболевания?</span>
                     <div class="field__wrapper">
                       <label class="field--radio">Да
-                        <input type="radio" checked="checked" name="Оплатить лечение животного" value="Да">
+                        <input type="radio" checked="checked" name="canPay" value="true">
                         <span class="checkmark"></span>
                       </label>
                       <label class="field--radio">Нет
-                        <input type="radio" name="Оплатить лечение животного" value="Нет">
+                        <input type="radio" name="canPay" value="false">
                         <span class="checkmark"></span>
                       </label>
                     </div>
-                    
                 </li>
               </ul>
             </fieldset>
