@@ -28,10 +28,7 @@
     padding: 0;
     background: url('./../../img/about/bg/ellipse.svg') no-repeat bottom 15px left calc(50% - 496px) / 373px 358px;
 }
-.page-main__food{
-    background: url('./../../img/shop/food/bg/ellipse-brown.svg') no-repeat top 113px right calc(50% - 637px) / 504px 504px,
-                url('./../../img/shop/food/bg/ellipse-green.svg') no-repeat bottom 30% left calc(50% - 574px) / 617px 617px;
-}
+
 .page-main__empty-cart{
     background: none;
     padding: 30px 0 50px 0;

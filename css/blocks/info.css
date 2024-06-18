@@ -92,12 +92,13 @@
   }
   .info__item{
     padding: 15px 15px 10px 15px;
-    border-radius: 50px;
+    border-radius: 25px;
   }
   .info__img{
     width: 294px;
     height: 256px;
     margin-bottom: 10px;
+    border-radius: 15px;
   }
   .info__description{
     align-items: flex-end;

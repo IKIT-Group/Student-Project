@@ -23,6 +23,11 @@
 #pet{
   background: url('./../../img/pet/bg/ellipse-bg-brown.svg') no-repeat top 1024px left calc(50% - 901px) / 821px 821px;
 }
+.page__body--shop{
+  background: url('./../../img/shop/food/bg/ellipse-brown.svg') no-repeat top 213px right calc(50% - 637px) / 504px 504px,
+                url('./../../img/shop/food/bg/ellipse-green.svg') no-repeat bottom 395px left calc(50% - 574px) / 617px 617px,
+                url('./../../img/shop/food/bg/rectangle-brown.svg') no-repeat bottom -220px left calc(50% - 621px);
+}
 
 /* ============================================================================================================== */
 /* ======================================== TABLET WIDTH (768px) =============================================== */
@@ -35,6 +40,9 @@
   .page-body__about{
     background: url('./../../img/about/bg/bg-1.png') no-repeat top 10px right calc(50% - 250px) / 557px 496px;
     background-size:  450px;
+  }
+  #pet{
+    background: url('./../../img/pet/bg/ellipse-bg-brown.svg') no-repeat top 673px left calc(50% - 451px) / 457px 457px;
   }
   #food{
     background: url('./../../img/shop/food/bg/rectangle-brown.svg') no-repeat bottom -105px left calc(50% - 333px) / 156px 134px;

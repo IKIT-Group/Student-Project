@@ -77,6 +77,7 @@ export const getProductsElementsByTypeAndName = async (type, name) => {
         const buyProductButtonContainer = document.createElement('div');
         
         const buyProductButton = document.createElement('button');
+
         buyProductButton.addEventListener('click', (e) => {
             e.preventDefault();
             addToCart(product.id);
