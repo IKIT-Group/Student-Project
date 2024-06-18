@@ -45,6 +45,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     if (pet.sterilized) {
         petSterilized.classList.remove('visually-hidden');
+        if (!pet.gender) petSterilized.textContent = "Cтерилизована";
     }
     if (pet.hasPassport) {
         petHasPassport.classList.remove('visually-hidden');
