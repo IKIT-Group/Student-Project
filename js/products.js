@@ -2,7 +2,8 @@ import {
     getProducts,
     parseImage,
     parsePrice,
-    addToCart
+    addToCart,
+    getProductInCart
 } from './api.js';
 
 /**
@@ -79,6 +80,7 @@ export const getProductsElementsByTypeAndName = async (type, name) => {
         buyProductButton.addEventListener('click', (e) => {
             e.preventDefault();
             addToCart(product.id);
+            buyProductButton.innerHTML = 'Добавлено ' + getProductInCart(product.id);
         });
         const buyProductButtonText = document.createTextNode('В корзину');
         buyProductButton.appendChild(buyProductButtonText);

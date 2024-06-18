@@ -20,6 +20,9 @@
 #food{
   background: url('./../../img/shop/food/bg/rectangle-brown.svg') no-repeat bottom 172px left calc(50% - 621px);
 }
+#pet{
+  background: url('./../../img/pet/bg/ellipse-bg-brown.svg') no-repeat top 1024px left calc(50% - 901px) / 821px 821px;
+}
 
 /* ============================================================================================================== */
 /* ======================================== TABLET WIDTH (768px) =============================================== */

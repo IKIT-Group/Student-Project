@@ -1,6 +1,5 @@
 .catalog{
-  background: url('./../../img/pet/bg/ellipse-bg-green.svg') no-repeat top 90px right calc(50% - 172px) / 197px 197px,
-              url('./../../img/pet/bg/ellipse-bg-brown.svg') no-repeat top 325px left calc(50% - 901px) / 821px 821px,
+  background: url('./../../img/pet/bg/ellipse-bg-green.svg') no-repeat top 90px right calc(50% - 172px) / 197px 197px
               url('./../../img/pet/bg/ellipse-bg-lightbrown.svg') no-repeat top 1100px left calc(50% - 209px) / 197px 197px,
               url('./../../img/pet/bg/rectangle-bg-green.svg') no-repeat top 900px right calc(50% - 640px) / 602px 598px;
 }
