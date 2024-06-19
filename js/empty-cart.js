@@ -11,6 +11,14 @@ import {
     parsePrice
 } from './api.js';
 
+const backButton = document.querySelector('.cart-header__link');
+backButton.onclick = () => {
+    const previousPage = document.referrer;
+    if (!previousPage) location.href = '/';
+    const url = new URL(previousPage);
+    url.host === location.host ? history.back() : location.href = '/';
+}
+
 /** @type {Product[]} */
 let allProducts;
 

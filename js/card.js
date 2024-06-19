@@ -1,5 +1,13 @@
 import { Pet, getPet, parseHealth, parseAge, parseImage } from './api.js';
 
+const backButton = document.querySelector('.pet-card__link--back');
+backButton.onclick = () => {
+    const previousPage = document.referrer;
+    if (!previousPage) location.href = '/';
+    const url = new URL(previousPage);
+    url.host === location.host ? history.back() : location.href = '/';
+}
+
 /*
 Логика такая:
 1. Получаем id питомца из URL (.../card.html?id=12345) => id = '12345'
