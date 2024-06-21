@@ -83,7 +83,9 @@ export const getProductsElementsByTypeAndName = async (type, name) => {
             addToCart(product.id);
             buyProductButton.innerHTML = 'Добавлено ' + getProductInCart(product.id);
         });
-        const buyProductButtonText = document.createTextNode('В корзину');
+        let buyProductButtonText = document.createTextNode('В корзину');
+        if (getProductInCart(product.id) > 0) buyProductButtonText = document.createTextNode('Добавлено ' + getProductInCart(product.id));
+
         buyProductButton.appendChild(buyProductButtonText);
         buyProductButton.classList.add('button', 'button__add');
 
