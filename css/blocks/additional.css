@@ -132,7 +132,7 @@
 @media(max-width: 767px){
   .additional{
     margin: 0;
-    background: url('./../../img/about/bg/bg-3.png') no-repeat top 313px right calc(50% - 42px) / 393px 269px;
+    background: url('./../../img/about/bg/bg-3.png') no-repeat top 313px right calc(50%) / 309px 269px;
   }
   .additional__title{
     font-size: 24px;

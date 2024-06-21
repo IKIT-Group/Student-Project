@@ -116,7 +116,8 @@
                         </ul>
                       </div>
                       <div class="cart__grid-total">
-                        <span id="hintMessage" class="cart__grid-hint--message visually-hidden">На сайте вы можете забронировать товар, а после получить и оплатить его удобными вам способами в нашем приюте.</span>
+                        <span id="hintMessage" class="cart__grid-hint--message visually-hidden">На сайте вы можете забронировать товар, а после получить и оплатить его удобными вам способами в нашем приюте. <br>
+                          Укажите свою электронную почту, вам будет выслан специальный код для получения товара.</span>
                         <p class="cart__grid-place">Забрать товары можно в нашем приюте:</p>
                         <p class="cart__grid-address">г. Красноярск, Улица Пушкина 4</p>
                         <div class="cart__grid-info__price">
@@ -133,8 +134,11 @@
                           <p class="cart__grid-sum__title">Итого</p>
                           <p class="cart__grid-sum__value">??? руб.</p>
                         </div>
-                        <div class="cart__grid-book visually-hidden">
-                          <button class="button cart__grid-book__add">Забронировать</button>
+                        <form class="cart__grid-contact" id="cartForm">
+                          <label class="cart__grid-contact__heading">Укажите свою эл. почту
+                          <input type="email" name="cartFormEmail" id="cartFormEmail" required placeholder="example@mail.com">
+                          </label>
+                          <button type="submit" class="button cart__grid-book__add">Забронировать</button>
                           <dialog class="cart__modal cart-modal" id="cartModal">
                             <h4 class="cart-modal__title">Товары забронированы</h4>
                             <p class="cart-modal__subtitle">Вы можете забрать товары в нашем приюте и оплатить при получении удобными вам способами.
@@ -143,6 +147,10 @@
                               Отлично
                             </button>
                           </dialog>
+                        </form>
+                        <div class="cart__grid-book visually-hidden">
+                          
+                          
                           <button class="cart__grid-book__hint"><svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M17.0087 15.3415L16.9921 23.675M17.0087 10.3417L16.9921 10.3417M32 16.9999C32 25.2842 25.2843 31.9999 17 31.9999C8.71573 31.9999 2 25.2842 2 16.9999C2 8.71564 8.71573 1.99991 17 1.99991C25.2843 1.99991 32 8.71564 32 16.9999Z" stroke="#A98467" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>

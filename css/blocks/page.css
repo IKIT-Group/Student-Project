@@ -17,15 +17,12 @@
   background: url('./../../img/cart/bg/bg_assets-desktop.svg') no-repeat bottom -122px right calc(50% - 770px),
                 url('./../../img/cart/bg/ellipse-desktop.svg') no-repeat top 318px left calc(50% - 685px);
 }
-#food{
-  background: url('./../../img/shop/food/bg/rectangle-brown.svg') no-repeat bottom 172px left calc(50% - 621px);
-}
 #pet{
   background: url('./../../img/pet/bg/ellipse-bg-brown.svg') no-repeat top 1024px left calc(50% - 901px) / 821px 821px;
 }
 .page__body--shop{
   background: url('./../../img/shop/food/bg/ellipse-brown.svg') no-repeat top 213px right calc(50% - 637px) / 504px 504px,
-                url('./../../img/shop/food/bg/ellipse-green.svg') no-repeat bottom 395px left calc(50% - 574px) / 617px 617px,
+                url('./../../img/shop/food/bg/ellipse-green.svg') no-repeat top 643px left calc(50% - 574px) / 617px 617px,
                 url('./../../img/shop/food/bg/rectangle-brown.svg') no-repeat bottom -220px left calc(50% - 621px);
 }
 
@@ -44,8 +41,10 @@
   #pet{
     background: url('./../../img/pet/bg/ellipse-bg-brown.svg') no-repeat top 673px left calc(50% - 451px) / 457px 457px;
   }
-  #food{
-    background: url('./../../img/shop/food/bg/rectangle-brown.svg') no-repeat bottom -105px left calc(50% - 333px) / 156px 134px;
+  .page__body--shop{
+    background: url('./../../img/shop/food/bg/ellipse-brown.svg') no-repeat top 170px right calc(50% - 365px) / 252px 252px,
+                url('./../../img/shop/food/bg/ellipse-green.svg') no-repeat top 460px left calc(50% - 318px) / 308px 308px,
+                  url('./../../img/shop/food/bg/rectangle-brown.svg') no-repeat bottom -220px left calc(50% - 621px);
   }
 }
 /* ============================================================================================================== */
@@ -60,7 +59,9 @@
   .page__body{
     grid-template-rows: max-content auto max-content;
   }
-  #page__body-shop{
-    background: url('./../../img/shop/bg/ellipse-green.svg') no-repeat top 1185px left calc(50% - 171px) / 266px 266px;
+  .page__body--shop{
+    background: url('./../../img/shop/food/bg/ellipse-brown.svg') no-repeat top 85px right calc(50% - 205px) / 267px 267px,
+                    url('./../../img/shop/food/bg/ellipse-green.svg') no-repeat bottom 213px left calc(50%) / 226px 226px,
+                    url('./../../img/shop/food/bg/rectangle-brown.svg') no-repeat bottom -220px left calc(50% - 621px);
   }
 }

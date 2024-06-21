@@ -70,10 +70,6 @@
     .page-main--pet{
         background: url('./../../img/pet/bg/rectangle-bg-green.svg') no-repeat top 31px left calc(50% - 486px) / 361px 359px;
     }
-    .page-main__food{
-        background: url('./../../img/shop/food/bg/ellipse-brown.svg') no-repeat top 113px right calc(50% - 365px) / 252px 252px,
-                    url('./../../img/shop/food/bg/ellipse-green.svg') no-repeat bottom 213px left calc(50% - 318px) / 308px 308px;
-    }
 }
 
 /* ============================================================================================================== */
@@ -94,10 +90,6 @@
     .page-main--pet{
         padding-bottom: 15px;
     }
-    .page-main__food{
-        padding-bottom: 15px;
-        background: none;
-    }
     .page-main__form{
         padding: 15px 0 20px 0;
         background: url('./../../img/form/bg/form-bg-320.png') no-repeat top 264px right 50%;
@@ -112,9 +104,5 @@
     }
     .page-main--pet{
         background: url('./../../img/pet/bg/rectangle-bg-green.svg') no-repeat top 15px left calc(50% - 183px) / 131px 131px;
-    }
-    .page-main__food{
-        background: url('./../../img/shop/food/bg/ellipse-brown.svg') no-repeat top 85px right calc(50% - 205px) / 267px 267px,
-                    url('./../../img/shop/food/bg/ellipse-green.svg') no-repeat bottom 7px left calc(50%) / 226px 226px;
     }
 }

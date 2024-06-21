@@ -1,7 +1,7 @@
 .help {
     margin-bottom: 100px;
     padding: 0 20px;
-    background: url('./../../img/about/bg/bg-3.png') no-repeat top 24px right calc(50% - 408px) / 855px 584px;
+    background: url('./../../img/about/bg/bg-3.png') no-repeat top 24px right calc(50% - 408px) / 674px 584px;
     
 }
 .help__container {
@@ -46,7 +46,7 @@ line-height: 120%;
 @media(max-width: 1300px){
   .help{
     margin-bottom: 50px;
-    background-size: 506px 346px;
+    background-size: 400px 346px;
     background-position: top 0px right calc(50% - 240px);
   }
   .help__content{
