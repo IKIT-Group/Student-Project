@@ -29,7 +29,11 @@
   background: url('./../../img/pet/bg/ellipse-bg-green.svg') no-repeat top 790px right calc(50% - 172px) / 197px 197px,
               url('./../../img/pet/bg/ellipse-bg-lightbrown.svg') no-repeat top 1799px left calc(50% - 201px) / 197px 197px,
               url('./../../img/pet/bg/rectangle-bg-green.svg') no-repeat top 1593px right calc(50% - 640px) / 602px 598px,
-              url('./../../img/pet/bg/ellipse-bg-brown.svg') no-repeat top 1024px left calc(50% - 831px) / 821px 821px;
+              url('./../../img/pet/bg/ellipse-bg-brown.svg') no-repeat top 1024px left calc(50% - 831px) / 821px 821px,
+              /* интервал */
+              url('./../../img/pet/bg/ellipse-bg-green.svg') no-repeat top calc(790px * 3) right calc(50% - 172px) / 197px 197px,
+              url('./../../img/pet/bg/ellipse-bg-lightbrown.svg') no-repeat top calc(1799px * 1.8) left calc(50% - 201px) / 197px 197px,
+              url('./../../img/pet/bg/rectangle-bg-green.svg') no-repeat top calc(1593px * 2) right calc(50% - 640px) / 602px 598px;
 }
 
 /* ============================================================================================================== */
@@ -69,9 +73,7 @@
     grid-template-rows: max-content auto max-content;
   }
   .page__body--shop{
-    background: url('./../../img/shop/food/bg/ellipse-brown.svg') no-repeat top 85px right calc(50% - 205px) / 267px 267px,
-                    url('./../../img/shop/food/bg/ellipse-green.svg') no-repeat bottom 213px left calc(50%) / 226px 226px;
-                    /* url('./../../img/shop/food/bg/rectangle-brown.svg') no-repeat bottom -220px left calc(50% - 621px); */
+    background: none;
   }
   .page-body__pets{
     background: url('./../../img/pet/bg/ellipse-bg-green.svg') no-repeat top 601px right calc(50% - 129px) / 93px 93px,
@@ -79,6 +81,14 @@
               url('./../../img/pet/bg/ellipse-bg-brown.svg') no-repeat top 1098px right calc(50% - 210px) / 387px 387px,
               url('./../../img/pet/bg/ellipse-bg-lightbrown.svg') no-repeat top 1629px left calc(50% - 136px) / 93px 93px,
               url('./../../img/pet/bg/rectangle-bg-brown.svg') no-repeat top 1944px right calc(50% - 144px) / 187px 187px,
-              url('./../../img/pet/bg/rectangle-bg-green-2.svg') no-repeat top 2157px left calc(50% - 156px) / 239px 297px;
+              url('./../../img/pet/bg/rectangle-bg-green-2.svg') no-repeat top 2157px left calc(50% - 156px) / 239px 297px,
+              /* интервал */
+              url('./../../img/pet/bg/ellipse-bg-green.svg') no-repeat top calc(601px * 4) right calc(50% - 129px) / 93px 93px,
+              url('./../../img/pet/bg/ellipse-bg-green.svg') no-repeat top calc(898px * 4) left calc(50% - 116px) / 135px 135px,
+              url('./../../img/pet/bg/ellipse-bg-brown.svg') no-repeat top calc(1098px * 4)  right calc(50% - 210px) / 387px 387px,
+              url('./../../img/pet/bg/ellipse-bg-lightbrown.svg') no-repeat top calc(1629px * 2.5) left calc(50% - 136px) / 93px 93px,
+              url('./../../img/pet/bg/rectangle-bg-brown.svg') no-repeat top calc(1944px * 2) right calc(50% - 144px) / 187px 187px,
+              url('./../../img/pet/bg/ellipse-bg-brown.svg') no-repeat top calc(1098px * 5)  right calc(50% - 210px) / 387px 387px,
+              url('./../../img/pet/bg/rectangle-bg-green-2.svg') no-repeat top calc(2157px * 3) left calc(50% - 156px) / 239px 297px;
   }
 }

@@ -148,7 +148,7 @@ input.food-catalog__search-button{
     position: absolute;
     width: 135px;
     height: 42px;
-    background: url('./../../img/shop/icons/sale.png') no-repeat;
+    background: url('./../../img/shop/icons/sale.svg') no-repeat;
     right: 15px;
     top: 15px;
 }
@@ -240,7 +240,7 @@ input.food-catalog__search-button{
     position: absolute;
     width: 68px;
     height: 20px;
-    background: url('./../../img/shop/icons/sale-768.png') no-repeat;
+    background: url('./../../img/shop/icons/sale-tablet.svg') no-repeat;
     right: 10px;
     top: 10px;
 }
@@ -332,9 +332,9 @@ input.food-catalog__search-button{
   .food-catalog__item--sale::before{
     content: "";
     position: absolute;
-    width: 68px;
-    height: 20px;
-    background: url('./../../img/shop/icons/sale-768.png') no-repeat;
+    width: 55px;
+    height: 16px;
+    background: url('./../../img/shop/icons/sale-mobile.svg') no-repeat;
     right: 10px;
     top: 10px;
   }

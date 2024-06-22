@@ -105,4 +105,7 @@
     .page-main--pet{
         background: url('./../../img/pet/bg/rectangle-bg-green.svg') no-repeat top 15px left calc(50% - 183px) / 131px 131px;
     }
+    .page-main__food{
+        padding: 0;
+    }
 }
