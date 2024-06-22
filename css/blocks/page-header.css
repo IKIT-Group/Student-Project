@@ -2,7 +2,7 @@
     padding: 51px 20px 0 20px;
     border-radius: 0 0 50px 50px;
     background: url('./../../img/index/header/decor/ellipse-green.svg') left calc(50% - 774px) top 493px / 533px 533px,
-                url('./../../img/index/header/header-bg-desktop.png') top 159px right calc(50% - 237px) / 743px 634px;
+                url('./../../img/index/header/header-bg-desktop.png') top 178px right calc(50% - 237px) / 743px 634px;
     background-repeat: no-repeat;
     background-color: var(--background-white-50);
     z-index: 3;
