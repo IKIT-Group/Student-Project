@@ -23,13 +23,12 @@
     margin-bottom: 54px;
 }
 .page-header__logo{
-    font-size: 24px;
-    line-height: 100%;
-    font-weight: 600;
     margin-right: 30px;
-    max-width: 141px;
-    text-align: center;
     transition: all .4s;
+}
+.logo{
+    width: 197px;
+    height: 71px;
 }
 .page-header__logo:hover{
     transform: scale(1.05);
@@ -54,9 +53,9 @@
         margin-bottom: 30px;
     }
     
-    .page-header__logo{
-        font-size: 16px;
-        max-width: 94px;
+    .logo{
+        width: 94px;
+        height: 32px;
     }
     .page-header__toggler{
         display: none;
@@ -90,6 +89,10 @@
     .page-header__logo{
         margin: 0;
         text-align: center;
+    }
+    .logo{
+        width: 71px;
+        height: 24px;
     }
     .page-header__toggler{
         padding: 0;

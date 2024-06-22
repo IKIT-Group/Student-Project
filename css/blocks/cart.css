@@ -109,11 +109,13 @@
   gap: 18px;
   align-items: flex-end;
   align-self: flex-end;
+  margin-left: auto;
 }
 .cart__grid-img {
   width: 124px;
   height: 129px;
   object-fit: cover;
+  border-radius: 15px;
 }
 .cart__grid-name {
   display: inline;
@@ -196,8 +198,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 120%;
-
-  top: 165px;
+  top: 225px;
   left: 57px;
 }
 .cart__grid-place {
@@ -248,7 +249,7 @@
 }
 .cart__grid-sum {
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   justify-content: space-between;
 }
 .cart__grid-sum__title {
@@ -260,6 +261,36 @@
   font-weight: 500;
   font-size: 32px;
   line-height: 120%;
+}
+.cart__grid-contact{
+  display: flex;
+  flex-direction: column;
+}
+.cart__grid-contact__heading{
+  display: flex;
+  flex-direction: column;
+  font-size: 24px;
+  line-height: 120%;
+  margin-bottom: 20px;
+}
+.cart__grid-contact__heading input{
+  margin-top: 5px;
+  font-size: 28px;
+  line-height: 100%;
+  color: var(--color-brown);
+  padding: 11px 15px;
+  background-color: transparent;
+  border: 1px solid var(--color-brown-50);
+  border-radius: 10px;
+}
+.cart__grid-contact__heading input::placeholder{
+  color: var(--color-brown);
+}
+.cart__grid-container{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  justify-content: center;
 }
 .cart__grid-book {
   text-align: center;
@@ -275,6 +306,8 @@
   padding: 24px 27px;
 }
 .cart__grid-book__hint {
+  width: 34px;
+  display: inline;
   cursor: pointer;
   background-color: transparent;
 }
@@ -405,7 +438,7 @@
     font-size: 16px;
   }
   .cart__grid-sum{
-    margin-bottom: 15px;
+    margin-bottom: 7px;
   }
   .cart__grid-book{
     gap: 10px;
@@ -466,6 +499,23 @@
   }
   .cart-info--empty__button{
     padding: 15px 23px;
+  }
+  .cart__grid-contact{
+    display: flex;
+    flex-direction: column;
+  }
+  .cart__grid-contact__heading{
+    font-size: 15px;
+    line-height: 120%;
+    margin-bottom: 10px;
+  }
+  .cart__grid-contact__heading input{
+    font-size: 16px;
+    padding: 6px 10px;
+    border-radius: 7px;
+  }
+  .cart__grid-container{
+    gap: 10px;
   }
 }
 
@@ -629,5 +679,11 @@
   }
   .cart-info--empty__button{
     padding: 8px;
+  }
+  .cart__grid-contact__heading{
+    font-size: 14px;
+  }
+  .cart__grid-container{
+    gap: 7px;
   }
 }

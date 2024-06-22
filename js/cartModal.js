@@ -3,17 +3,17 @@ let cartDialog = document.querySelector('.cart__modal');
 let cartInputForm = document.querySelectorAll('input');
 
 
-if (cartInputForm.checkValidity === true){
-  
-  cartDialogOpener.addEventListener("click", openModalAndLockScroll);
-  cartDialog.addEventListener("close", returnScroll);
-  function openModalAndLockScroll() {
-    cartDialog.showModal();
-    document.body.classList.add("scroll-lock");
-  }
-  
-  function returnScroll() {
-    document.body.classList.remove("scroll-lock")
-  }
+
+
+cartDialogOpener.addEventListener("click", openModalAndLockScroll);
+cartDialog.addEventListener("close", returnScroll);
+function openModalAndLockScroll() {
+  cartDialog.showModal();
+  document.body.classList.add("scroll-lock");
 }
+
+function returnScroll() {
+  document.body.classList.remove("scroll-lock")
+}
+
 

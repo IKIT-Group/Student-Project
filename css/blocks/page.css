@@ -22,8 +22,8 @@
 }
 .page__body--shop{
   background: url('./../../img/shop/food/bg/ellipse-brown.svg') no-repeat top 213px right calc(50% - 637px) / 504px 504px,
-                url('./../../img/shop/food/bg/ellipse-green.svg') no-repeat top 643px left calc(50% - 574px) / 617px 617px,
-                url('./../../img/shop/food/bg/rectangle-brown.svg') no-repeat bottom -220px left calc(50% - 621px);
+                url('./../../img/shop/food/bg/ellipse-green.svg') no-repeat top 643px left calc(50% - 574px) / 617px 617px;
+                /* url('./../../img/shop/food/bg/rectangle-brown.svg') no-repeat bottom -150px left calc(50% - 621px); */
 }
 
 /* ============================================================================================================== */
@@ -43,8 +43,8 @@
   }
   .page__body--shop{
     background: url('./../../img/shop/food/bg/ellipse-brown.svg') no-repeat top 170px right calc(50% - 365px) / 252px 252px,
-                url('./../../img/shop/food/bg/ellipse-green.svg') no-repeat top 460px left calc(50% - 318px) / 308px 308px,
-                  url('./../../img/shop/food/bg/rectangle-brown.svg') no-repeat bottom -220px left calc(50% - 621px);
+                url('./../../img/shop/food/bg/ellipse-green.svg') no-repeat top 460px left calc(50% - 318px) / 308px 308px;
+                  /* url('./../../img/shop/food/bg/rectangle-brown.svg') no-repeat bottom -220px left calc(50% - 621px); */
   }
 }
 /* ============================================================================================================== */
@@ -61,7 +61,7 @@
   }
   .page__body--shop{
     background: url('./../../img/shop/food/bg/ellipse-brown.svg') no-repeat top 85px right calc(50% - 205px) / 267px 267px,
-                    url('./../../img/shop/food/bg/ellipse-green.svg') no-repeat bottom 213px left calc(50%) / 226px 226px,
-                    url('./../../img/shop/food/bg/rectangle-brown.svg') no-repeat bottom -220px left calc(50% - 621px);
+                    url('./../../img/shop/food/bg/ellipse-green.svg') no-repeat bottom 213px left calc(50%) / 226px 226px;
+                    /* url('./../../img/shop/food/bg/rectangle-brown.svg') no-repeat bottom -220px left calc(50% - 621px); */
   }
 }
