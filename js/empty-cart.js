@@ -244,6 +244,7 @@ orderButton.addEventListener('click', async (e) => {
     if (!gotOrder) {
         alert('Что-то пошло не так, возможно вы ввели неправильный e-mail');
         clearCart();
+        renderPage();
         return;
     }
     //... success!
@@ -254,5 +255,4 @@ orderButton.addEventListener('click', async (e) => {
 
 cartDialog.addEventListener("close", () => {
     returnScroll();
-    location.href = '/';
 });
