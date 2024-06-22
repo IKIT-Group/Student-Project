@@ -198,7 +198,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 120%;
-  top: 225px;
+  top: 210px;
   left: 57px;
 }
 .cart__grid-place {
@@ -453,7 +453,7 @@
   }
   .cart__grid-hint--message {
     position: absolute;
-    padding: 7px;
+    padding: 8px;
     max-width: 202px;
     background-color: var(--background-white-50);
     border-radius: 15px;
@@ -641,11 +641,11 @@
   }
   .cart__grid-hint--message {
     border-radius: 15px;
-    max-width: 153px;
-    top: 52px;
-    padding: 7px 10px;
+    max-width: 198px;
+    top: 104px;
+    padding: 5px 9px;
     font-size: 10px;
-    left: 65px;
+    left: 41px;
   }
 
   .cart-modal {

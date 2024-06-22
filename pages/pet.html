@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="./../img/icons/head/favicon.png">
+    <link rel="icon" href="./../img/main-favicon.png" />
     <link rel="stylesheet" href="./../css/style.css" />
     <title>Выбор питомца</title>
     <script defer src="./../js/pets.js" type="module"></script>
@@ -14,72 +14,111 @@
       class="page__header page-header page-header--no-decor page-header__shop"
     >
       <div class="page-header__container container">
-        <nav class="page-header__nav page-header__nav--closed page-header__nav--nojs">
-                
-          <a href="./../index.html" class="page-header__logo logo">
-              YOUR LOGO HERE
-          </a>
+        <nav
+          class="page-header__nav page-header__nav--closed page-header__nav--nojs"
+        >
+        <a href="./../index.html" class="page-header__logo"> <img src="./../img/main-logo.png" alt="" class="logo"> </a>
           <button class="page-header__toggler" type="button">
-              <span class="visually-hidden">Открыть меню</span>
+            <span class="visually-hidden">Открыть меню</span>
           </button>
           <ul class="page-header__list site-menu">
-              <li class="site-menu__item">
-                  <a href="./../index.html" class="site-menu__link">Главная</a>
-              </li>
-              <li class="site-menu__item site-menu__item--active">
-                  <a href="#" class="site-menu__link">Выбор питомца</a>
-              </li>
-              
-              <li class="site-menu__item site-menu__item--dropdown" data-has-children>
-                  <a href="./shop.html" class="site-menu__btn">Магазин</a>
-                  <svg id="dropdownButton--first" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M15 7.5L10 12.5L5 7.5" stroke="#222222"/>
-                  </svg>
-                      
-                  <ul class="site-menu--dropdown visually-hidden" id="menuDropdownFirst">
-                      <il class="site-menu__item">
-                          <a href="./food.html" class="site-menu__link">Корма и лакомства</a>
-                      </il>
-                      <il class="site-menu__item">
-                          <a href="./care.html" class="site-menu__link">Уход за животными</a>
-                      </il>
-                      <il class="site-menu__item">
-                          <a href="./accessories.html" class="site-menu__link">Аксессуары</a>
-                      </il>
-                      <il class="site-menu__item">
-                          <a href="./toys.html" class="site-menu__link">Игрушки</a>
-                      </il>
-                      <il class="site-menu__item">
-                          <a href="./empty-cart.html" class="site-menu__link">Корзина товаров</a>
-                      </il>
-                  </ul>
-              </li>
-              <li class="site-menu__item site-menu__item--dropdown " data-has-children>
-                  <a href="./about.html" class="site-menu__btn">О нас</a>
-                  <svg id="dropdownButton--second" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M15 7.5L10 12.5L5 7.5" stroke="#222222"/>
-                  </svg>
-                      
-                  <ul class="site-menu--dropdown" id="menuDropdownSecond">
-                      <il class="site-menu__item">
-                          <a href="./about.html#mission" class="site-menu__link">Наша миссия</a>
-                      </il>
-                      <il class="site-menu__item">
-                          <a href="./about.html#photo" class="site-menu__link">Фотографии приюта</a>
-                      </il>
-                      <il class="site-menu__item">
-                          <a href="./about.html#history" class="site-menu__link">История приюта</a>
-                      </il>
-                      <il class="site-menu__item">
-                          <a href="./about.html#additional" class="site-menu__link">Доп. информация</a>
-                      </il>
-                      <il class="site-menu__item">
-                          <a href="./about.html#help" class="site-menu__link">Помощь приюту</a>
-                      </il>
-                  </ul>
-              </li>
-          </ul>
+            <li class="site-menu__item">
+              <a href="./../index.html" class="site-menu__link">Главная</a>
+            </li>
+            <li class="site-menu__item site-menu__item--active">
+              <a href="#" class="site-menu__link">Выбор питомца</a>
+            </li>
 
+            <li
+              class="site-menu__item site-menu__item--dropdown"
+              data-has-children
+            >
+              <a href="./shop.html" class="site-menu__btn">Магазин</a>
+              <svg
+                id="dropdownButton--first"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M15 7.5L10 12.5L5 7.5" stroke="#222222" />
+              </svg>
+
+              <ul
+                class="site-menu--dropdown visually-hidden"
+                id="menuDropdownFirst"
+              >
+                <il class="site-menu__item">
+                  <a href="./food.html" class="site-menu__link"
+                    >Корма и лакомства</a
+                  >
+                </il>
+                <il class="site-menu__item">
+                  <a href="./care.html" class="site-menu__link"
+                    >Уход за животными</a
+                  >
+                </il>
+                <il class="site-menu__item">
+                  <a href="./accessories.html" class="site-menu__link"
+                    >Аксессуары</a
+                  >
+                </il>
+                <il class="site-menu__item">
+                  <a href="./toys.html" class="site-menu__link">Игрушки</a>
+                </il>
+                <il class="site-menu__item">
+                  <a href="./empty-cart.html" class="site-menu__link"
+                    >Корзина товаров</a
+                  >
+                </il>
+              </ul>
+            </li>
+            <li
+              class="site-menu__item site-menu__item--dropdown"
+              data-has-children
+            >
+              <a href="./about.html" class="site-menu__btn">О нас</a>
+              <svg
+                id="dropdownButton--second"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M15 7.5L10 12.5L5 7.5" stroke="#222222" />
+              </svg>
+
+              <ul class="site-menu--dropdown" id="menuDropdownSecond">
+                <il class="site-menu__item">
+                  <a href="./about.html#mission" class="site-menu__link"
+                    >Наша миссия</a
+                  >
+                </il>
+                <il class="site-menu__item">
+                  <a href="./about.html#photo" class="site-menu__link"
+                    >Фотографии приюта</a
+                  >
+                </il>
+                <il class="site-menu__item">
+                  <a href="./about.html#history" class="site-menu__link"
+                    >История приюта</a
+                  >
+                </il>
+                <il class="site-menu__item">
+                  <a href="./about.html#additional" class="site-menu__link"
+                    >Доп. информация</a
+                  >
+                </il>
+                <il class="site-menu__item">
+                  <a href="./about.html#help" class="site-menu__link"
+                    >Помощь приюту</a
+                  >
+                </il>
+              </ul>
+            </li>
+          </ul>
         </nav>
       </div>
     </header>
@@ -112,73 +151,195 @@
                 </h2>
                 <div class="search-button__wrapper">
                   <input
-                  class="filter-row__search-button"
-                  type="text"
-                  name="name"
-                  id="searchBar"
-                  placeholder="Поиск по кличке"
-                />
+                    class="filter-row__search-button"
+                    type="text"
+                    name="name"
+                    id="searchBar"
+                    placeholder="Поиск по кличке"
+                  />
                 </div>
                 <div class="submit-button__wrapper">
-                  <button type="submit" id="toggle-filter" class="filter-row__submit-button">Фильтр поиска</button>
+                  <button
+                    type="submit"
+                    id="toggle-filter"
+                    class="filter-row__submit-button"
+                  >
+                    Фильтр поиска
+                  </button>
                 </div>
               </div>
               <div class="filter-row__block visually-hidden">
                 <div class="filter">
                   <div class="filter__row">
                     <div class="filter-row__wrapper--arrow">
-                      <select class="filter-row__select" name="type" id="type-of-pet">
-                        <option class="filter-row__option" value="" hidden disabled selected>Питомец</option>
-                        <option class="filter-row__option" value="cat">Кошка</option>
-                        <option class="filter-row__option" value="dog">Собака</option>
-                        <option class="filter-row__option" value="hamster">Хомяк</option>
+                      <select
+                        class="filter-row__select"
+                        name="type"
+                        id="type-of-pet"
+                      >
+                        <option
+                          class="filter-row__option"
+                          value=""
+                          hidden
+                          disabled
+                          selected
+                        >
+                          Питомец
+                        </option>
+                        <option class="filter-row__option" value="cat">
+                          Кошка
+                        </option>
+                        <option class="filter-row__option" value="dog">
+                          Собака
+                        </option>
+                        <option class="filter-row__option" value="hamster">
+                          Хомяк
+                        </option>
                       </select>
                     </div>
-                    
+
                     <div class="filter-row__wrapper--arrow">
-                      <select class="filter-row__select" name="gender" id="the-gender-of-the-pet">
-                        <option class="filter-row__option" value="" hidden disabled selected>Пол</option>
-                        <option class="filter-row__option" value="true">Самец</option>
-                        <option class="filter-row__option" value="false">Самка</option>
+                      <select
+                        class="filter-row__select"
+                        name="gender"
+                        id="the-gender-of-the-pet"
+                      >
+                        <option
+                          class="filter-row__option"
+                          value=""
+                          hidden
+                          disabled
+                          selected
+                        >
+                          Пол
+                        </option>
+                        <option class="filter-row__option" value="true">
+                          Самец
+                        </option>
+                        <option class="filter-row__option" value="false">
+                          Самка
+                        </option>
                       </select>
                     </div>
                     <div class="filter-row__wrapper--arrow">
-                      <select class="filter-row__select" name="age" id="age-of-pet">
-                        <option class="filter-row__option" value="" hidden disabled selected>Возраст</option>
-                        <option class="filter-row__option" value="6m">0-6 мес.</option>
-                        <option class="filter-row__option" value="7-12m">7-12 мес.</option>
-                        <option class="filter-row__option" value="1-5y">1-5 лет</option>
-                        <option class="filter-row__option" value="6y">6+ лет</option>
+                      <select
+                        class="filter-row__select"
+                        name="age"
+                        id="age-of-pet"
+                      >
+                        <option
+                          class="filter-row__option"
+                          value=""
+                          hidden
+                          disabled
+                          selected
+                        >
+                          Возраст
+                        </option>
+                        <option class="filter-row__option" value="6m">
+                          0-6 мес.
+                        </option>
+                        <option class="filter-row__option" value="7-12m">
+                          7-12 мес.
+                        </option>
+                        <option class="filter-row__option" value="1-5y">
+                          1-5 лет
+                        </option>
+                        <option class="filter-row__option" value="6y">
+                          6+ лет
+                        </option>
                       </select>
                     </div>
                     <div class="filter-row__wrapper--arrow">
-                      <select class="filter-row__select" name="sterilized" id="sterilization">
-                        <option class="filter-row__option" value="" hidden disabled selected>Стерилизация</option>
-                        <option class="filter-row__option" value="true">Да</option>
-                        <option class="filter-row__option" value="false">Нет</option>
+                      <select
+                        class="filter-row__select"
+                        name="sterilized"
+                        id="sterilization"
+                      >
+                        <option
+                          class="filter-row__option"
+                          value=""
+                          hidden
+                          disabled
+                          selected
+                        >
+                          Стерилизация
+                        </option>
+                        <option class="filter-row__option" value="true">
+                          Да
+                        </option>
+                        <option class="filter-row__option" value="false">
+                          Нет
+                        </option>
                       </select>
                     </div>
                     <div class="filter-row__wrapper--arrow">
-                      <select class="filter-row__select" name="hasPassport" id="veterinary-passport">
-                        <option class="filter-row__option" value="" hidden disabled selected>Вет. паспорт</option>
-                        <option class="filter-row__option" value="true">Да</option>
-                        <option class="filter-row__option" value="false">Нет</option>
+                      <select
+                        class="filter-row__select"
+                        name="hasPassport"
+                        id="veterinary-passport"
+                      >
+                        <option
+                          class="filter-row__option"
+                          value=""
+                          hidden
+                          disabled
+                          selected
+                        >
+                          Вет. паспорт
+                        </option>
+                        <option class="filter-row__option" value="true">
+                          Да
+                        </option>
+                        <option class="filter-row__option" value="false">
+                          Нет
+                        </option>
                       </select>
                     </div>
                     <div class="filter-row__wrapper--arrow">
-                      <select class="filter-row__select" name="health" id="health">
-                        <option class="filter-row__option" value="" hidden disabled selected>Здоровье</option>
-                        <option class="filter-row__option" value="great">Отличное</option>
-                        <option class="filter-row__option" value="good">Хорошее</option>
-                        <option class="filter-row__option" value="bad">Плохое</option>
-                        <option class="filter-row__option" value="disabled">Инвалид</option>
+                      <select
+                        class="filter-row__select"
+                        name="health"
+                        id="health"
+                      >
+                        <option
+                          class="filter-row__option"
+                          value=""
+                          hidden
+                          disabled
+                          selected
+                        >
+                          Здоровье
+                        </option>
+                        <option class="filter-row__option" value="great">
+                          Отличное
+                        </option>
+                        <option class="filter-row__option" value="good">
+                          Хорошее
+                        </option>
+                        <option class="filter-row__option" value="bad">
+                          Плохое
+                        </option>
+                        <option class="filter-row__option" value="disabled">
+                          Инвалид
+                        </option>
                       </select>
                     </div>
                   </div>
                 </div>
                 <div class="filter__buttons filter-buttons">
-                    <button type="reset" class="filter-button filter-buttons__reset">Сбросить все</button>
-                    <button type="submit" class="filter-button filter-buttons__submit">Применить</button>
+                  <button
+                    type="reset"
+                    class="filter-button filter-buttons__reset"
+                  >
+                    Сбросить все
+                  </button>
+                  <button
+                    type="submit"
+                    class="filter-button filter-buttons__submit"
+                  >
+                    Применить
+                  </button>
                 </div>
               </div>
             </form>

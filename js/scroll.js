@@ -1,6 +1,6 @@
 let menu = document.querySelector(".page-header__nav");
 
-$("#menuDropdownSecond .site-menu__item a").on("click", function (e){
+$(".page-body__about #menuDropdownSecond .site-menu__item a").on("click", function (e){
     e.preventDefault();
 
     var id = $(this).attr('href'),

@@ -90,10 +90,7 @@
         margin: 0;
         text-align: center;
     }
-    .logo{
-        width: 71px;
-        height: 24px;
-    }
+    
     .page-header__toggler{
         padding: 0;
         position: absolute;
@@ -147,7 +144,7 @@
     }
     .site-menu{
         width: 100vw;
-        margin-top: 10px;
+        margin-top: 9px;
         display: flex;
         text-align: center;
         flex-direction: column;
@@ -165,5 +162,9 @@
     
     .page-header__shop .page-header__nav{
         margin-bottom: 10px;
+    }
+    .logo{
+        width: 71px;
+        height: 24px;
     }
 }
