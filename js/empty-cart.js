@@ -7,8 +7,11 @@ import {
     ProductInCart,
     addToCart,
     removeFromCart,
+    clearCart,
     parseImage,
-    parsePrice
+    parsePrice,
+    Order,
+    makeOrder
 } from './api.js';
 
 const backButton = document.querySelector('.cart-header__link');
@@ -207,3 +210,48 @@ const showSummary = (data) => {
         bookingButton.classList.add('visually-hidden');
     }
 }
+
+// КОНПКА БРОНИ
+
+const orderButton = document.querySelector('.cart__grid-book__add');
+const cartDialog = document.querySelector('.cart__modal');
+const orderForm = document.getElementById('cartForm');
+
+const openModalAndLockScroll = () => {
+    cartDialog.showModal();
+    document.body.classList.add("scroll-lock");
+}
+
+const returnScroll = () => {
+    document.body.classList.remove("scroll-lock");
+}
+
+orderButton.addEventListener('click', async (e) => {
+    e.preventDefault();
+    const formData = new FormData(orderForm);
+
+    /** @type {Partial<Order>} */
+    const o = { cart: getCart() };
+    for (const [key, value] of formData) {
+        if (!value) {
+            alert('Введите e-mail!');
+            return;
+        }
+        o[key] = value;
+    };
+    const order = new Order(o.email, o.cart);
+    const gotOrder = await makeOrder(order);
+    if (!gotOrder) {
+        alert('Что-то пошло не так, возможно вы ввели неправильный e-mail');
+        return;
+    }
+    //... success!
+    clearCart();
+    renderPage();
+    openModalAndLockScroll();
+});
+
+cartDialog.addEventListener("close", () => {
+    returnScroll();
+    location.href = '/';
+});

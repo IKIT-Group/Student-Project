@@ -3,6 +3,7 @@ const storageUrl = 'https://storage.yandexcloud.net/backend-bucket';
 const petsUrl = apiUrl + '/pets';
 const ownersUrl = apiUrl + '/owners';
 const productsUrl = apiUrl + '/products';
+const ordersUrl = apiUrl + '/orders';
 
 /**
  * Класс питомца
@@ -89,6 +90,19 @@ export class Owner {
 }
 
 /**
+ * Класс заказа
+ */
+export class Order {
+    id;    // string
+    email; // string
+    cart;  // {[id: string]: number}
+    constructor(email, cart) {
+        this.email = email;
+        this.cart = cart;
+    }
+}
+
+/**
  * Получить всех питомцев, удовлетворяющих условиям фильтрации
  * @param {URLSearchParams} query - Параметры фильтрации
  */
@@ -99,7 +113,7 @@ export const getPets = async (query) => {
             mode: "cors"
         });
     
-        if (!response.ok) return console.error("Ошибка запроса!");
+        if (!response.ok) return console.error("Ошибка запроса на получение всех питомцев!");
     
         /** @type {Pet[]} */
         const data = await response.json();
@@ -120,7 +134,7 @@ export const getPet = async (id) => {
             mode: "cors"
         });
     
-        if (!response.ok) return console.error("Ошибка запроса!");
+        if (!response.ok) return console.error("Ошибка запроса на получение питомца!");
     
         /** @type {Pet} */
         const data = await response.json();
@@ -141,7 +155,7 @@ export const getProducts = async (query) => {
             mode: "cors"
         });
     
-        if (!response.ok) return console.error("Ошибка запроса!");
+        if (!response.ok) return console.error("Ошибка запроса на получение всех товаров!");
     
         /** @type {Product[]} */
         const data = await response.json();
@@ -162,7 +176,7 @@ export const getProduct = async (id) => {
             mode: "cors"
         });
     
-        if (!response.ok) return console.error("Ошибка запроса!");
+        if (!response.ok) return console.error("Ошибка запроса на получение товара!");
     
         /** @type {Product} */
         const data = await response.json();
@@ -187,9 +201,34 @@ export const requestPet = async (owner) => {
             body: JSON.stringify(owner)
         });
     
-        if (!response.ok) return console.error("Ошибка запроса!");
+        if (!response.ok) return console.error("Ошибка запроса на запрос питомца!");
     
         /** @type {Owner} */
+        const data = await response.json();
+        return data;
+    } catch (error) {
+        console.error('Ошибка: ' + error);
+    }
+}
+
+/**
+ * Сделать заказ корзины
+ * @param {Order} order
+ */
+export const makeOrder = async (order) => {
+    try {
+        const response = await fetch(ordersUrl, {
+            method: "POST",
+            mode: "cors",
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(order)
+        });
+
+        if (!response.ok) return console.error("Ошибка запроса на создание заказа!");
+
+        /** @type {Order} */
         const data = await response.json();
         return data;
     } catch (error) {
@@ -267,6 +306,9 @@ export const getCart = () => JSON.parse(localStorage.getItem('cart')) || {};
 
 /** @param {{[string]:number}} items */
 const setCart = items => localStorage.setItem('cart', JSON.stringify(items));
+
+/** Очистить корзину */
+export const clearCart = () => setCart({});
 
 /** @param {string} itemId @returns {number} */
 export const getProductInCart = (itemId) => {
