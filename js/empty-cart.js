@@ -243,6 +243,7 @@ orderButton.addEventListener('click', async (e) => {
     const gotOrder = await makeOrder(order);
     if (!gotOrder) {
         alert('Что-то пошло не так, возможно вы ввели неправильный e-mail');
+        clearCart();
         return;
     }
     //... success!
