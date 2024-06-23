@@ -116,7 +116,8 @@ export const getPets = async (query) => {
         if (!response.ok) return console.error("Ошибка запроса на получение всех питомцев!");
     
         /** @type {Pet[]} */
-        const data = await response.json();
+        let data = await response.json();
+        data = data.sort((a, b) => a.name > b.name ? 1 : -1);
         return data;
     } catch (error) {
         console.error('Ошибка: ' + error);
